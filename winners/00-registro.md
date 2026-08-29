@@ -48,7 +48,7 @@ Formato: `[fecha] | [nicho] | [página] | V:[n]/3 O:[n]/3 | [veredicto] | [motiv
 29/08 | adestramento BR | Alexandre Rossi Dr Pet (190430167791786) | — | DESCARTAR | marca personal, no modelable
 
 ### Caza 30/08 · arte con cemento (producto propio · analisis de destino)
-30/08 | arte cemento | Ebooks del Futuro (725759253957744) | V:1/3 O:— | WATCHLIST | 41 ads pero todos de hoy
+30/08 | arte cemento | Ebooks del Futuro (725759253957744) | — | CUENTA PROPIA | 41 ads: 32 en AR, 8 en ES, 0 resto
 30/08 | arte cemento | El Arte De Las Manualidades (414262975102462) | V:2/3 O:— | referencia | 16 ads, 13-20 dias, COP
 30/08 | arte cemento | Mymundoartesanal (342734358933995) | V:2/3 O:— | referencia | unico con 58 dias de rodaje
 30/08 | arte cemento | Creaciones Digitales (943288698874892) | V:1/3 O:— | referencia | 10 ads, 4,9 dias
@@ -66,3 +66,5 @@ Formato: `[fecha] | [nicho] | [página] | V:[n]/3 O:[n]/3 | [veredicto] | [motiv
 - **Argentina es mercado FUENTE de manualidades, nunca destino.** Segunda confirmacion: bordado ruso 64% del mundo en AR; arte en cemento 13 ads en AR contra 7 en ES. Para cualquier nicho de craft, mi mercado local es el peor lugar donde lanzar.
 - **Brasil va 6-12 meses adelante en craft.** Alla los productos ya tienen nombre propio ("Metodo Hope", "Metodo Vasos de Luxo") y prueba social numerica ("+1700 alunas"); en espanol todavia se vende "curso de manualidades". El copy brasileno es la hoja de ruta del copy espanol.
 - **Nicho entero chico = arma de doble filo.** Si ningun jugador supera los 50 ads en ningun mercado, no hay a quien enfrentar pero tampoco hay prueba de que escale. Caja chica consistente, no cohete.
+- **Chequear si una pagina del barrido es MIA antes de llamarla competencia.** Conte a Ebooks del Futuro como competidor sin saber que era la cuenta propia del usuario. Antes de dar veredicto, preguntar/verificar que paginas del nicho son propias.
+- **Un limit bajo en page_ids miente sobre la antiguedad.** Con limit 3 vi solo los ads mas nuevos y conclui "tester de hoy"; el arsenal real llevaba 21,5 dias. Para medir antiguedad hay que pedir limit alto y mirar el mas viejo.
