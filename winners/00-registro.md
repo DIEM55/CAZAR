@@ -47,6 +47,14 @@ Formato: `[fecha] | [nicho] | [página] | V:[n]/3 O:[n]/3 | [veredicto] | [motiv
 29/08 | adiestramiento canino ES | (mercado entero) | — | DESCARTAR | 80% servicio local presencial
 29/08 | adestramento BR | Alexandre Rossi Dr Pet (190430167791786) | — | DESCARTAR | marca personal, no modelable
 
+### Caza 30/08 · arte con cemento (producto propio · analisis de destino)
+30/08 | arte cemento | Ebooks del Futuro (725759253957744) | V:1/3 O:— | WATCHLIST | 41 ads pero todos de hoy
+30/08 | arte cemento | El Arte De Las Manualidades (414262975102462) | V:2/3 O:— | referencia | 16 ads, 13-20 dias, COP
+30/08 | arte cemento | Mymundoartesanal (342734358933995) | V:2/3 O:— | referencia | unico con 58 dias de rodaje
+30/08 | arte cemento | Creaciones Digitales (943288698874892) | V:1/3 O:— | referencia | 10 ads, 4,9 dias
+30/08 | arte cemento BR | Hope Decor (110121774557104) | V:2/3 O:— | MODELAR COPY | "Metodo Hope", mercado maduro
+30/08 | arte cemento | NICHO COMPLETO | V:2/3 O:2/3 | LANZAR en ES/US-hispano/MX | AR es el mas saturado (13)
+
 ### Patrones propios · agregado tras la recaza de bordado ruso
 - **Contar el arsenal no alcanza.** Sin las variantes de keyword y sin el chequeo por pais, la foto sale falsa: bordado ruso paso de "2 paginas en el mundo" a "7 anunciantes y el 64% en Argentina" con dos consultas mas.
 - **Mirar SIEMPRE la antiguedad antes de festejar el volumen.** Toda la ola de bordado ruso tiene 1-5 dias. Volumen alto + antiguedad nula = alguien escalando, no alguien ganando.
@@ -55,3 +63,6 @@ Formato: `[fecha] | [nicho] | [página] | V:[n]/3 O:[n]/3 | [veredicto] | [motiv
 - **Buscar el infoproducto por el problema, no por la solucion.** "adiestramiento canino" trae 80% servicio local. "recetas caseras para perros" trae la red de infoproductos. La keyword de la solucion trae proveedores; la keyword del formato trae vendedores.
 - **Keyword demasiado generica = keyword inservible.** "educar a tu perro paso a paso" devolvio 435.379 resultados matcheando concesionarias de autos. Si el count pasa de ~10.000, la keyword no discrimina y hay que tirarla.
 - **Cuando el nicho esta saturado con el mismo angulo, la entrada es cambiar el dolor, no el mercado.** 15 competidores gritan "gana dinero" con galletas para perros; nadie ataca "la comida del super le da alergia a tu perro".
+- **Argentina es mercado FUENTE de manualidades, nunca destino.** Segunda confirmacion: bordado ruso 64% del mundo en AR; arte en cemento 13 ads en AR contra 7 en ES. Para cualquier nicho de craft, mi mercado local es el peor lugar donde lanzar.
+- **Brasil va 6-12 meses adelante en craft.** Alla los productos ya tienen nombre propio ("Metodo Hope", "Metodo Vasos de Luxo") y prueba social numerica ("+1700 alunas"); en espanol todavia se vende "curso de manualidades". El copy brasileno es la hoja de ruta del copy espanol.
+- **Nicho entero chico = arma de doble filo.** Si ningun jugador supera los 50 ads en ningun mercado, no hay a quien enfrentar pero tampoco hay prueba de que escale. Caja chica consistente, no cohete.
