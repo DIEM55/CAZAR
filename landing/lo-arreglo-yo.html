@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lo Arreglo Yo</title>
+<meta name="description" content="El manual de arreglos del hogar para mujeres. 50+ reparaciones paso a paso, con foto de cada paso.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#faf5f0;
+  --blush:#f0ddd5;
+  --blush-soft:#f7e9e3;
+  --dark:#33201c;
+  --dark-2:#3f2823;
+  --rose:#c58d82;
+  --rose-deep:#b2766a;
+  --ink:#33201c;
+  --ink-soft:#6e564f;
+  --ink-faint:#9b837b;
+  --line:rgba(51,32,28,.12);
+  --r-lg:20px; --r-md:14px; --r-sm:10px;
+  --f:'Figtree',system-ui,-apple-system,sans-serif;
+  --maxw:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; font-family:var(--f); color:var(--ink);
+  background:var(--cream); font-size:17px; line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+.dots{
+  background-color:var(--cream);
+  background-image:radial-gradient(rgba(51,32,28,.13) 1px, transparent 1px);
+  background-size:22px 22px;
+}
+section{padding:72px 0}
+h1,h2,h3{font-weight:800;letter-spacing:-.02em;line-height:1.1;margin:0 0 14px}
+h1{font-size:clamp(32px,5.4vw,56px)}
+h2{font-size:clamp(28px,4.4vw,46px);text-align:center}
+h3{font-size:22px;letter-spacing:-.01em}
+.ac{color:var(--rose)}
+.lead{text-align:center;max-width:820px;margin:0 auto 42px;color:var(--ink-soft);font-size:18px}
+.lead strong{color:var(--ink)}
+
+/* ---------- placeholders de imagen ---------- */
+.ph{
+  position:relative;background:var(--blush-soft);
+  border:2px dashed var(--rose);border-radius:var(--r-md);
+  display:flex;align-items:center;justify-content:center;text-align:center;
+  padding:18px;color:var(--rose-deep);font-size:12.5px;font-weight:700;
+  line-height:1.45;letter-spacing:.02em;min-height:160px;
+}
+.ph span{max-width:260px}
+
+/* ---------- topbar ---------- */
+.topbar{background:var(--dark);color:#f5e9e4;font-size:13.5px;font-weight:600}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;padding:11px 20px;gap:12px}
+.topbar .brand{letter-spacing:.14em;text-transform:uppercase;font-weight:800}
+
+/* ---------- botones ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  background:var(--dark);color:#fff;text-decoration:none;
+  font-weight:800;font-size:17px;letter-spacing:.01em;
+  padding:17px 30px;border-radius:var(--r-sm);border:0;cursor:pointer;
+  transition:transform .15s ease,background .15s ease;
+  box-shadow:0 6px 0 rgba(51,32,28,.18);
+}
+.btn:hover{background:var(--dark-2);transform:translateY(-2px)}
+.btn-block{width:100%}
+.btn-ghost{background:transparent;color:var(--dark);border:2px solid var(--dark);box-shadow:none}
+.btn-ghost:hover{background:var(--dark);color:#fff}
+
+/* ---------- hero ---------- */
+.hero{padding:60px 0 56px}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center}
+.eyebrow{
+  display:inline-block;background:var(--blush);color:var(--rose-deep);
+  font-size:12.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;
+  padding:7px 14px;border-radius:999px;margin-bottom:18px;
+}
+.hero p.sub{font-size:19px;color:var(--ink-soft);margin:0 0 26px;max-width:520px}
+.hero p.sub strong{color:var(--ink)}
+.hero .ph{min-height:460px}
+.microlist{list-style:none;padding:0;margin:0 0 28px;display:grid;gap:9px}
+.microlist li{display:flex;gap:10px;font-weight:600;font-size:16px}
+.microlist li::before{content:"✓";color:var(--rose-deep);font-weight:800}
+
+/* ---------- barra confianza ---------- */
+.trust{background:var(--blush);padding:16px 0}
+.trust .wrap{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 34px;
+  font-size:14px;font-weight:700;color:var(--dark)}
+
+/* ---------- tarjetas oscuras ---------- */
+.cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card-dark{
+  background:var(--dark);color:#f3e5e0;border-radius:var(--r-md);
+  padding:14px 14px 22px;
+}
+.card-dark .ph{background:#4a312b;border-color:rgba(197,141,130,.6);color:#d8b1a8;min-height:230px;margin-bottom:16px}
+.card-dark h3{color:#fff;margin:0 0 8px;padding:0 6px}
+.card-dark p{margin:0;font-size:15.5px;color:#ddc8c2;padding:0 6px}
+.card-dark em{color:#fff;font-style:italic;font-weight:700}
+
+/* ---------- testimonios ---------- */
+.band{background:var(--blush)}
+.testi{
+  background:var(--dark);color:#f3e5e0;border-radius:var(--r-md);
+  padding:14px;display:flex;flex-direction:column;gap:12px;
+}
+.testi .ph{background:#4a312b;border-color:rgba(197,141,130,.6);color:#d8b1a8;min-height:220px}
+.stars{color:#f0d9cf;letter-spacing:4px;font-size:14px;text-align:center}
+.testi p{margin:0;font-size:15.5px;text-align:center;color:#ebd8d2}
+.testi .who{font-style:italic;font-weight:700;text-align:right;font-size:14px;color:#fff}
+
+/* ---------- qué incluye ---------- */
+.split{display:grid;grid-template-columns:1.05fr 1fr;gap:54px;align-items:center}
+.split .ph{min-height:480px}
+.split h3{font-size:28px;margin-bottom:16px}
+.split p{color:var(--ink-soft);margin:0 0 16px}
+.split p strong{color:var(--ink)}
+
+/* ---------- capítulos ---------- */
+.chapters{max-width:760px;margin:0 auto;display:grid;gap:10px}
+.chap{
+  display:flex;gap:16px;align-items:flex-start;
+  background:#fff;border:1px solid var(--line);border-radius:var(--r-sm);
+  padding:16px 20px;
+}
+.chap b{color:var(--rose-deep);font-size:15px;font-weight:800;min-width:30px}
+.chap span{font-weight:600;font-size:16px}
+.chap small{display:block;font-weight:500;color:var(--ink-soft);font-size:14.5px;margin-top:3px}
+
+/* ---------- bonus oscuro ---------- */
+.darksec{background:var(--dark);color:#f3e5e0;padding:78px 0}
+.darksec h2{color:#fff}
+.darksec h2 .ac{color:var(--rose)}
+.darksec .lead{color:#dcc6bf}
+.darksec .lead strong{color:#fff}
+.bonus{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:900px;margin:0 auto}
+.bonus-card{background:#452c26;border:1px solid rgba(197,141,130,.3);border-radius:var(--r-md);padding:24px}
+.bonus-card .tag{
+  display:inline-block;background:var(--rose);color:#2b1a16;font-size:11.5px;
+  font-weight:800;letter-spacing:.12em;text-transform:uppercase;
+  padding:5px 11px;border-radius:999px;margin-bottom:12px;
+}
+.bonus-card h3{color:#fff;font-size:19px;margin-bottom:8px}
+.bonus-card p{margin:0 0 12px;font-size:15.5px;color:#dcc6bf}
+.bonus-card .val{font-size:14px;font-weight:800;color:var(--rose)}
+.bonus-card .val s{color:#9d7f78;font-weight:600;margin-right:7px}
+
+/* ---------- buybox ---------- */
+.buybox{
+  background:var(--blush-soft);border:1px solid rgba(197,141,130,.45);
+  border-radius:var(--r-lg);padding:30px;
+  display:grid;grid-template-columns:1fr 1fr;gap:38px;align-items:center;
+  max-width:1060px;margin:0 auto;
+}
+.buybox.single{grid-template-columns:1fr;max-width:520px}
+.buybox .ph{min-height:420px;background:#fff}
+.offer-name{font-size:26px;font-weight:800;font-style:italic;margin:0 0 18px}
+.offer-list{list-style:none;padding:0;margin:0 0 22px;display:grid;gap:11px}
+.offer-list li{display:flex;gap:11px;font-size:16px;font-weight:600;line-height:1.45}
+.offer-list li i{font-style:normal;flex:0 0 22px;font-size:17px}
+.offer-badge{
+  display:block;background:var(--rose);color:#fff;text-align:center;
+  font-weight:800;font-size:15px;letter-spacing:.02em;
+  padding:13px;border-radius:var(--r-sm);margin-bottom:16px;
+}
+.price{display:flex;align-items:baseline;gap:14px;margin-bottom:18px}
+.price .now{font-size:44px;font-weight:800;letter-spacing:-.03em}
+.price .was{font-size:21px;color:var(--ink-faint);text-decoration:line-through;font-weight:700}
+.paynote{text-align:center;font-size:13.5px;color:var(--ink-soft);margin-top:14px;line-height:1.7}
+.paynote b{color:var(--ink)}
+
+/* ---------- pasos ---------- */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.step{background:var(--dark);border-radius:var(--r-md);padding:14px 14px 20px;text-align:center}
+.step .ph{background:#4a312b;border-color:rgba(197,141,130,.6);color:#d8b1a8;min-height:200px;margin-bottom:14px}
+.step h3{color:#fff;font-size:18px;margin:0}
+
+/* ---------- autora ---------- */
+.founder{display:grid;grid-template-columns:.85fr 1.15fr;gap:54px;align-items:center}
+.founder .ph{min-height:470px}
+.founder h2{text-align:left}
+.founder p{color:var(--ink-soft);margin:0 0 16px}
+.founder p strong{color:var(--ink)}
+
+/* ---------- faq ---------- */
+.faq{max-width:780px;margin:0 auto;display:grid;gap:10px}
+.faq details{background:var(--blush-soft);border-radius:var(--r-sm);border:1px solid rgba(197,141,130,.3)}
+.faq summary{
+  cursor:pointer;list-style:none;padding:18px 22px;
+  font-weight:700;font-size:16.5px;display:flex;justify-content:space-between;gap:16px;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--rose-deep);font-weight:800;font-size:22px;line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq .ans{padding:0 22px 20px;color:var(--ink-soft);font-size:16px}
+
+/* ---------- cierre ---------- */
+.closing{text-align:center;max-width:760px;margin:0 auto}
+.closing p{font-size:19px;color:var(--ink-soft)}
+.closing p strong{color:var(--ink)}
+
+/* ---------- footer ---------- */
+footer{background:var(--dark);color:#cbb3ac;padding:54px 0 34px;font-size:14.5px}
+.foot-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+footer h4{color:#fff;font-size:21px;font-weight:800;margin:0 0 16px}
+footer ul{list-style:none;padding:0;margin:0;display:grid;gap:11px}
+footer a{text-decoration:none}
+footer a:hover{color:#fff}
+.legal{margin-top:34px;padding-top:20px;border-top:1px solid rgba(255,255,255,.12);font-size:12.5px;color:#9d8780;line-height:1.7}
+
+/* ---------- sticky mobile ---------- */
+.sticky{display:none}
+
+@media(max-width:900px){
+  body{font-size:16px}
+  section{padding:54px 0}
+  .hero-grid,.split,.founder,.buybox{grid-template-columns:1fr;gap:30px}
+  .buybox{padding:22px}
+  .cards3,.steps,.bonus{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .founder h2{text-align:center}
+  .hero .ph,.split .ph,.founder .ph,.buybox .ph{min-height:300px}
+  .scroller{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;-webkit-overflow-scrolling:touch}
+  .scroller>*{flex:0 0 82%;scroll-snap-align:center}
+  .sticky{
+    display:block;position:fixed;left:0;right:0;bottom:0;z-index:50;
+    background:var(--cream);border-top:1px solid var(--line);padding:10px 14px;
+    box-shadow:0 -6px 18px rgba(51,32,28,.1);
+  }
+  .sticky .btn{box-shadow:none;padding:15px}
+  body{padding-bottom:78px}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="brand">Lo Arreglo Yo</div>
+    <div>🇦🇷 ARS · Español</div>
+  </div>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero dots">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Manual de arreglos del hogar para mujeres</div>
+      <h1>La Próxima Vez Que Se Rompa Algo, <span class="ac">Lo Arreglás Vos</span>.</h1>
+      <p class="sub">De no saber ni por dónde empezar a resolver la primera reparación de tu casa <strong>esta misma semana</strong>, sin experiencia previa y sin llamar a nadie.</p>
+      <ul class="microlist">
+        <li>Más de 50 arreglos explicados paso a paso</li>
+        <li>Una foto en cada paso: no tenés que imaginarte nada</li>
+        <li>Te dice también cuándo <strong>no</strong> conviene hacerlo sola</li>
+      </ul>
+      <a href="#oferta" class="btn">Quiero el manual completo</a>
+      <p style="font-size:14px;color:var(--ink-faint);margin-top:14px">Descarga inmediata · Garantía de 14 días</p>
+    </div>
+    <div class="ph"><span>IMAGEN 1 — HERO<br>Mujer de 40-55 arreglando la canilla de su cocina, mirando a cámara con media sonrisa. Luz natural, cocina real argentina. Vertical 4:5.</span></div>
+  </div>
+</section>
+
+<div class="trust">
+  <div class="wrap">
+    <div>✓ Descarga inmediata</div>
+    <div>✓ PDF para celular, tablet y compu</div>
+    <div>✓ Es tuyo para siempre</div>
+    <div>✓ Garantía de 14 días</div>
+  </div>
+</div>
+
+<!-- ============ DOLOR ============ -->
+<section>
+  <div class="wrap">
+    <h2>No Es Que No Puedas. Es Que <span class="ac">Nunca Te Enseñaron</span>.</h2>
+    <p class="lead">A los varones de tu familia alguien les mostró cómo se cambia un enchufe. A vos te dijeron que llamaras a alguien. <strong>Las instrucciones estaban escritas para otra persona</strong> — con palabras que no entendés, pasos que dan por sabidos, y siempre la sensación de que si tocás algo lo vas a empeorar.</p>
+    <div class="cards3 scroller">
+      <div class="card-dark">
+        <div class="ph"><span>IMAGEN 2<br>Canilla goteando de cerca, balde abajo. Tono frío, sensación de "esto viene hace meses".</span></div>
+        <h3>Esperás</h3>
+        <p>La canilla gotea hace tres meses. El enchufe suelto hace un año. <em>No es vagancia: es no saber por dónde empezar.</em></p>
+      </div>
+      <div class="card-dark">
+        <div class="ph"><span>IMAGEN 3<br>Mujer en la puerta pagándole a un técnico, expresión de incomodidad. Billetes en la mano.</span></div>
+        <h3>Pagás de más</h3>
+        <p>Te cobran la visita, el diagnóstico y un repuesto de dos lucas como si fuera una obra. <em>Y nunca sabés si el precio era ese.</em></p>
+      </div>
+      <div class="card-dark">
+        <div class="ph"><span>IMAGEN 4<br>Mujer frente a la compu con 6 tutoriales de YouTube abiertos, cara de agotamiento. De noche.</span></div>
+        <h3>Te perdés en YouTube</h3>
+        <p>Veinte videos, cada uno dice algo distinto, ninguno muestra el paso donde te trabaste. <em>Cerrás todo y seguís igual.</em></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIOS 1 ============ -->
+<section class="band">
+  <div class="wrap">
+    <h2>Mujeres Que Ya <span class="ac">Lo Arreglaron Solas</span></h2>
+    <p class="lead">Sin experiencia previa. Sin herramientas raras. Con esta guía abierta al lado.</p>
+    <div class="cards3 scroller">
+      <div class="testi">
+        <div class="ph"><span>FOTO TESTIMONIO 1<br>Foto tipo celular, real, sin producción: pared reparada o canilla arreglada.</span></div>
+        <div class="stars">★★★★★</div>
+        <p>[INSERTAR TESTIMONIO]</p>
+        <div class="who">[Nombre + inicial]</div>
+      </div>
+      <div class="testi">
+        <div class="ph"><span>FOTO TESTIMONIO 2<br>Foto tipo celular: mujer con el manual abierto en la tablet mientras trabaja.</span></div>
+        <div class="stars">★★★★★</div>
+        <p>[INSERTAR TESTIMONIO]</p>
+        <div class="who">[Nombre + inicial]</div>
+      </div>
+      <div class="testi">
+        <div class="ph"><span>FOTO TESTIMONIO 3<br>Foto tipo celular: mujer arreglando el depósito del inodoro, herramientas en el piso.</span></div>
+        <div class="stars">★★★★★</div>
+        <p>[INSERTAR TESTIMONIO]</p>
+        <div class="who">[Nombre + inicial]</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PARA QUIÉN ============ -->
+<section class="dots">
+  <div class="wrap">
+    <h2>Para La Mujer <span class="ac">Que Sos</span>.<br>Y Para Las Mujeres <span class="ac">Que Querés</span>.</h2>
+    <p class="lead">Quedátela <strong>para vos</strong>, regalásela a <strong>tu mamá</strong> o pasásela a <strong>tu hija</strong>.<br>Porque saber qué hacer en casa cambia cómo se siente una mujer adentro de ella.</p>
+    <div class="cards3 scroller">
+      <div class="card-dark">
+        <div class="ph"><span>IMAGEN 5<br>Mujer 45-55 parada en su cocina con las manos en la cintura, orgullosa, canilla recién arreglada atrás.</span></div>
+        <h3>Para vos</h3>
+        <p>Abrís la guía, hacés el primer paso con seguridad, terminás el trabajo y pensás: <em>lo arreglé yo.</em></p>
+      </div>
+      <div class="card-dark">
+        <div class="ph"><span>IMAGEN 6<br>Dos mujeres (hija 40 y madre 65) mirando juntas una tablet en la cocina, sonriendo.</span></div>
+        <h3>Para tu mamá</h3>
+        <p>A la que nunca le dieron la oportunidad de aprender esto y sigue esperando que venga alguien. <em>Regalale dejar de esperar.</em></p>
+      </div>
+      <div class="card-dark">
+        <div class="ph"><span>IMAGEN 7<br>Mujer joven (25-30) sentada en el piso del baño frente al mueble de la pileta, destornillador en la mano.</span></div>
+        <h3>Para tu hija</h3>
+        <p>Para que cuando se mude sola y algo se rompa, no se sienta perdida. Abre la guía y piensa: <em>puedo hacerlo.</em></p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:34px">
+      <a href="#oferta" class="btn btn-ghost">Regalale la tranquilidad de saber qué hacer</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUÉ INCLUYE ============ -->
+<section>
+  <div class="wrap">
+    <h2>Cada Arreglo Que Venís <span class="ac">Postergando</span>,<br>En Un Solo Lugar.</h2>
+    <p class="lead">Solo herramientas básicas. Ningún repuesto raro. Todo se consigue en la ferretería de tu barrio. <strong>No necesitás experiencia.</strong></p>
+    <div class="split">
+      <div class="ph"><span>IMAGEN 8 — MOCKUP<br>Páginas del manual impresas sobre una mesa clara, con cinta métrica, destornillador y lápiz al lado. Se ven las fotos paso a paso adentro. Esta imagen vende el volumen del producto.</span></div>
+      <div>
+        <h3>Qué incluye:</h3>
+        <p>Los arreglos se van amontonando porque llamar a alguien cuesta demasiado, tarda demasiado o directamente no debería hacer falta.</p>
+        <p><strong>Cada capítulo trae la lista completa de materiales, las herramientas exactas que necesitás y una foto de cada paso.</strong></p>
+        <p>No necesitás experiencia en bricolaje. Necesitás la guía adecuada, escrita en el idioma en el que hablás.</p>
+        <p><strong>Y una cosa más que nadie te dice:</strong> en cada capítulo está marcado con rojo cuándo parar y llamar a un profesional. Porque saber qué <em>no</em> tocar también es parte de saber.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CAPÍTULOS ============ -->
+<section class="band">
+  <div class="wrap">
+    <h2>Esto Es Lo Que Recibís: <span class="ac">12 Capítulos</span></h2>
+    <p class="lead">Más de 110 páginas. Más de 50 reparaciones resueltas paso a paso.</p>
+    <div class="chapters">
+      <div class="chap"><b>01</b><span>La mentalidad y las herramientas correctas<small>Las 9 herramientas que sí vas a usar. Nada más. Qué comprar y qué no.</small></span></div>
+      <div class="chap"><b>02</b><span>Canillas, pérdidas y goteos<small>Cambiar cueritos, apretar uniones, frenar esa gotera de una vez.</small></span></div>
+      <div class="chap"><b>03</b><span>Inodoro y depósito<small>Que deje de correr agua, que cargue bien, que no se tape más.</small></span></div>
+      <div class="chap"><b>04</b><span>Desagües y cañerías tapadas<small>Pileta, bacha y rejilla sin productos que arruinan los caños.</small></span></div>
+      <div class="chap"><b>05</b><span>Electricidad básica y segura<small>Enchufes, llaves de luz, térmica que salta. Con el corte de seguridad explicado primero.</small></span></div>
+      <div class="chap"><b>06</b><span>Luces, portalámparas y artefactos<small>Colgar, cambiar y conectar sin que te tiemble la mano.</small></span></div>
+      <div class="chap"><b>07</b><span>Paredes: agujeros, humedad y fisuras<small>Enduido, lijado y pintura que no se nota dónde fue el arreglo.</small></span></div>
+      <div class="chap"><b>08</b><span>Colgar sin arruinar la pared<small>Tarugo correcto según el material. Estantes, cuadros, TV, repisas.</small></span></div>
+      <div class="chap"><b>09</b><span>Puertas, cerraduras y ventanas<small>Que no rechine, que cierre, que no entre frío.</small></span></div>
+      <div class="chap"><b>10</b><span>Muebles que se aflojaron<small>Cajones, bisagras, patas flojas y melamina saltada.</small></span></div>
+      <div class="chap"><b>11</b><span>Electrodomésticos: fallas comunes<small>Lavarropas que no desagota, heladera que gotea, termotanque sin agua caliente.</small></span></div>
+      <div class="chap"><b>12</b><span>Cómo tratar con un profesional<small>Qué preguntar, qué pedir por escrito y cómo darte cuenta de que te están cobrando de más.</small></span></div>
+    </div>
+    <div style="text-align:center;margin-top:34px">
+      <a href="#oferta" class="btn">Ver la oferta de octubre</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BONUS ============ -->
+<div class="darksec">
+  <div class="wrap">
+    <h2>Y Además, <span class="ac">4 Guías Extra</span> Que Resuelven<br>Lo Que Te Frena Antes De Empezar</h2>
+    <p class="lead">No son relleno. Cada una tapa una excusa concreta para no abrir el manual.</p>
+    <div class="bonus">
+      <div class="bonus-card">
+        <div class="tag">Bonus 1</div>
+        <h3>El Manual Antichamuyo</h3>
+        <p>Qué cuesta cada arreglo en promedio, qué preguntar antes de aceptar un presupuesto y las 7 frases que usan para inflarte el precio. Para que no te vuelvan a ver la cara.</p>
+        <div class="val"><s>$9.900</s> Incluido</div>
+      </div>
+      <div class="bonus-card">
+        <div class="tag">Bonus 2</div>
+        <h3>Tu Primera Caja De Herramientas</h3>
+        <p>La lista exacta con qué comprar primero, cuánto sale cada cosa y cuáles podés dejar para después. Se arma por menos de lo que sale una visita técnica.</p>
+        <div class="val"><s>$7.900</s> Incluido</div>
+      </div>
+      <div class="bonus-card">
+        <div class="tag">Bonus 3</div>
+        <h3>Stop: Esto No Lo Toques</h3>
+        <p>Las 11 situaciones donde hacerlo sola es peligroso — gas, tableros viejos, agua caliente a presión — y exactamente a quién llamar en cada una.</p>
+        <div class="val"><s>$7.900</s> Incluido</div>
+      </div>
+      <div class="bonus-card">
+        <div class="tag">Bonus 4</div>
+        <h3>Revisión De 20 Minutos</h3>
+        <p>La recorrida que hacés dos veces al año para encontrar las fallas antes de que se conviertan en un problema caro. Checklist para imprimir.</p>
+        <div class="val"><s>$5.900</s> Incluido</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ TESTIMONIOS 2 ============ -->
+<section class="band">
+  <div class="wrap">
+    <h2>Más Historias De <span class="ac">Mujeres</span> Que Lo Arreglaron</h2>
+    <div class="cards3 scroller">
+      <div class="testi">
+        <div class="ph"><span>FOTO TESTIMONIO 4<br>Foto casera de una pared enduida y pintada, recién terminada.</span></div>
+        <div class="stars">★★★★★</div>
+        <p>[INSERTAR TESTIMONIO]</p>
+        <div class="who">[Nombre + inicial]</div>
+      </div>
+      <div class="testi">
+        <div class="ph"><span>FOTO TESTIMONIO 5<br>Foto casera: estante colgado derecho, con plantas arriba.</span></div>
+        <div class="stars">★★★★★</div>
+        <p>[INSERTAR TESTIMONIO]</p>
+        <div class="who">[Nombre + inicial]</div>
+      </div>
+      <div class="testi">
+        <div class="ph"><span>FOTO TESTIMONIO 6<br>Foto casera: mujer mayor con un destornillador, sonriendo.</span></div>
+        <div class="stars">★★★★★</div>
+        <p>[INSERTAR TESTIMONIO]</p>
+        <div class="who">[Nombre + inicial]</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OFERTA ============ -->
+<section class="dots" id="oferta">
+  <div class="wrap">
+    <h2>Arreglá La Próxima Falla <span class="ac">Vos Misma</span>,<br>Apenas Pase.</h2>
+    <p class="lead">Cuando algo se rompe, no llamás a nadie. Abrís esta guía.</p>
+    <div class="buybox">
+      <div class="ph"><span>IMAGEN 9 — MOCKUP OFERTA<br>Todas las páginas desplegadas en abanico + tapa del manual + celular con el PDF abierto. Sello circular "4 BONUS GRATIS". Es la imagen que cierra la venta.</span></div>
+      <div>
+        <div class="offer-name">Manual <em>Lo Arreglo Yo</em></div>
+        <ul class="offer-list">
+          <li><i>🧰</i> Más de 50 reparaciones, paso a paso</li>
+          <li><i>📖</i> Más de 110 páginas, sin tecnicismos ni jerga</li>
+          <li><i>📚</i> 12 capítulos: agua, electricidad, paredes, puertas, muebles, electrodomésticos y cómo tratar con profesionales</li>
+          <li><i>📷</i> Una foto en cada paso</li>
+          <li><i>🎁</i> Los 4 bonus incluidos sin costo extra</li>
+          <li><i>⬇️</i> Descarga inmediata, tuyo para siempre</li>
+          <li><i>🇦🇷</i> Escrito en argentino, para casas argentinas</li>
+        </ul>
+        <div class="offer-badge">OFERTA DE OCTUBRE: 50% DE DESCUENTO</div>
+        <div class="price">
+          <div class="now">$19.990</div>
+          <div class="was">$39.980</div>
+        </div>
+        <a href="#" class="btn btn-block">🛒 Añadir al carrito</a>
+        <div class="paynote">
+          💳 Tarjeta de crédito y débito · Mercado Pago<br>
+          <b>Garantía de devolución de 14 días</b> · 🔒 Pago seguro
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3 PASOS ============ -->
+<section class="band">
+  <div class="wrap">
+    <h2>Cómo Funciona En <span class="ac">3 Pasos</span></h2>
+    <p class="lead">No necesitás experiencia. Abrís el capítulo que te hace falta, seguís las fotos y tomás el control.</p>
+    <div class="steps scroller">
+      <div class="step">
+        <div class="ph"><span>ILUSTRACIÓN 1<br>Mujer con una tablet descargando el manual. Estilo ilustración digital, mismo personaje en los 3.</span></div>
+        <h3>1. Descargala</h3>
+      </div>
+      <div class="step">
+        <div class="ph"><span>ILUSTRACIÓN 2<br>La misma mujer con una llave inglesa arreglando la canilla, tablet apoyada al lado.</span></div>
+        <h3>2. Aplicá el método</h3>
+      </div>
+      <div class="step">
+        <div class="ph"><span>ILUSTRACIÓN 3<br>La misma mujer con el pulgar arriba, canilla andando, tilde verde en la tablet.</span></div>
+        <h3>3. Disfrutá la tranquilidad</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AUTORA ============ -->
+<section>
+  <div class="wrap founder">
+    <div class="ph"><span>IMAGEN 10 — AUTORA<br>Mujer sentada a la mesa de la cocina, cinta métrica, destornillador y martillo adelante. Mira a cámara, serena. Vertical 4:5.</span></div>
+    <div>
+      <h2 style="text-align:left">Hola, soy <span class="ac">[TU NOMBRE]</span></h2>
+      <p><strong>Arreglo yo misma las cosas de mi casa:</strong> la canilla que gotea, la térmica que salta, el lavarropas que decide no desagotar justo el domingo.</p>
+      <p><strong>Nadie me dio un talento especial para esto.</strong> Como a muchas, me cansé de sentir un nudo en el estómago cada vez que algo se rompía, y de pagar presupuestos inflados a gente que tenía todas las respuestas.</p>
+      <p>Después de un tiempo entendí algo: la mayoría de estos arreglos nunca fueron difíciles. <strong>Las instrucciones estaban escritas para otra persona.</strong> La jerga, los videos, el rubro entero estaban armados para dejarnos afuera.</p>
+      <p><strong>Así que descifré el sistema.</strong> Escribí esta guía para las que históricamente quedamos fuera de esa conversación. Paso a paso, con palabras claras y una foto en cada paso. Como se lo explicaría a una amiga que está parada al lado mío.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="dots">
+  <div class="wrap">
+    <h2>Preguntas <span class="ac">Frecuentes</span></h2>
+    <div class="faq">
+      <details open>
+        <summary>No sé nada de arreglos. ¿Igual me sirve?</summary>
+        <div class="ans">Está escrita exactamente para eso. El capítulo 1 arranca por las herramientas y cómo se usan, y cada paso tiene su foto. Si sabés seguir una receta de cocina, podés seguir esta guía.</div>
+      </details>
+      <details>
+        <summary>¿Y si empiezo y lo empeoro?</summary>
+        <div class="ans">Cada capítulo arranca por el corte de seguridad: cerrar el agua, bajar la térmica, desenchufar. Y los arreglos que no conviene hacer sola están marcados aparte, con a quién llamar en cada caso. No vas a entrar a ciegas a ningún lado.</div>
+      </details>
+      <details>
+        <summary>Alquilo. ¿Me sirve igual?</summary>
+        <div class="ans">Sí. La mayoría de los arreglos son reversibles y no tocan la estructura. Además está marcado qué le corresponde al propietario, así sabés qué reclamar en lugar de pagarlo vos.</div>
+      </details>
+      <details>
+        <summary>¿En qué formato llega?</summary>
+        <div class="ans">PDF. Lo abrís en el celular, la tablet o la compu, y lo podés imprimir. Te llega al mail apenas se confirma el pago y queda tuyo para siempre.</div>
+      </details>
+      <details>
+        <summary>¿Y si mi arreglo no está en la guía?</summary>
+        <div class="ans">Están los 50+ arreglos más frecuentes de una casa. Igual, el método —diagnosticar, cortar el suministro, desarmar, revisar, armar— se aplica a casi cualquier falla doméstica. Aprendés una vez y te sirve toda la vida.</div>
+      </details>
+      <details>
+        <summary>Esto está gratis en YouTube. ¿Para qué pagar?</summary>
+        <div class="ans">En YouTube está todo y nada. Veinte videos distintos, ninguno ordenado, y el paso donde te trabás justo queda fuera de cámara. Acá tenés las 50 reparaciones ordenadas por tema, con la lista de materiales, el precio aproximado y una foto en cada paso. Lo que pagás es que esté resuelto y en un solo lugar.</div>
+      </details>
+      <details>
+        <summary>¿Cómo es la garantía?</summary>
+        <div class="ans">Tenés 14 días. Si abrís la guía y sentís que no es para vos, escribinos y te devolvemos el dinero completo. Sin formularios ni explicaciones.</div>
+      </details>
+    </div>
+    <div class="closing" style="margin-top:50px">
+      <p><strong>Podés arreglar cosas por tu cuenta. Y cuando no puedas, vas a ir preparada.</strong></p>
+      <a href="#oferta" class="btn">Empezar hoy por $19.990</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>Enlaces</h4>
+        <ul>
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Términos y condiciones</a></li>
+          <li><a href="#">Política de reembolso</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Lo Arreglo Yo</h4>
+        <p style="margin:0">El manual de arreglos del hogar para mujeres que no quieren esperar a que venga alguien.</p>
+      </div>
+    </div>
+    <div class="legal">
+      Este sitio no forma parte de Meta ni de Meta Platforms, Inc. Tampoco está avalado por Meta de ninguna manera. META es una marca registrada de Meta Platforms, Inc.<br>
+      Los arreglos de gas y las instalaciones eléctricas de alta tensión deben ser realizados por un profesional matriculado.
+    </div>
+  </div>
+</footer>
+
+<div class="sticky"><a href="#oferta" class="btn btn-block">🛒 Añadir al carrito — $19.990</a></div>
+
+</body>
+</html>
