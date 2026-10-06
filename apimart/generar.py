@@ -73,7 +73,7 @@ def main():
     ap.add_argument("prompt")
     ap.add_argument("--size", default="1:1", help="proporción: 1:1, 16:9, ...")
     ap.add_argument("--resolution", default="1k", help="1k, 2k o 4k")
-    ap.add_argument("--quality", default=None, help="auto, low, medium, high (solo para -official)")
+    ap.add_argument("--quality", default="high", help="auto, low, medium, high")
     ap.add_argument("--n", type=int, default=1)
     ap.add_argument("--out", default="output")
     a = ap.parse_args()
