@@ -5,7 +5,7 @@ Uso:
     export APIMART_API_KEY="tu-key"
     python3 generar.py "un gato astronauta" [--size 1:1] [--resolution 1k] [--quality auto] [--n 1]
 
-Flujo: crea la tarea -> espera 200 s -> consulta el estado -> descarga la imagen.
+Flujo: crea la tarea -> espera 20 s -> consulta el estado -> descarga la imagen.
 Los endpoints y el modelo se pueden cambiar con variables de entorno si la
 documentación de APIMart difiere de los valores por defecto.
 """
