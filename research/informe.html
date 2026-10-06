@@ -1,0 +1,280 @@
+<title>Cazadero Octubre 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,500..800&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: un dossier de campo en una columna ancha; ranking primero, tabla completa después. */
+:root {
+  --bg: #f5f6f1; --surface: #ffffff; --ink: #1d241d; --muted: #5d685c; --line: #d9ddd2;
+  --blaze: #e2571a; --moss: #3f5a3a; --tA: #2f6b3a; --tB: #3a5f8a; --tC: #a06a12; --tD: #7a6f86;
+  --display: "Archivo", "Arial Narrow", system-ui, sans-serif;
+  --body: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #141914; --surface: #1c231c; --ink: #e7ebe3; --muted: #a3ad9f; --line: #2e382e;
+  --blaze: #ff7a3d; --moss: #9cc493; --tA: #7fc48a; --tB: #8db3e0; --tC: #e0b25c; --tD: #b9aec6; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #141914; --surface: #1c231c; --ink: #e7ebe3; --muted: #a3ad9f; --line: #2e382e;
+  --blaze: #ff7a3d; --moss: #9cc493; --tA: #7fc48a; --tB: #8db3e0; --tC: #e0b25c; --tD: #b9aec6; color-scheme: dark }
+body { background: var(--bg); color: var(--ink); font: 15px/1.6 var(--body); }
+.wrap { max-width: 1080px; margin: 0 auto; padding-inline: 20px; padding-block: 32px 64px; display: grid; gap: 40px; }
+h1, h2, h3 { font-family: var(--display); text-wrap: balance; margin: 0; line-height: 1.1; }
+h1 { font-size: clamp(2rem, 5vw, 3.2rem); font-stretch: 85%; font-weight: 800; letter-spacing: -.01em; }
+h2 { font-size: 1.5rem; font-stretch: 90%; font-weight: 700; }
+h3 { font-size: 1.15rem; font-weight: 700; }
+p { margin: 0; max-width: 72ch; }
+a { color: var(--blaze); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--blaze); outline-offset: 2px; }
+.eyebrow { font: 500 .75rem var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.sub { color: var(--muted); font-size: .85rem; }
+.lead { display: grid; gap: 14px; }
+.lead p.big { font-size: 1.1rem; }
+.stats { display: flex; flex-wrap: wrap; gap: 10px 28px; font-family: var(--mono); font-size: .85rem; color: var(--muted); }
+.stats b { color: var(--ink); font-size: 1.05rem; }
+section { display: grid; gap: 18px; }
+.picks { display: grid; gap: 18px; }
+.pick { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--blaze); padding: 20px 22px; display: grid; gap: 12px; min-width: 0; }
+.pick header { display: grid; grid-template-columns: auto 1fr auto; gap: 14px; align-items: start; }
+.rank { font: 800 2rem/1 var(--display); color: var(--blaze); font-stretch: 75%; }
+.score { font: 500 1.1rem var(--mono); border: 1px solid var(--line); padding: 2px 8px; }
+.model { color: var(--muted); font-size: .88rem; margin-top: 4px; }
+.facts { font-family: var(--mono); font-size: .82rem; color: var(--moss); }
+dl { display: grid; grid-template-columns: 9.5em 1fr; gap: 6px 14px; margin: 0; }
+dt { font-weight: 600; font-size: .85rem; }
+dd { margin: 0; min-width: 0; }
+.bars { display: flex; flex-wrap: wrap; gap: 6px 14px; font: 500 .75rem var(--mono); color: var(--muted); }
+.links { display: flex; flex-wrap: wrap; gap: 12px; font-size: .85rem; }
+.chip { display: inline-block; font: 500 .72rem var(--mono); padding: 1px 7px; border: 1px solid currentColor; }
+.tA { color: var(--tA); } .tB { color: var(--tB); } .tC { color: var(--tC); } .tD { color: var(--tD); }
+.legend { display: grid; gap: 6px; font-size: .9rem; }
+.filters { display: flex; flex-wrap: wrap; gap: 8px; }
+.filters button { font: 500 .8rem var(--mono); background: var(--surface); color: var(--ink); border: 1px solid var(--line); padding: 5px 10px; cursor: pointer; }
+.filters button[aria-pressed="true"] { border-color: var(--blaze); color: var(--blaze); }
+.tablewrap { overflow-x: auto; border: 1px solid var(--line); background: var(--surface); }
+table { border-collapse: collapse; width: 100%; min-width: 860px; font-size: .88rem; }
+th, td { text-align: left; vertical-align: top; padding: 9px 10px; border-bottom: 1px solid var(--line); }
+th { font: 500 .72rem var(--mono); text-transform: uppercase; letter-spacing: .06em; color: var(--muted); position: sticky; top: 0; background: var(--surface); }
+td.num { font-family: var(--mono); font-variant-numeric: tabular-nums; text-align: right; }
+.season { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+.season div { border-top: 3px solid var(--moss); padding-top: 10px; display: grid; gap: 8px; min-width: 0; }
+ul { margin: 0; padding-left: 1.1em; display: grid; gap: 6px; max-width: 75ch; }
+.note { border: 1px dashed var(--line); padding: 14px 16px; display: grid; gap: 8px; }
+@media (max-width: 560px) { dl { grid-template-columns: 1fr; } .pick header { grid-template-columns: auto 1fr; } .score { grid-column: 2; justify-self: start; } }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="wrap">
+  <div class="lead">
+    <span class="eyebrow">Cazar · Biblioteca de anuncios de Meta · 6 de octubre de 2026</span>
+    <h1>Cazadero de infoproductos: los 7 para modelar ya</h1>
+    <p class="big">Revisamos más de 100 páginas en 9 idiomas (español, portugués, inglés, italiano, francés, alemán, polaco, turco e indonesio) y verificamos 30 productos página por página. Abajo están los 7 que conviene modelar ahora, con país, idioma, precio y temporada para cada uno.</p>
+    <div class="stats"><span><b>8</b> cumplen el filtro duro (≥20 anuncios y anuncio activo con ≥20 días)</span><span><b>5</b> tienen volumen y antigüedad probable</span><span><b>7</b> están a pocos días del umbral</span><span><b>10</b> son exóticos con menos volumen</span></div>
+  </div>
+
+  <section>
+    <h2>Veredicto: los 7 top</h2>
+    <p class="sub">El orden combina el score, lo fácil que es modelarlo en español o portugués, la temporada y la competencia. No es solo el número.</p>
+    <div class="picks">
+<article class="pick">
+  <header>
+    <span class="rank">1</span>
+    <div><h3>Fichas de diagnóstico para técnicos de aire acondicionado</h3><p class="model">Modelo: 100 Fichas de Fallas de Aire Acondicionado (ES) · 100 Fiches de Pannes (FR) · 100 Schede di Guasti HVAC (IT)</p></div>
+    <span class="score" title="Score 0-100">79</span>
+  </header>
+  <p class="facts">≈38 anuncios activos entre 2 páginas · anuncio más viejo del 30-ago (37 días) · ya traducido a 3 idiomas</p>
+  <p>Es el único producto del estudio donde el operador ya probó la traducción: el mismo pack corre en español, francés e italiano. Nicho de oficio, comprador con plata (cada diagnóstico bien hecho le paga la visita) y poca competencia: 3-4 anunciantes.</p>
+  <dl>
+    <dt>Dónde lanzar</dt><dd>PT-BR primero (Brasil: verano + la mayor base de técnicos de LATAM), después Argentina, Chile, Paraguay y Uruguay en ES. En el norte, versión &quot;bombas de calor y calefacción&quot; para España e Italia.</dd>
+    <dt>Idioma</dt><dd>Portugués de Brasil y español rioplatense</dd>
+    <dt>Precio sugerido</dt><dd>US$9-17 / R$37-67 + order bump &quot;fichas de placas inverter&quot; <span class="sub">(estimación: no pudimos abrir las landings)</span></dd>
+    <dt>Riesgo</dt><dd>Bajo. Escribí fichas propias: no copies el PDF de la competencia.</dd>
+  </dl>
+  <p class="bars"><span>Antig. 20/20</span><span>Volumen 20/20</span><span>Alcance 15/15</span><span>Creativos 6/10</span><span>Clonado 15/20</span><span>Funnel 3/15</span></p>
+  <p class="links"><a href="https://www.facebook.com/ads/library/?id=1099224979238232" target="_blank" rel="noopener">Anuncio 1</a> <a href="https://www.facebook.com/ads/library/?id=1711504169945297" target="_blank" rel="noopener">Anuncio 2</a> <a href="https://www.facebook.com/ads/library/?id=2065088270810895" target="_blank" rel="noopener">Anuncio 3</a></p>
+</article>
+<article class="pick">
+  <header>
+    <span class="rank">2</span>
+    <div><h3>Workbook de regulación del sistema nervioso (y estudio bíblico)</h3><p class="model">Modelo: Printable WITH Lisa (EE. UU.)</p></div>
+    <span class="score" title="Score 0-100">85</span>
+  </header>
+  <p class="facts">79 anuncios activos · desde 16-sep · retargeting &quot;You came back…&quot; · siempre &quot;90% off&quot;</p>
+  <p>La página tiene 79 anuncios y rota productos (sistema nervioso, ejercicios somáticos, Biblia, fonética, regulación emocional para adolescentes) sobre una misma promesa de precio. &quot;Regular el sistema nervioso&quot; está creciendo en español y casi nadie lo vende como workbook imprimible.</p>
+  <dl>
+    <dt>Dónde lanzar</dt><dd>México, Colombia, España y la comunidad hispana de EE. UU. La línea bíblica funciona muy bien en México, Guatemala y Colombia.</dd>
+    <dt>Idioma</dt><dd>Español neutro</dd>
+    <dt>Precio sugerido</dt><dd>US$7-12 con precio ancla tachado; bump &quot;versión para adolescentes&quot; <span class="sub">(estimación: no pudimos abrir las landings)</span></dd>
+    <dt>Riesgo</dt><dd>Medio: el original dice &quot;the cure for anxiety&quot;. Usá &quot;herramientas para calmar tu cuerpo&quot;, nunca &quot;cura&quot;.</dd>
+  </dl>
+  <p class="bars"><span>Antig. 20/20</span><span>Volumen 20/20</span><span>Alcance 10/15</span><span>Creativos 10/10</span><span>Clonado 20/20</span><span>Funnel 5/15</span></p>
+  <p class="links"><a href="https://www.facebook.com/ads/library/?id=1593599118912122" target="_blank" rel="noopener">Anuncio 1</a> <a href="https://www.facebook.com/ads/library/?id=1654212152972905" target="_blank" rel="noopener">Anuncio 2</a> <a href="https://www.facebook.com/ads/library/?id=1141296415084131" target="_blank" rel="noopener">Anuncio 3</a></p>
+</article>
+<article class="pick">
+  <header>
+    <span class="rank">3</span>
+    <div><h3>&quot;50 adornos navideños en fieltro&quot; (colecciones por temporada)</h3><p class="model">Modelo: Universo do Feltro (Brasil)</p></div>
+    <span class="score" title="Score 0-100">78</span>
+  </header>
+  <p class="facts">≈66 anuncios activos · desde 10-sep · nueva colección cada 1-2 semanas (Halloween → Navidad)</p>
+  <p>Encadena colecciones de 50 moldes por fecha, así que siempre tiene algo nuevo que anunciar. En español hay vendedoras de fieltro, pero ninguna con este formato de colección; además la Navidad empieza ya.</p>
+  <dl>
+    <dt>Dónde lanzar</dt><dd>España, México, Colombia, Perú y Chile, de octubre a mediados de diciembre. Después: San Valentín, Día de la Madre, Pascua.</dd>
+    <dt>Idioma</dt><dd>Español neutro (&quot;fieltro&quot;, &quot;moldes&quot;)</dd>
+    <dt>Precio sugerido</dt><dd>US$5-9 por colección; bump &quot;pack de 3 colecciones&quot; <span class="sub">(estimación: no pudimos abrir las landings)</span></dd>
+    <dt>Riesgo</dt><dd>Bajo. Ojo con personajes con licencia (Disney, El Chavo): usá diseños genéricos.</dd>
+  </dl>
+  <p class="bars"><span>Antig. 20/20</span><span>Volumen 20/20</span><span>Alcance 5/15</span><span>Creativos 10/10</span><span>Clonado 20/20</span><span>Funnel 3/15</span></p>
+  <p class="links"><a href="https://www.facebook.com/ads/library/?id=4000385506938006" target="_blank" rel="noopener">Anuncio 1</a> <a href="https://www.facebook.com/ads/library/?id=1251647313811839" target="_blank" rel="noopener">Anuncio 2</a> <a href="https://www.facebook.com/ads/library/?id=4706928642871772" target="_blank" rel="noopener">Anuncio 3</a></p>
+</article>
+<article class="pick">
+  <header>
+    <span class="rank">4</span>
+    <div><h3>Guía NCLEX con advertorial &quot;Leé esto si estás estudiando para el NCLEX&quot;</h3><p class="model">Modelo: Maya Bennett (Canadá/EE. UU.) + Alexa Paige (mismo copy)</p></div>
+    <span class="score" title="Score 0-100">76</span>
+  </header>
+  <p class="facts">72 anuncios activos · ≥27 con más de 20 días · el más viejo del 5-sep</p>
+  <p>Un solo gancho escalado a 72 anuncios durante un mes es una señal clara de que vende. El comprador gana en dólares, y hay ocho o más anunciantes de NCLEX, lo que confirma la demanda sin saturarla.</p>
+  <dl>
+    <dt>Dónde lanzar</dt><dd>Inglés para EE. UU., Canadá y Filipinas (la mayor exportadora de enfermeros). Segunda versión: &quot;NCLEX para enfermeros hispanohablantes&quot; en México, Colombia y Puerto Rico.</dd>
+    <dt>Idioma</dt><dd>Inglés y español</dd>
+    <dt>Precio sugerido</dt><dd>US$9-19; bump &quot;300 preguntas tipo examen&quot; <span class="sub">(estimación: no pudimos abrir las landings)</span></dd>
+    <dt>Riesgo</dt><dd>Bajo. No prometas &quot;aprobado garantizado&quot;.</dd>
+  </dl>
+  <p class="bars"><span>Antig. 20/20</span><span>Volumen 20/20</span><span>Alcance 10/15</span><span>Creativos 3/10</span><span>Clonado 20/20</span><span>Funnel 3/15</span></p>
+  <p class="links"><a href="https://www.facebook.com/ads/library/?id=1864727954938373" target="_blank" rel="noopener">Anuncio 1</a> <a href="https://www.facebook.com/ads/library/?id=1431052808884405" target="_blank" rel="noopener">Anuncio 2</a> <a href="https://www.facebook.com/ads/library/?id=1074672455171486" target="_blank" rel="noopener">Anuncio 3</a></p>
+</article>
+<article class="pick">
+  <header>
+    <span class="rank">5</span>
+    <div><h3>Mapas visuales técnicos (mecánica industrial, automatización, ingeniería civil)</h3><p class="model">Modelo: Mapas Visuales PRO (Perú), que ya exporta a Italia</p></div>
+    <span class="score" title="Score 0-100">86</span>
+  </header>
+  <p class="facts">23 anuncios activos · más viejo del 18-sep (18 días: le faltan 2 para cumplir el filtro)</p>
+  <p>El nicho de mapas para salud está saturado (11 o más anunciantes); el técnico no. El operador ya lo traduce al italiano, lo que demuestra que viaja bien.</p>
+  <dl>
+    <dt>Dónde lanzar</dt><dd>Brasil en portugués (cursos técnicos tipo SENAI, enorme volumen); México y Colombia en español.</dd>
+    <dt>Idioma</dt><dd>Portugués de Brasil</dd>
+    <dt>Precio sugerido</dt><dd>R$27-47 / US$7-10 <span class="sub">(estimación: no pudimos abrir las landings)</span></dd>
+    <dt>Riesgo</dt><dd>Bajo.</dd>
+  </dl>
+  <p class="bars"><span>Antig. 20/20</span><span>Volumen 20/20</span><span>Alcance 15/15</span><span>Creativos 8/10</span><span>Clonado 20/20</span><span>Funnel 3/15</span></p>
+  <p class="links"><a href="https://www.facebook.com/ads/library/?id=1972976284106410" target="_blank" rel="noopener">Anuncio 1</a> <a href="https://www.facebook.com/ads/library/?id=1395207449448848" target="_blank" rel="noopener">Anuncio 2</a></p>
+</article>
+<article class="pick">
+  <header>
+    <span class="rank">6</span>
+    <div><h3>100 actividades sensoriales para tu bebé (0-5 años)</h3><p class="model">Modelo: Crescere Giocando (Italia)</p></div>
+    <span class="score" title="Score 0-100">66</span>
+  </header>
+  <p class="facts">22 anuncios activos · el más viejo del 18-jun: 110 días seguidos con el mismo producto</p>
+  <p>Es el producto más estable del estudio: un solo producto anunciado sin pausa durante casi 4 meses. En español casi no hay versión digital; lo que aparece son centros y jugueterías.</p>
+  <dl>
+    <dt>Dónde lanzar</dt><dd>España y México primero; después Chile, Colombia y Brasil (PT). En el sur, &quot;actividades para las vacaciones de verano&quot; (diciembre-febrero).</dd>
+    <dt>Idioma</dt><dd>Español neutro + portugués</dd>
+    <dt>Precio sugerido</dt><dd>US$7-12; bump &quot;plan semanal imprimible por edad&quot; <span class="sub">(estimación: no pudimos abrir las landings)</span></dd>
+    <dt>Riesgo</dt><dd>Bajo. Existe un libro francés con el mismo título (Sylvie d&#x27;Esclaibes): hacé contenido 100 % propio.</dd>
+  </dl>
+  <p class="bars"><span>Antig. 20/20</span><span>Volumen 20/20</span><span>Alcance 5/15</span><span>Creativos 3/10</span><span>Clonado 15/20</span><span>Funnel 3/15</span></p>
+  <p class="links"><a href="https://www.facebook.com/ads/library/?id=1719132472559701" target="_blank" rel="noopener">Anuncio 1</a> <a href="https://www.facebook.com/ads/library/?id=1998591761017078" target="_blank" rel="noopener">Anuncio 2</a></p>
+</article>
+<article class="pick">
+  <header>
+    <span class="rank">7</span>
+    <div><h3>Novela romántica personalizada: vos sos la protagonista</h3><p class="model">Modelo: Soft Sins (Alemania, 94 anuncios) + Ember Books (EE. UU.)</p></div>
+    <span class="score" title="Score 0-100">64</span>
+  </header>
+  <p class="facts">94 anuncios activos en Soft Sins; 44 creados antes del 22-sep que la herramienta no deja ver (confianza media en la antigüedad)</p>
+  <p>Es lo más exótico del estudio. Funciona en dos idiomas con dos operadores distintos y no encontramos ningún anunciante en español. El público de BookTok en México, Argentina y España es enorme, y con IA el costo de producción es casi cero.</p>
+  <dl>
+    <dt>Dónde lanzar</dt><dd>México y Argentina (BookTok fuerte, CPM barato) y España (mayor poder adquisitivo). Lanzalo en octubre, antes de que suban los CPM de Black Friday y Navidad.</dd>
+    <dt>Idioma</dt><dd>Español con versión rioplatense</dd>
+    <dt>Precio sugerido</dt><dd>US$9-15 por novela; bump &quot;capítulo extra&quot; o &quot;versión audio&quot; <span class="sub">(estimación: no pudimos abrir las landings)</span></dd>
+    <dt>Riesgo</dt><dd>Medio: contenido adulto. Mantené el anuncio y la portada sin desnudos ni texto explícito, porque Meta rechaza contenido sexual.</dd>
+  </dl>
+  <p class="bars"><span>Antig. 10/20</span><span>Volumen 20/20</span><span>Alcance 10/15</span><span>Creativos 6/10</span><span>Clonado 15/20</span><span>Funnel 3/15</span></p>
+  <p class="links"><a href="https://www.facebook.com/ads/library/?id=2035041457172040" target="_blank" rel="noopener">Anuncio 1</a> <a href="https://www.facebook.com/ads/library/?id=1115166987715921" target="_blank" rel="noopener">Anuncio 2</a></p>
+</article></div>
+    <div class="note">
+      <strong>Por qué quedaron afuera dos productos con score alto</strong>
+      <p>Moldes de costura infantil (Tudo para Costura, 78) y mapas de farmacología (Digi Aprende, 79) son ganadores claros en su idioma. Pero en español ya hay unos 12 vendedores de "megapacks de moldes" y 11 o más de "mapas visuales" de salud. Para entrar ahí hace falta un ángulo distinto: un molde premium por talla, o mapas para técnicos en vez de para salud.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Los 30 auditados</h2>
+    <div class="legend">
+      <span><span class="chip tA">A</span> Cumple el filtro duro: 20 o más anuncios activos y un anuncio activo con 20 o más días, verificado.</span>
+      <span><span class="chip tB">B</span> 20 o más anuncios; la antigüedad de más de 20 días es probable, pero la herramienta corta en 50 y no deja ver los más viejos.</span>
+      <span><span class="chip tC">C</span> 20 o más anuncios (o casi), con 6 a 19 días. Volvé a revisarlos la semana que viene.</span>
+      <span><span class="chip tD">D</span> Exótico y particular, con menos de 20 anuncios. Sirve como ángulo para modelar, no como prueba de ventas.</span>
+    </div>
+    <div class="filters" role="group" aria-label="Filtrar por nivel">
+      <button type="button" id="f-all" data-f="all" aria-pressed="true">Todos</button>
+      <button type="button" id="f-A" data-f="A" aria-pressed="false">A</button>
+      <button type="button" id="f-B" data-f="B" aria-pressed="false">B</button>
+      <button type="button" id="f-C" data-f="C" aria-pressed="false">C</button>
+      <button type="button" id="f-D" data-f="D" aria-pressed="false">D</button>
+    </div>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Score</th><th>Nivel</th><th>Producto / página</th><th>Anuncios</th><th>Días</th><th>Idioma</th><th>Clones</th><th>Mejor país</th><th>Ref.</th></tr></thead>
+      <tbody id="rows"><tr data-tier="C"><td class="num">86</td><td><span class="chip tC">C</span></td><td><strong>Mapas visuales técnicos (mecánica industrial, automatización, ing. civil)</strong><br><span class="sub">Mapas Visuales PRO · Perú (PEN), ya exporta a Italia</span></td><td class="num">23</td><td class="num">18</td><td>ES, IT</td><td class="num">11</td><td class="sub">Brasil en PT (enorme base de técnicos), México y Colombia en ES</td><td><a href="https://www.facebook.com/ads/library/?id=1972976284106410" target="_blank" rel="noopener">Ver</a></td></tr><tr data-tier="A"><td class="num">85</td><td><span class="chip tA">A</span></td><td><strong>Workbooks imprimibles: estudio bíblico + regulación del sistema nervioso</strong><br><span class="sub">Printable WITH Lisa · EE. UU. (USD)</span></td><td class="num">79</td><td class="num">20</td><td>EN</td><td class="num">8</td><td class="sub">EE. UU.; en ES funciona para México, Colombia y comunidad hispana en EE. UU.</td><td><a href="https://www.facebook.com/ads/library/?id=1593599118912122" target="_blank" rel="noopener">Ver</a></td></tr><tr data-tier="A"><td class="num">79</td><td><span class="chip tA">A</span></td><td><strong>100 Fichas de Fallas de Aire Acondicionado (HVAC)</strong><br><span class="sub">David Alejandro (ES) + Julien Moreau (FR/IT) · Operador LATAM (cobra en USD) con persona por idioma</span></td><td class="num">38</td><td class="num">37</td><td>ES, FR, IT</td><td class="num">4</td><td class="sub">Brasil (PT), Argentina, Chile, Paraguay, Uruguay y México norte: arranca el verano y la temporada de A/A</td><td><a href="https://www.facebook.com/ads/library/?id=1099224979238232" target="_blank" rel="noopener">Ver</a></td></tr><tr data-tier="A"><td class="num">79</td><td><span class="chip tA">A</span></td><td><strong>Mapas visuales de farmacología y estudio (Digi Aprende)</strong><br><span class="sub">Digi Aprende · Perú (PEN)</span></td><td class="num">39</td><td class="num">64</td><td>ES</td><td class="num">11</td><td class="sub">Perú, México, Colombia, Ecuador; traducible a PT-BR</td><td><a href="https://www.facebook.com/ads/library/?id=1797588771686798" target="_blank" rel="noopener">Ver</a></td></tr><tr data-tier="A"><td class="num">78</td><td><span class="chip tA">A</span></td><td><strong>Moldes PDF de ropa infantil (Tudo para Costura)</strong><br><span class="sub">Tudo para Costura · Brasil (BRL)</span></td><td class="num">28</td><td class="num">218</td><td>PT</td><td class="num">12</td><td class="sub">Brasil ya funciona; en ES el formato &quot;megapack&quot; está saturado, el molde premium individual no</td><td><a href="https://www.facebook.com/ads/library/?id=1435024878102955" target="_blank" rel="noopener">Ver</a></td></tr><tr data-tier="A"><td class="num">78</td><td><span class="chip tA">A</span></td><td><strong>&quot;50 [X] em Feltro&quot; (colecciones de moldes de fieltro)</strong><br><span class="sub">Universo do Feltro · Brasil (BRL)</span></td><td class="num">66</td><td class="num">26</td><td>PT</td><td class="num">6</td><td class="sub">España y LATAM en ES ahora mismo con &quot;50 adornos navideños en fieltro&quot; (octubre-diciembre)</td><td><a href="https://www.facebook.com/ads/library/?id=4000385506938006" target="_blank" rel="noopener">Ver</a></td></tr><tr data-tier="A"><td class="num">76</td><td><span class="chip tA">A</span></td><td><strong>Guía de estudio NCLEX (advertorial &quot;Read This If…&quot;)</strong><br><span class="sub">Maya Bennett (+ Alexa Paige, mismo copy) · Canadá / EE. UU.</span></td><td class="num">72</td><td class="num">31</td><td>EN</td><td class="num">8</td><td class="sub">EE. UU. y Canadá (alto poder adquisitivo); Filipinas, India, Nigeria y LATAM como mercado de enfermeros que migran</td><td><a href="https://www.facebook.com/ads/library/?id=1864727954938373" target="_blank" rel="noopener">Ver</a></td></tr><tr data-tier="C"><td class="num">74</td><td><span class="chip tC">C</span></td><td><strong>Dibujos para que los chicos creen sin pantallas</strong><br><span class="sub">Jennifer Collins · EE. UU. (USD)</span></td><td class="num">52</td><td class="num">16</td><td>EN</td><td class="num">4</td><td class="sub">EE. UU.; en ES para México y España</td><td><a href="https://www.facebook.com/ads/library/?id=2122663111659451" target="_blank" rel="noopener">Ver</a></td></tr><tr data-tier="B"><td class="num">68</td><td><span class="chip tB">B</span></td><td><strong>Atlas de Fotobiomodulación (láser y LED), +900 págs</strong><br><span class="sub">Lumix Prime · Brasil (BRL), ya entró a ES</span></td><td class="num">137</td><td class="num">16</td><td>PT, ES</td><td class="num">1</td><td class="sub">México, Colombia, Chile y España (el operador recién empezó en ES el 1-oct)</td><td><a href="https://www.facebook.com/ads/library/?id=1087061917452784" target="_blank" rel="noopener">Ver</a></td></tr><tr data-tier="B"><td class="num">68</td><td><span class="chip tB">B</span></td><td><strong>Patrones de crochet (Sleeping Cat Bag, bundles de 50 y 200)</strong><br><span class="sub">Soreno · EE. UU. (USD)</span></td><td class="num">55</td><td class="num">5</td><td>EN</td><td class="num">10</td><td class="sub">EE. UU., Reino Unido; en ES, México y Argentina</td><td><a href="https://www.facebook.com/ads/library/?id=1430654619217283" target="_blank" rel="noopener">Ver</a></td></tr><tr data-tier="A"><td class="num">66</td><td><span class="chip tA">A</span></td><td><strong>100 Attività Sensoriali per il tuo Bambino (0–5 anni)</strong><br><span class="sub">Crescere Giocando · Italia (EUR)</span></td><td class="num">22</td><td class="num">110</td><td>IT</td><td class="num">4</td><td class="sub">España, México, Chile, Colombia y Brasil (PT): poca competencia digital en ES; en el sur llegan las vacaciones de verano</td><td><a href="https://www.facebook.com/ads/library/?id=1719132472559701" target="_blank" rel="noopener">Ver</a></td></tr><tr data-tier="C"><td class="num">66</td><td><span class="chip tC">C</span></td><td><strong>Inglés en mapas mentales</strong><br><span class="sub">Inglés en Mapas · LATAM (USD)</span></td><td class="num">25</td><td class="num">13</td><td>ES</td><td class="num">11</td><td class="sub">México, Colombia, Perú</td><td><a href="https://www.facebook.com/ads/library/?id=1102560409327912" target="_blank" rel="noopener">Ver</a></td></tr><tr data-tier="B"><td class="num">64</td><td><span class="chip tB">B</span></td><td><strong>Novela dark romance personalizada (vos sos la protagonista)</strong><br><span class="sub">Soft Sins · Alemania (EUR)</span></td><td class="num">94</td><td class="num">14</td><td>DE</td><td class="num">3</td><td class="sub">España, México y Argentina: no vimos ningún anunciante en ES</td><td><a href="https://www.facebook.com/ads/library/?id=2035041457172040" target="_blank" rel="noopener">Ver</a></td></tr><tr data-tier="C"><td class="num">64</td><td><span class="chip tC">C</span></td><td><strong>Domina la Química desde Cero</strong><br><span class="sub">Domina la química desde cero · BRL, en ES</span></td><td class="num">50</td><td class="num">6</td><td>ES</td><td class="num">11</td><td class="sub">México, Colombia, Perú</td><td><a href="https://www.facebook.com/ads/library/?id=2298569024262947" target="_blank" rel="noopener">Ver</a></td></tr><tr data-tier="D"><td class="num">64</td><td><span class="chip tD">D</span></td><td><strong>Moldes de fieltro para emprender (pesebres, Navidad)</strong><br><span class="sub">Maestra del Fieltro (+ Taller Lau, Lyzandra) · Colombia (COP)</span></td><td class="num">8</td><td class="num">42</td><td>ES</td><td class="num">6</td><td class="sub">Colombia, México, Perú</td><td><a href="https://www.facebook.com/ads/library/?id=802091959655352" target="_blank" rel="noopener">Ver</a></td></tr><tr data-tier="A"><td class="num">63</td><td><span class="chip tA">A</span></td><td><strong>Catálogo de ebooks esotéricos (Hermetismo, Kejawen, cuántica)</strong><br><span class="sub">Mekanika Kuantum + Kebangkitan Nusantara + Ma&#x27;rifat · Indonesia (IDR), un solo operador con 3 páginas</span></td><td class="num">425</td><td class="num">24</td><td>ID</td><td class="num">1</td><td class="sub">Modelo traducible a ES: Argentina, México y Colombia (Kybalion, leyes herméticas, física cuántica)</td><td><a href="https://www.facebook.com/ads/library/?id=1084199480647428" target="_blank" rel="noopener">Ver</a></td></tr><tr data-tier="D"><td class="num">56</td><td><span class="chip tD">D</span></td><td><strong>Tarot desde cero / Astrología / 200 gráficos de radiestesia</strong><br><span class="sub">Alma, cuerpo y mente · Argentina</span></td><td class="num">6</td><td class="num">66</td><td>ES</td><td class="num">4</td><td class="sub">Argentina, Uruguay, México</td><td><a href="https://www.facebook.com/ads/library/?id=3070748743257327" target="_blank" rel="noopener">Ver</a></td></tr><tr data-tier="C"><td class="num">51</td><td><span class="chip tC">C</span></td><td><strong>&quot;La biblia del oficio inteligente&quot;</strong><br><span class="sub">Labibliadeloficiointeligente · LATAM (USD)</span></td><td class="num">42</td><td class="num">10</td><td>ES</td><td class="num">1</td><td class="sub">LATAM</td><td><a href="https://www.facebook.com/ads/library/?id=1604983160618285" target="_blank" rel="noopener">Ver</a></td></tr><tr data-tier="C"><td class="num">51</td><td><span class="chip tC">C</span></td><td><strong>1500 Moldes de Costura (megapack)</strong><br><span class="sub">1500 Moldes de Costura · LATAM (USD)</span></td><td class="num">17</td><td class="num">6</td><td>ES</td><td class="num">12</td><td class="sub">Mercado ES ya saturado</td><td><a href="https://www.facebook.com/ads/library/?id=1722364679062549" target="_blank" rel="noopener">Ver</a></td></tr><tr data-tier="C"><td class="num">51</td><td><span class="chip tC">C</span></td><td><strong>EducaTech &quot;Descarga Inmediata&quot; (+1280 Abogados Innovadores)</strong><br><span class="sub">EducaTech · LATAM (USD)</span></td><td class="num">17</td><td class="num">21</td><td>ES</td><td class="num">1</td><td class="sub">LATAM</td><td><a href="https://www.facebook.com/ads/library/?id=1661298955663074" target="_blank" rel="noopener">Ver</a></td></tr><tr data-tier="B"><td class="num">49</td><td><span class="chip tB">B</span></td><td><strong>Romance personalizado &quot;What if the heroine had your name?&quot;</strong><br><span class="sub">Ember Books · EE. UU. (USD)</span></td><td class="num">15</td><td class="num">1</td><td>EN</td><td class="num">3</td><td class="sub">Valida el mismo modelo que Soft Sins en otro idioma</td><td><a href="https://www.facebook.com/ads/library/?id=4662940993984124" target="_blank" rel="noopener">Ver</a></td></tr><tr data-tier="B"><td class="num">48</td><td><span class="chip tB">B</span></td><td><strong>Planes de comidas para adelgazar (mujeres 40+ y menopausia)</strong><br><span class="sub">Źródło Zdrowych Kalorii · Polonia (PLN)</span></td><td class="num">60</td><td class="num">6</td><td>PL</td><td class="num">1</td><td class="sub">España y México (segmento menopausia en crecimiento)</td><td><a href="https://www.facebook.com/ads/library/?id=1928559158520867" target="_blank" rel="noopener">Ver</a></td></tr><tr data-tier="D"><td class="num">42</td><td><span class="chip tD">D</span></td><td><strong>Atlas visual ACLS / PALS (soporte vital)</strong><br><span class="sub">Katarzyna Lis · Polonia (cobra en USD)</span></td><td class="num">6</td><td class="num">27</td><td>PL</td><td class="num">1</td><td class="sub">Traducible a ES para enfermería LATAM</td><td><a href="https://www.facebook.com/ads/library/?id=1495713305653263" target="_blank" rel="noopener">Ver</a></td></tr><tr data-tier="D"><td class="num">41</td><td><span class="chip tD">D</span></td><td><strong>120 juegos sin pantallas para chicos</strong><br><span class="sub">Unplugged Brain Games · Operador BRL vendiendo en EN</span></td><td class="num">8</td><td class="num">5</td><td>EN</td><td class="num">4</td><td class="sub">EE. UU.</td><td><a href="https://www.facebook.com/ads/library/?id=1847379233298463" target="_blank" rel="noopener">Ver</a></td></tr><tr data-tier="D"><td class="num">37</td><td><span class="chip tD">D</span></td><td><strong>Super Pack de Agendas 2027</strong><br><span class="sub">Jirafa Creativa · LATAM (USD)</span></td><td class="num">6</td><td class="num">0</td><td>ES</td><td class="num">4</td><td class="sub">Estacional: octubre-enero en todo LATAM</td><td><a href="https://www.facebook.com/ads/library/?id=1122671533631333" target="_blank" rel="noopener">Ver</a></td></tr><tr data-tier="D"><td class="num">36</td><td><span class="chip tD">D</span></td><td><strong>PAE Gen: tu Proceso de Atención de Enfermería en minutos</strong><br><span class="sub">PAE Gen · LATAM (USD)</span></td><td class="num">13</td><td class="num">5</td><td>ES</td><td class="num">1</td><td class="sub">México, Perú, Colombia</td><td><a href="https://www.facebook.com/ads/library/?id=1571717877491932" target="_blank" rel="noopener">Ver</a></td></tr><tr data-tier="D"><td class="num">32</td><td><span class="chip tD">D</span></td><td><strong>Biblia Etíope (88 libros) + Enoc y Jubileos en español</strong><br><span class="sub">Camina con Dios · LATAM (USD)</span></td><td class="num">3</td><td class="num">0</td><td>ES</td><td class="num">1</td><td class="sub">Chile, Argentina, México</td><td><a href="https://www.facebook.com/ads/library/?id=1073329228654543" target="_blank" rel="noopener">Ver</a></td></tr><tr data-tier="D"><td class="num">31</td><td><span class="chip tD">D</span></td><td><strong>Guía práctica de Vastu a ₹99</strong><br><span class="sub">Pixel Theory · India (INR)</span></td><td class="num">8</td><td class="num">6</td><td>EN/HI</td><td class="num">1</td><td class="sub">India (precio muy bajo)</td><td><a href="https://www.facebook.com/ads/library/?id=1127931963533410" target="_blank" rel="noopener">Ver</a></td></tr><tr data-tier="D"><td class="num">29</td><td><span class="chip tD">D</span></td><td><strong>128 recetas con productos de Biedronka (súper low cost)</strong><br><span class="sub">Szama za grosze · Polonia (PLN)</span></td><td class="num">3</td><td class="num">5</td><td>PL</td><td class="num">1</td><td class="sub">Modelable a ES con Mercadona/Lidl (España), Aldi/Bodega Aurrera (México)</td><td><a href="https://www.facebook.com/ads/library/?id=1681978020116027" target="_blank" rel="noopener">Ver</a></td></tr><tr data-tier="D"><td class="num">29</td><td><span class="chip tD">D</span></td><td><strong>Ebooks PDF: Constelaciones familiares, uñas, visas</strong><br><span class="sub">Coursewe · Turquía (TRY)</span></td><td class="num">5</td><td class="num">0</td><td>TR</td><td class="num">1</td><td class="sub">Turquía</td><td><a href="https://www.facebook.com/ads/library/?id=1934685594167269" target="_blank" rel="noopener">Ver</a></td></tr></tbody>
+    </table></div>
+    <p class="sub">Días = antigüedad del anuncio activo más viejo que pudimos ver. Clones = anunciantes distintos con una oferta casi igual. Score de 0 a 100: antigüedad 20, volumen 20, alcance 15, creativos 10, clonado 20 y funnel 15. El funnel quedó bajo en todos porque no pudimos abrir las landings.</p>
+  </section>
+
+  <section>
+    <h2>Temporada y poder adquisitivo (octubre a diciembre de 2026)</h2>
+    <div class="season">
+      <div><h3>Hemisferio sur: empieza la primavera</h3>
+        <ul><li>Brasil, Argentina, Chile, Uruguay y Paraguay entran en temporada de aire acondicionado: es el momento del pack HVAC.</li>
+        <li>Las vacaciones de verano (diciembre a febrero) empujan las actividades para chicos.</li>
+        <li>En Argentina conviene cobrar en USD o en pesos ajustados; Chile y Uruguay pagan más por el mismo PDF.</li></ul></div>
+      <div><h3>Hemisferio norte: otoño e invierno</h3>
+        <ul><li>Se pasa más tiempo adentro y llega la Navidad: fieltro, manualidades y regalos personalizados (novela) en España y EE. UU.</li>
+        <li>Temporada de calefacción en España, Italia y Francia: versión "bombas de calor" del pack HVAC.</li>
+        <li>EE. UU., Canadá y Alemania tienen el mayor poder adquisitivo (NCLEX, workbooks, novela).</li></ul></div>
+      <div><h3>Calendario de pauta</h3>
+        <ul><li>Octubre: lanzar y testear ahora, con CPM todavía bajos.</li>
+        <li>Black Friday (27-nov) y diciembre: los CPM suben; escalá solo lo que ya tenga ROAS.</li>
+        <li>Enero: propósitos de año nuevo, agendas, NCLEX y planes de alimentación.</li></ul></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>¿Se puede automatizar?</h2>
+    <p>Sí. Esta misma búsqueda puede correr sola cada semana como una rutina programada de Claude Code: vuelve a revisar los 30 page_id con Cazar, actualiza el Excel con la tendencia (sube, se mantiene o baja), busca candidatos nuevos con las mismas consultas y republica este informe con el mismo link. Para dejarla andando necesito dos datos: el día y la hora, y tu zona horaria.</p>
+    <ul>
+      <li>Necesita que el conector de Meta siga activo, con una cuenta publicitaria activa.</li>
+      <li>No puede ver el botón de cada anuncio ni entrar a la landing, porque el entorno bloquea facebook.com. Eso se revisa a mano en los links "Ver".</li>
+      <li>Cada corrida consume uso de Claude: con una vez por semana alcanza.</li>
+    </ul>
+  </section>
+
+  <section class="note">
+    <h2>Límites de este estudio</h2>
+    <ul>
+      <li>La API devuelve los 50 anuncios más nuevos de cada página. En páginas con más de 50 anuncios no se ve el más viejo, por eso existe el nivel B.</li>
+      <li>Muchos anunciantes recrean sus anuncios cada pocos días. Por eso medimos cuánto tiempo lleva corriendo el producto, no cuánto dura cada anuncio.</li>
+      <li>El botón ("Más información" o "Enviar mensaje") no viene en los datos. Lo inferimos por el título del link y descartamos todo lo que decía WhatsApp, "Escríbeme", "Chatea" o "Converse conosco".</li>
+      <li>No pudimos abrir landings ni checkouts, así que los precios sugeridos son estimaciones y no datos medidos.</li>
+      <li>Solo cubre Meta. Un producto puede estar ganando en TikTok o Google y no aparecer acá.</li>
+      <li>El score indica validación de mercado. No garantiza ingresos.</li>
+    </ul>
+  </section>
+</div>
+
+<script>
+(function () {
+  var btns = document.querySelectorAll('.filters button');
+  var rows = document.querySelectorAll('#rows tr');
+  function apply(f) {
+    btns.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.f === f)); });
+    rows.forEach(function (r) { r.hidden = !(f === 'all' || r.dataset.tier === f); });
+    try { localStorage.setItem('cazar-filtro', f); } catch (e) {}
+  }
+  btns.forEach(function (b) { b.addEventListener('click', function () { apply(b.dataset.f); }); });
+  var saved = 'all';
+  try { saved = localStorage.getItem('cazar-filtro') || 'all'; } catch (e) {}
+  apply(saved);
+})();
+</script>
