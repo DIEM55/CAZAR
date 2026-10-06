@@ -3,7 +3,7 @@
 
 Uso:
     export APIMART_API_KEY="tu-key"
-    python3 generar.py "un gato astronauta" [--size 1024x1024] [--n 1]
+    python3 generar.py "un gato astronauta" [--size 1:1] [--resolution 1k] [--quality auto] [--n 1]
 
 Flujo: crea la tarea -> espera 200 s -> consulta el estado -> descarga la imagen.
 Los endpoints y el modelo se pueden cambiar con variables de entorno si la
@@ -14,7 +14,7 @@ import argparse, base64, json, os, sys, time, urllib.request, urllib.error
 BASE = os.environ.get("APIMART_BASE_URL", "https://api.apimart.ai")
 GEN_PATH = os.environ.get("APIMART_GEN_PATH", "/v1/images/generations")      # VERIFICAR en la doc
 STATUS_PATH = os.environ.get("APIMART_STATUS_PATH", "/v1/tasks/{task_id}")  # VERIFICAR en la doc
-MODEL = os.environ.get("APIMART_MODEL", "gpt-image-2")                      # VERIFICAR en la doc
+MODEL = os.environ.get("APIMART_MODEL", "gpt-image-2-official")             # variante oficial (la otra es gpt-image-2-ext)
 WAIT_FIRST = int(os.environ.get("APIMART_WAIT", "200"))
 POLL_EVERY = 15
 POLL_MAX = 20
@@ -71,7 +71,9 @@ def find_images(obj, out=None):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("prompt")
-    ap.add_argument("--size", default="1024x1024")
+    ap.add_argument("--size", default="1:1", help="proporción: 1:1, 16:9, ...")
+    ap.add_argument("--resolution", default="1k", help="1k, 2k o 4k")
+    ap.add_argument("--quality", default="auto", help="auto, low, medium, high")
     ap.add_argument("--n", type=int, default=1)
     ap.add_argument("--out", default="output")
     a = ap.parse_args()
@@ -80,7 +82,8 @@ def main():
     if not key:
         sys.exit("Falta la variable de entorno APIMART_API_KEY.")
 
-    resp = call("POST", GEN_PATH, key, {"model": MODEL, "prompt": a.prompt, "size": a.size, "n": a.n})
+    resp = call("POST", GEN_PATH, key, {"model": MODEL, "prompt": a.prompt, "size": a.size,
+                                    "resolution": a.resolution, "quality": a.quality, "n": a.n})
     print("Respuesta de creación:", json.dumps(resp)[:500])
     task_id = find_key(resp, {"task_id", "id"})
     imgs = find_images(resp)
