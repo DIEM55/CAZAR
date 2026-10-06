@@ -12,7 +12,7 @@ documentación de APIMart difiere de los valores por defecto.
 import argparse, base64, json, os, sys, time, urllib.request, urllib.error
 
 BASE = os.environ.get("APIMART_BASE_URL", "https://api.apimart.ai")
-GEN_PATH = os.environ.get("APIMART_GEN_PATH", "/v1/images/generations")      # VERIFICAR en la doc
+GEN_PATH = os.environ.get("APIMART_GEN_PATH", "/v1/images/generations")      # confirmado en la doc
 STATUS_PATH = os.environ.get("APIMART_STATUS_PATH", "/v1/tasks/{task_id}")  # VERIFICAR en la doc
 MODEL = os.environ.get("APIMART_MODEL", "gpt-image-2-official")             # variante oficial (la otra es gpt-image-2-ext)
 WAIT_FIRST = int(os.environ.get("APIMART_WAIT", "200"))
@@ -73,7 +73,7 @@ def main():
     ap.add_argument("prompt")
     ap.add_argument("--size", default="1:1", help="proporción: 1:1, 16:9, ...")
     ap.add_argument("--resolution", default="1k", help="1k, 2k o 4k")
-    ap.add_argument("--quality", default="auto", help="auto, low, medium, high")
+    ap.add_argument("--quality", default=None, help="auto, low, medium, high (solo para -official)")
     ap.add_argument("--n", type=int, default=1)
     ap.add_argument("--out", default="output")
     a = ap.parse_args()
@@ -82,8 +82,10 @@ def main():
     if not key:
         sys.exit("Falta la variable de entorno APIMART_API_KEY.")
 
-    resp = call("POST", GEN_PATH, key, {"model": MODEL, "prompt": a.prompt, "size": a.size,
-                                    "resolution": a.resolution, "quality": a.quality, "n": a.n})
+    body = {"model": MODEL, "prompt": a.prompt, "size": a.size, "resolution": a.resolution, "n": a.n}
+    if a.quality:
+        body["quality"] = a.quality
+    resp = call("POST", GEN_PATH, key, body)
     print("Respuesta de creación:", json.dumps(resp)[:500])
     task_id = find_key(resp, {"task_id", "id"})
     imgs = find_images(resp)
