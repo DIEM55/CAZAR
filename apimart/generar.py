@@ -81,6 +81,10 @@ def main():
     key = os.environ.get("APIMART_API_KEY")
     if not key:
         sys.exit("Falta la variable de entorno APIMART_API_KEY.")
+    key = key.strip().strip("\"'")
+    if not key.isascii() or " " in key:
+        sys.exit("APIMART_API_KEY tiene caracteres no válidos (acentos, espacios o texto de ejemplo). "
+                 "Vuelve a copiar la key desde APIMart y pégala sin comillas ni espacios.")
 
     body = {"model": MODEL, "prompt": a.prompt, "size": a.size, "resolution": a.resolution, "n": a.n}
     if a.quality:
