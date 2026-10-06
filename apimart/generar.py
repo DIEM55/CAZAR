@@ -13,7 +13,7 @@ import argparse, base64, json, os, sys, time, urllib.request, urllib.error
 
 BASE = os.environ.get("APIMART_BASE_URL", "https://api.apimart.ai")
 GEN_PATH = os.environ.get("APIMART_GEN_PATH", "/v1/images/generations")      # confirmado en la doc
-STATUS_PATH = os.environ.get("APIMART_STATUS_PATH", "/v1/tasks/{task_id}")  # VERIFICAR en la doc
+STATUS_PATH = os.environ.get("APIMART_STATUS_PATH", "/v1/tasks/{task_id}")  # confirmado en la doc
 MODEL = os.environ.get("APIMART_MODEL", "gpt-image-2-official")             # variante oficial (la otra es gpt-image-2-ext)
 WAIT_FIRST = int(os.environ.get("APIMART_WAIT", "200"))
 POLL_EVERY = 15
