@@ -29,3 +29,13 @@ Veredictos: 🟢 COPIAR · 🟡 ARBITRAJE · 🟠 WATCHLIST · 🔴 DESCARTAR
 29/08 | arte yeso/ceramica/cemento | Creaciones Digitales | V:0/3 O:1/3 | 🔴 DESCARTAR | revendedor PLR generico
 29/08 | arte yeso/ceramica/cemento | Universo Digital | V:0/3 O:1/3 | 🔴 DESCARTAR | revendedor PLR, 2 ads
 29/08 | arte yeso/ceramica/cemento | Daros Custom Design | V:0/3 O:1/3 | 🔴 DESCARTAR | venetian plaster B2B, otro nicho
+
+07/10 | low ticket mundial | Rosie Crochet (DE) | V:1/3 O:3/3 | 🟠 WATCHLIST | 139 ads pero 3 dias
+07/10 | low ticket mundial | Universo do Feltro (BR) | V:2/3 O:3/3 | 🟢 COPIAR | 66 ads, navidad en curso
+07/10 | low ticket mundial | Pablo Gutierrez (multi) | V:1/3 O:2/3 | 🟠 WATCHLIST | 44 ads multiidioma, 1 dia
+07/10 | low ticket mundial | Pilota90 (FR) | V:0/3 O:3/3 | 🟠 WATCHLIST | 13 ads 15 dias, exotico limpio
+07/10 | low ticket mundial | Claudia Monteiro Uncinetto (IT) | V:0/3 O:2/3 | 🟠 WATCHLIST | BR vendiendo en italiano
+07/10 | low ticket mundial | Criart Mounjaro (BR) | V:1/3 O:1/3 | 🔴 DESCARTAR | 100 dias pero 1 ad activo
+07/10 | low ticket mundial | Med-Ment ECG (BR) | V:1/3 O:1/3 | 🔴 DESCARTAR | 79 dias pero 1 ad activo
+07/10 | low ticket mundial | Mboa Academy (FR Africa) | V:0/3 O:3/3 | 🔴 DESCARTAR | tester 6 ads arranco hoy
+07/10 | low ticket mundial | Nadjate Digital (FR) | V:0/3 O:2/3 | 🔴 DESCARTAR | 2 ads, tester
