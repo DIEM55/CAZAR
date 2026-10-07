@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <defs>
+    <radialGradient id="space" cx="50%" cy="38%" r="75%">
+      <stop offset="0%" stop-color="#2a2b5e"/>
+      <stop offset="55%" stop-color="#14153a"/>
+      <stop offset="100%" stop-color="#07071c"/>
+    </radialGradient>
+    <linearGradient id="suit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#e6ebf5"/>
+      <stop offset="100%" stop-color="#c3cce0"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0.1" y1="0" x2="0.9" y2="1">
+      <stop offset="0%" stop-color="#bfe4ff" stop-opacity=".55"/>
+      <stop offset="45%" stop-color="#7fb4e8" stop-opacity=".18"/>
+      <stop offset="100%" stop-color="#2d6ea8" stop-opacity=".45"/>
+    </linearGradient>
+    <radialGradient id="planet" cx="35%" cy="32%" r="75%">
+      <stop offset="0%" stop-color="#ffb37a"/>
+      <stop offset="60%" stop-color="#e07a4f"/>
+      <stop offset="100%" stop-color="#9c4530"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8ad4ff" stop-opacity=".30"/>
+      <stop offset="100%" stop-color="#8ad4ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#space)"/>
+
+  <!-- estrellas -->
+  <g fill="#fff">
+    <circle cx="70" cy="90" r="2.2" opacity=".9"/><circle cx="150" cy="190" r="1.4" opacity=".6"/>
+    <circle cx="240" cy="70" r="1.8" opacity=".75"/><circle cx="330" cy="150" r="1.2" opacity=".5"/>
+    <circle cx="520" cy="60" r="2" opacity=".85"/><circle cx="640" cy="130" r="1.5" opacity=".65"/>
+    <circle cx="720" cy="60" r="2.4" opacity=".95"/><circle cx="760" cy="250" r="1.3" opacity=".55"/>
+    <circle cx="60" cy="330" r="1.6" opacity=".7"/><circle cx="110" cy="520" r="2.1" opacity=".8"/>
+    <circle cx="48" cy="660" r="1.4" opacity=".6"/><circle cx="200" cy="730" r="1.9" opacity=".75"/>
+    <circle cx="690" cy="470" r="1.5" opacity=".65"/><circle cx="745" cy="620" r="2.2" opacity=".85"/>
+    <circle cx="600" cy="740" r="1.3" opacity=".5"/><circle cx="420" cy="770" r="1.7" opacity=".7"/>
+    <circle cx="390" cy="40" r="1.1" opacity=".45"/><circle cx="660" cy="320" r="1.1" opacity=".45"/>
+  </g>
+  <g stroke="#fff" stroke-width="1.1" opacity=".5">
+    <path d="M718 52 L718 68 M710 60 L726 60"/>
+    <path d="M110 518 L110 530 M104 524 L116 524"/>
+  </g>
+
+  <!-- planeta -->
+  <g>
+    <circle cx="645" cy="625" r="92" fill="url(#planet)"/>
+    <ellipse cx="645" cy="625" rx="138" ry="26" fill="none" stroke="#f0c9a0" stroke-width="7" opacity=".55"
+             transform="rotate(-18 645 625)"/>
+    <circle cx="612" cy="598" r="15" fill="#000" opacity=".10"/>
+    <circle cx="672" cy="652" r="10" fill="#000" opacity=".09"/>
+  </g>
+
+  <circle cx="400" cy="382" r="250" fill="url(#glow)"/>
+
+  <!-- ===== GATO ASTRONAUTA ===== -->
+  <g transform="translate(0,-40)">
+    <!-- cola -->
+    <path d="M292 612 C218 608 182 560 206 512 C222 480 262 476 278 502"
+          fill="none" stroke="#c3cce0" stroke-width="30" stroke-linecap="round"/>
+    <path d="M292 612 C218 608 182 560 206 512 C222 480 262 476 278 502"
+          fill="none" stroke="#eef2f9" stroke-width="18" stroke-linecap="round"/>
+
+    <!-- cuerpo / traje -->
+    <path d="M310 450 C310 400 490 400 490 450 L504 596 C508 634 470 660 400 660
+             C330 660 292 634 296 596 Z" fill="url(#suit)"/>
+    <path d="M318 470 C360 486 440 486 482 470" fill="none" stroke="#aab6cf" stroke-width="4"/>
+    <!-- brazos -->
+    <path d="M316 486 C272 502 256 548 268 586" fill="none" stroke="#e6ebf5" stroke-width="40" stroke-linecap="round"/>
+    <path d="M484 486 C528 502 544 548 532 586" fill="none" stroke="#e6ebf5" stroke-width="40" stroke-linecap="round"/>
+    <circle cx="266" cy="596" r="25" fill="#ff8b5e"/><circle cx="534" cy="596" r="25" fill="#ff8b5e"/>
+    <!-- piernas -->
+    <path d="M352 650 L344 712" stroke="#e6ebf5" stroke-width="42" stroke-linecap="round"/>
+    <path d="M448 650 L456 712" stroke="#e6ebf5" stroke-width="42" stroke-linecap="round"/>
+    <ellipse cx="340" cy="726" rx="30" ry="18" fill="#ff8b5e"/>
+    <ellipse cx="460" cy="726" rx="30" ry="18" fill="#ff8b5e"/>
+
+    <!-- panel de control -->
+    <rect x="364" y="524" width="72" height="50" rx="10" fill="#2b3350"/>
+    <circle cx="384" cy="542" r="7" fill="#5fe08a"/><circle cx="408" cy="542" r="7" fill="#ffd166"/>
+    <circle cx="432" cy="542" r="7" fill="#ff6b6b"/>
+    <rect x="376" y="556" width="48" height="6" rx="3" fill="#4a5578"/>
+
+    <!-- bandera -->
+    <rect x="300" y="492" width="34" height="22" rx="4" fill="#5aa9e6"/>
+    <text x="317" y="508" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold"
+          fill="#fff" text-anchor="middle">AR</text>
+
+    <!-- cuello del casco -->
+    <ellipse cx="400" cy="432" rx="104" ry="26" fill="#cfd8e8"/>
+    <ellipse cx="400" cy="426" rx="104" ry="24" fill="#f2f5fa"/>
+
+    <!-- cabeza del gato -->
+    <g>
+      <path d="M318 318 L330 236 L392 282 Z" fill="#f7a072"/>
+      <path d="M330 300 L337 262 L368 285 Z" fill="#ffd3c0"/>
+      <path d="M482 318 L470 236 L408 282 Z" fill="#f7a072"/>
+      <path d="M470 300 L463 262 L432 285 Z" fill="#ffd3c0"/>
+      <ellipse cx="400" cy="342" rx="98" ry="86" fill="#ffb088"/>
+      <path d="M302 340 C302 300 340 268 400 268 C460 268 498 300 498 340
+               C498 300 460 272 400 272 C340 272 302 300 302 340 Z" fill="#f08f66"/>
+      <!-- rayas -->
+      <path d="M372 272 L366 296 M400 266 L400 292 M428 272 L434 296"
+            stroke="#e8825c" stroke-width="7" stroke-linecap="round"/>
+      <!-- ojos -->
+      <ellipse cx="364" cy="340" rx="19" ry="23" fill="#1d2a3a"/>
+      <ellipse cx="436" cy="340" rx="19" ry="23" fill="#1d2a3a"/>
+      <circle cx="370" cy="331" r="7" fill="#fff"/><circle cx="442" cy="331" r="7" fill="#fff"/>
+      <circle cx="359" cy="349" r="3.4" fill="#fff" opacity=".8"/>
+      <circle cx="431" cy="349" r="3.4" fill="#fff" opacity=".8"/>
+      <!-- nariz y boca -->
+      <path d="M392 372 L408 372 L400 382 Z" fill="#ff7f9e"/>
+      <path d="M400 382 C400 394 386 396 380 388" fill="none" stroke="#9a5b45" stroke-width="4" stroke-linecap="round"/>
+      <path d="M400 382 C400 394 414 396 420 388" fill="none" stroke="#9a5b45" stroke-width="4" stroke-linecap="round"/>
+      <!-- bigotes -->
+      <g stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".92">
+        <path d="M330 366 L286 356"/><path d="M330 378 L288 380"/>
+        <path d="M470 366 L514 356"/><path d="M470 378 L512 380"/>
+      </g>
+    </g>
+
+    <!-- casco -->
+    <circle cx="400" cy="340" r="146" fill="none" stroke="#dfe6f2" stroke-width="13"/>
+    <circle cx="400" cy="340" r="146" fill="url(#glass)"/>
+    <path d="M300 246 C330 212 372 196 412 198" fill="none" stroke="#fff" stroke-width="13"
+          stroke-linecap="round" opacity=".7"/>
+    <path d="M292 300 C296 280 304 262 316 246" fill="none" stroke="#fff" stroke-width="7"
+          stroke-linecap="round" opacity=".45"/>
+    <!-- antena -->
+    <path d="M512 244 L556 196" stroke="#cfd8e8" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="560" cy="190" r="13" fill="#ff6b6b"/>
+    <circle cx="560" cy="190" r="22" fill="#ff6b6b" opacity=".22"/>
+  </g>
+</svg>
