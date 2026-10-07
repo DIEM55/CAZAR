@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><title>Schleifentasche</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "DejaVu Sans", Arial, Helvetica, sans-serif; color: #1a2340; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .page { width: 210mm; height: 297mm; padding: 18mm 16mm; position: relative; page-break-after: always; overflow: hidden; }
+  .page:last-child { page-break-after: auto; }
+
+  h1 { font-size: 17pt; letter-spacing: .02em; margin-bottom: 2mm; }
+  h2 { font-size: 12.5pt; margin-bottom: 2.5mm; }
+  p  { font-size: 9pt; line-height: 1.5; }
+  .sub { font-size: 8.5pt; color: #5a6480; }
+  .rule { height: .4mm; background: #1a2340; margin: 4mm 0 5mm; }
+
+  /* --- Testquadrat --- */
+  .calib { border: 2.5px solid #c0392b; width: 100mm; height: 100mm; margin: 6mm 0 4mm;
+           display: flex; align-items: center; justify-content: center; text-align: center; }
+  .calib b { font-size: 11pt; color: #c0392b; display: block; }
+  .calib span { font-size: 8.5pt; color: #5a6480; display: block; margin-top: 2mm; }
+  .warn { background: #fdf3f2; border-left: 3px solid #c0392b; padding: 3.5mm 4mm; font-size: 8.5pt; line-height: 1.5; }
+
+  /* --- Schnittteil-Kopf --- */
+  .ph { background: #1a2340; color: #fff; padding: 3.5mm 4mm; text-align: center; }
+  .ph .t { font-size: 11.5pt; letter-spacing: .04em; }
+  .ph .d { font-size: 8pt; opacity: .85; margin-top: 1.2mm; }
+
+  /* --- Diagramm --- */
+  .wrap { position: relative; margin: 14mm 0 0 14mm; width: 128mm; }
+  .piece { position: relative; width: 128mm; height: 112mm; border: 1.6px solid #1a2340; background: #fbfcfe; }
+  .inner { position: absolute; inset: 5mm; border: 1px dashed #8d97b4; }
+  .hemline { position: absolute; left: 5mm; right: 5mm; top: 19mm; border-top: 1px dashed #c0392b; }
+  .hemtxt { position: absolute; left: 8mm; top: 12.5mm; font-size: 6.6pt; color: #39456b; }
+  .grain { position: absolute; left: 50%; top: 32mm; bottom: 16mm; width: 0; border-left: 1.2px solid #2f6fb5; }
+  .grain::before, .grain::after { content: ""; position: absolute; left: -2.2mm; border-left: 2.2mm solid transparent; border-right: 2.2mm solid transparent; }
+  .grain::before { top: -3mm; border-bottom: 3.4mm solid #2f6fb5; }
+  .grain::after  { bottom: -3mm; border-top: 3.4mm solid #2f6fb5; }
+  .grainlbl { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%) rotate(-90deg);
+              background: #fbfcfe; padding: 0 2mm; font-size: 7.4pt; letter-spacing: .22em; color: #2f6fb5; white-space: nowrap; }
+  .tab { position: absolute; top: -0.8mm; height: 4mm; border: 1.4px solid #c0392b; border-bottom: 0; background: #fdf3f2; }
+  .tablbl { position: absolute; top: 4.6mm; font-size: 6.6pt; color: #c0392b; text-align: center; }
+
+  /* Maßlinien */
+  .dim { position: absolute; font-size: 7.6pt; color: #1a2340; }
+  .dim.top    { top: -8mm; left: 0; width: 128mm; text-align: center; }
+  .dim.right  { top: 0; left: 131mm; height: 112mm; writing-mode: vertical-rl; display: flex; align-items: center; }
+  .dim.left   { top: 0; left: -12mm; height: 112mm; writing-mode: vertical-rl; transform: rotate(180deg); display: flex; align-items: center; color: #5a6480; font-size: 7pt; }
+  .dim.bottom { bottom: -8mm; left: 0; width: 128mm; text-align: center; color: #5a6480; font-size: 7pt; }
+  .nz { position: absolute; left: -10mm; top: 6mm; font-size: 6.6pt; color: #c0392b; }
+  .ruffle { position: absolute; bottom: -13mm; left: 0; width: 128mm; text-align: center; font-size: 7pt; color: #2f6fb5; }
+
+  .summary { margin-top: 26mm; background: #f2f5fb; border: .6px solid #d4dbea; padding: 4mm 5mm; }
+  .summary h3 { font-size: 8.6pt; letter-spacing: .06em; margin-bottom: 2mm; }
+  .summary td { font-size: 8pt; padding: .9mm 0; vertical-align: top; }
+  .summary td:first-child { color: #5a6480; width: 46mm; }
+  .foot { position: absolute; left: 16mm; right: 16mm; bottom: 10mm; display: flex; justify-content: space-between;
+          font-size: 7pt; color: #8d97b4; border-top: .4px solid #d4dbea; padding-top: 2mm; }
+</style></head><body>
+
+<div class="page">
+  <h1>Schleifentasche · Schnittmuster</h1>
+  <p class="sub">Lockere Tote-Bag aus Vichykaro mit Rüsche und großer Schulterschleife · Einheitsgröße · Für Anfängerinnen geeignet</p>
+  <div class="rule"></div>
+
+  <h2>Vor dem Zuschneiden: Druck prüfen</h2>
+  <p>Drucke diese Seite auf <b>A4</b> in Originalgröße aus. Wähle im Druckdialog <b>„Tatsächliche Größe“</b> oder <b>100 %</b> – nicht „An Seite anpassen“. Miss anschließend das Quadrat nach.</p>
+
+  <div class="calib">
+    <div><b>10 cm × 10 cm</b><span>Miss beide Seiten mit dem Lineal nach.<br>Beide müssen exakt 10 cm ergeben.</span></div>
+  </div>
+
+  <p class="warn"><b>Stimmt das Maß nicht?</b> Dann ist die Skalierung falsch und alle Schnittteile wären verzerrt. Stelle im Druckdialog die Skalierung auf 100 % und drucke erneut. Erst wenn das Quadrat exakt 10 cm misst, darfst du zuschneiden.</p>
+
+  <div class="foot"><span>Schleifentasche · Schnittmuster</span><span>Seite 1</span></div>
+</div>
+
+<div class="page">
+  <h2>6. Zuschnittpläne und Schnittzeichnungen</h2>
+  <p>Jede Zeichnung zeigt die exakten Zuschnittmaße <b>inklusive Nahtzugabe</b>. Alle Maße in Zentimetern. Übertrage sie mit Lineal und Schneiderkreide direkt auf den Stoff.</p>
+  <div class="rule"></div>
+
+  <div class="ph">
+    <div class="t">SCHNITTTEIL 1 · TASCHENKÖRPER</div>
+    <div class="d">2× zuschneiden (1 Vorderteil + 1 Rückenteil) · Nahtzugabe 1,5 cm bereits enthalten</div>
+  </div>
+
+  <div class="wrap">
+    <div class="dim top">Zuschnitt: 42 cm</div>
+    <div class="piece">
+      <div class="nz">1,5 cm<br>NZ</div>
+      <div class="inner"></div>
+      <div class="hemline"></div>
+      <div class="hemtxt">OBERER SAUM · 1 cm umbügeln, dann 2 cm umschlagen, absteppen</div>
+
+      <div class="tab" style="left:24mm; width:20mm;"></div>
+      <div class="tablbl" style="left:24mm; width:20mm;">TRÄGER A</div>
+      <div class="tab" style="left:84mm; width:20mm;"></div>
+      <div class="tablbl" style="left:84mm; width:20mm;">TRÄGER B</div>
+
+      <div class="grain"><span class="grainlbl">FADENLAUF</span></div>
+
+      <div class="dim right">Zuschnitt: 51 cm</div>
+      <div class="dim left">Fertig: 46 cm</div>
+      <div class="dim bottom">Fertige Breite: 38 cm</div>
+    </div>
+    <div class="ruffle">↑ Die RÜSCHE wird an dieser unteren Kante angesetzt</div>
+  </div>
+
+  <div class="summary">
+    <h3>ZUSAMMENFASSUNG SCHNITTTEIL 1</h3>
+    <table>
+      <tr><td>Zuschnittmaß</td><td>42 × 51 cm</td></tr>
+      <tr><td>Fertigmaß</td><td>38 × 46 cm</td></tr>
+      <tr><td>Nahtzugabe</td><td>1,5 cm an Seiten und Unterkante · enthalten</td></tr>
+      <tr><td>Oberer Saum</td><td>3 cm doppelt umgeschlagen (1 cm + 2 cm) · enthalten</td></tr>
+      <tr><td>Anzahl</td><td>2 Teile (Vorderteil + Rückenteil)</td></tr>
+      <tr><td>Trägerposition</td><td>Je 10 cm breit · 10 cm von jeder Seitenkante · 5 cm Abstand in der Mitte</td></tr>
+      <tr><td>Wichtig</td><td>Markiere die Trägerpositionen auf <b>beiden</b> Teilen – sie müssen beim Zusammennähen exakt aufeinandertreffen.</td></tr>
+    </table>
+  </div>
+
+  <div class="foot"><span>Schleifentasche · Schnittmuster</span><span>Seite 2</span></div>
+</div>
+
+</body></html>
