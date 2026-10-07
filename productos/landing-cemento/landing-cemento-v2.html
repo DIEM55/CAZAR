@@ -1,0 +1,2754 @@
+<style>
+
+/* =============================================
+   VARIABLES — Paleta "Concreto & Arcilla"
+   ============================================= */
+:root {
+  --concreto-oscuro: #2b2a28;
+  --concreto-medio:  #6e6a63;
+  --concreto-claro:  #b8ae9f;
+  --arcilla:         #a8552f;
+  --arcilla-suave:   #c76d4a;
+  --arcilla-hover:   #c1653a;
+  --arena-fondo:     #f3ede0;
+  --arena-seccion:   #ece3d0;
+  --arena-card:      #f7f1e2;
+  --arena-borde:     #d9cdb2;
+  --crema:           #fdfaf3;
+  --texto-oscuro:    #211f1c;
+  --texto-medio:     #5c584f;
+  --texto-suave:     #8c8478;
+  --musgo-check:     #5f7a4a;
+  --rojo-oferta:     #9c3b28;
+  --dorado:          #c9a227;
+  --musgo:           #6b7a5e;
+  --musgo-oscuro:    #545f45;
+  --marfil:          #f7f3ea;
+  --marron-oscuro: #2b2a28;
+  --beige-seccion: #ece3d0;
+  --amarillo: #c9a227;
+
+  --font-titulo: 'Fraunces', serif;
+  --font-cuerpo: 'Work Sans', sans-serif;
+  --font-pop:    'Poppins', Arial, sans-serif;
+
+  --radio-sm:   6px;
+  --radio-md:   14px;
+  --radio-lg:   22px;
+  --radio-pill: 60px;
+
+  --sombra:          0 4px 20px rgba(43,42,40,0.12);
+  --sombra-concreto: 0 6px 28px rgba(43,42,40,0.22);
+  --sombra-arcilla:  0 6px 24px rgba(168,85,47,0.35);
+  --ancho-max: 920px;
+}
+
+/* =============================================
+   RESET & BASE
+   ============================================= */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-cuerpo);
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--texto-oscuro);
+  background: var(--arena-fondo);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+img { display: block; max-width: 100%; height: auto; }
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; padding: 0; margin: 0; }
+
+.c-wrap {
+  width: 100%;
+  max-width: var(--ancho-max);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* =============================================
+   BOTÓN PRINCIPAL HERO
+   ============================================= */
+.golden-button-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 28px 0 0;
+}
+.golden-button {
+  position: relative;
+  background: linear-gradient(90deg, #8f451f, #a8552f, #d38a5c, #a8552f, #8f451f);
+  background-size: 200% 200%;
+  color: #fdfaf3;
+  font-family: var(--font-titulo);
+  font-weight: 700;
+  font-size: clamp(1rem, 1.2vw + 0.75rem, 1.25rem);
+  padding: 16px 40px;
+  width: 100%;
+  display: block;
+  text-align: center;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: shimmer 3s infinite linear;
+  display: inline-block;
+}
+@keyframes shimmer {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.golden-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 28px rgba(168,85,47,0.55);
+  color: #fdfaf3;
+}
+.golden-button--bloque { display: block; width: 100%; text-align: center; }
+
+/* BOTÓN SECUNDARIO */
+.golden-button-wrap--sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0 8px 0;
+}
+.golden-button--sec {
+  position: relative;
+  background: linear-gradient(90deg, #8f451f, #a8552f, #d38a5c, #a8552f, #8f451f);
+  background-size: 200% 200%;
+  color: #fdfaf3;
+  font-family: var(--font-pop);
+  font-weight: 600;
+  font-size: clamp(1rem, 1.2vw + 0.75rem, 1.25rem);
+  padding: 16px 40px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: shimmer 3s infinite linear;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+.golden-button--sec:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(168,85,47,0.45);
+  color: #fdfaf3;
+}
+
+.trustline {
+  max-width: 520px;
+  margin: 0 auto 12px;
+  text-align: center;
+  font-family: var(--font-pop);
+  font-weight: 600;
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  color: var(--musgo);
+}
+
+/* =============================================
+   TOPBAR
+============================================= */
+
+.topbar{
+    background: var(--marron-oscuro);
+    color: var(--beige-seccion);
+    overflow: hidden;
+    white-space: nowrap;
+    height: 38px;          /* ≈ 1 cm */
+    display: flex;
+    align-items: center;
+}
+
+.topbar-track{
+    display: flex;
+    align-items: center;
+    width: max-content;
+    animation: marquee 14s linear infinite;
+}
+
+.topbar-track span{
+    flex-shrink: 0;
+    margin-right: 28px;    /* pequeño espacio entre frases */
+    font-family: var(--font-titulo);
+    font-size: 0.95rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    line-height: 1;
+}
+
+.topbar a{
+    color: var(--amarillo);
+    text-decoration: none;
+    font-weight: 900;
+}
+
+@keyframes marquee{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-50%);
+    }
+}
+
+/* Móvil */
+@media (max-width:768px){
+
+    .topbar{
+        height: 36px;
+    }
+
+    .topbar-track span{
+        font-size: 0.78rem;
+        margin-right: 22px;
+    }
+
+}
+/* =============================================
+   HERO
+   ============================================= */
+.hero {
+  background: linear-gradient(160deg, var(--arena-seccion) 0%, var(--arena-fondo) 70%);
+  padding: 28px 0 48px;
+  border-bottom: 3px solid var(--arena-borde);
+}
+.hero__inner {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 32px;
+  align-items: center;
+}
+.hero__contenido { order: 1; }
+.hero__imagen { order: 2; display: flex; justify-content: center; align-items: flex-start; margin-top: 0; width: 100%; overflow: visible; }
+.hero__imagen img {
+  max-width: 100%;
+  width: 100%;
+  border-radius: var(--radio-lg);
+  box-shadow: var(--sombra-concreto);
+  border: 3px solid var(--arena-borde);
+  display: block;
+}
+.hero__titulo {
+  font-family: var(--font-titulo);
+  font-size: clamp(1.9rem, 3vw + 1rem, 2.9rem);
+  font-weight: 900;
+  line-height: 1.15;
+  color: var(--concreto-oscuro);
+  margin-bottom: 14px;
+}
+.hero__titulo span { color: var(--arcilla); }
+.hero__subtitulo { font-size: clamp(1rem, 1vw + 0.75rem, 1.2rem); color: var(--texto-medio); margin-bottom: 22px; line-height: 1.6; }
+.hero__subtitulo strong { color: var(--concreto-medio); }
+.hero__checks { display: flex; flex-direction: column; gap: 10px; margin-bottom: 32px; }
+.hero__checks li {
+  display: flex; align-items: flex-start; gap: 10px;
+  font-size: clamp(0.95rem, 0.8vw + 0.75rem, 1.1rem); color: var(--texto-oscuro); line-height: 1.45;
+}
+.hero__checks li::before { content: 'X'; color: var(--musgo-check); font-weight: 900; flex-shrink: 0; margin-top: 2px; }
+
+/* =============================================
+   TARJETA MEDIOS DE PAGO (hero)
+   ============================================= */
+.hero-medios-pago {
+  margin: 20px auto 0;
+  max-width: 420px;
+  background-color: var(--marfil);
+  text-align: center;
+  padding: 14px 18px;
+  border: 1px solid rgba(107,122,94,0.35);
+  border-radius: 10px;
+  box-shadow: 0 10px 26px rgba(43,42,40,0.12);
+}
+.hero-medios-pago img {
+  max-width: min(80%, 260px);
+  height: auto;
+  display: inline-block;
+  background-color: #fff;
+  padding: 5px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(107,122,94,0.25);
+  box-shadow: 0 0 0 3px rgba(168,85,47,0.10), 0 8px 16px rgba(43,42,40,0.10);
+  filter: brightness(1.02);
+}
+
+/* =============================================
+   VIDEO PREVIEW (FORMATO HORIZONTAL)
+============================================= */
+
+.sm-preview{
+    background: var(--marfil);
+    padding:60px 0;
+}
+
+.sm-wrap{
+    max-width:1100px;
+    margin:auto;
+    padding:0 24px;
+}
+
+.sm-preview__h2{
+    margin:0 0 40px;
+    text-align:center;
+    font-family:var(--font-titulo);
+    font-weight:900;
+    font-size:clamp(1.85rem, 2.8vw + 1.05rem, 2.6rem);
+    line-height:1.2;
+    color:var(--concreto-oscuro);
+}
+
+.sm-preview__accent{
+    color:var(--musgo);
+}
+
+/* CONTENEDOR DEL VIDEO */
+
+.sm-phone{
+    width:100%;
+    max-width:900px;
+    margin:0 auto 30px;
+
+    background:#111;
+    border-radius:22px;
+
+    overflow:hidden;
+
+    box-shadow:
+        0 25px 60px rgba(0,0,0,.20),
+        0 10px 25px rgba(0,0,0,.12);
+
+    border:6px solid #fff;
+}
+
+/* Eliminamos la muesca del celular */
+
+.sm-phone__notch{
+    display:none;
+}
+
+/* Relación 16:9 tipo YouTube */
+
+.sm-phone__screen{
+    position:relative;
+    width:100%;
+    aspect-ratio:16 / 9;
+    background:#000;
+    overflow:hidden;
+}
+
+/* Compatibilidad con navegadores viejos */
+
+@supports not (aspect-ratio:16/9){
+
+.sm-phone__screen{
+    height:0;
+    padding-bottom:56.25%;
+}
+
+}
+
+/* Video */
+
+.sm-phone__video,
+.sm-phone__iframe{
+
+    position:absolute;
+    inset:0;
+
+    width:100%;
+    height:100%;
+
+    border:0;
+
+    object-fit:cover;
+    display:block;
+
+}
+
+/* Texto inferior */
+
+.sm-preview__bottom{
+
+    margin:0;
+    text-align:center;
+
+    font-family:var(--font-pop);
+
+    font-size:clamp(0.9rem, 0.6vw + 0.75rem, 1.05rem);
+
+    font-weight:500;
+
+    line-height:1.7;
+
+    color:var(--musgo);
+
+}
+
+/* Responsive */
+
+@media (max-width:768px){
+
+.sm-preview{
+    padding:45px 0;
+}
+
+.sm-wrap{
+    padding:0 18px;
+}
+
+.sm-phone{
+    border-width:4px;
+    border-radius:18px;
+}
+
+}
+/* =============================================
+   VIDEO HORIZONTAL RESPONSIVE
+============================================= */
+
+.video-horizontal{
+    width:100%;
+    max-width:1000px;
+    margin:0 auto 40px;
+    background:#fff;
+    border:8px solid #fff;
+    border-radius:24px;
+    overflow:hidden;
+    box-shadow:0 20px 60px rgba(0,0,0,.18);
+    box-sizing:border-box;
+}
+
+.video-horizontal__screen{
+    position:relative;
+    width:100%;
+    aspect-ratio:16/9;
+    background:#000;
+}
+
+.video-horizontal__video{
+    width:100%;
+    height:100%;
+    display:block;
+    object-fit:cover;
+}
+
+/* ==========================
+   TABLET
+========================== */
+
+@media (max-width:991px){
+
+    .video-horizontal{
+        max-width:100%;
+        border-width:6px;
+        border-radius:20px;
+    }
+
+}
+
+/* ==========================
+   CELULAR
+========================== */
+
+@media (max-width:767px){
+
+    .sm-wrap{
+        padding:0 16px;
+    }
+
+    .video-horizontal{
+        width:100%;
+        max-width:100%;
+        margin:0 auto 30px;
+        border:4px solid #fff;
+        border-radius:16px;
+    }
+
+    .video-horizontal__screen{
+        aspect-ratio:16/9;
+    }
+
+}
+/* =============================================
+   PARA QUIÉN ES
+   ============================================= */
+.para-quien { background: var(--crema); padding: 30px 0; border-bottom: 2px solid var(--arena-borde); }
+.para-quien__titulo {
+  font-family: var(--font-titulo);
+  font-size: clamp(1.85rem, 2.8vw + 1.05rem, 2.6rem) !important;
+  font-weight: 900;
+  color: var(--concreto-oscuro);
+  text-align: center;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+.para-quien__titulo span { color: var(--arcilla); }
+.para-quien__subtitulo { text-align: center; font-size: clamp(0.95rem, 0.8vw + 0.75rem, 1.15rem); color: var(--texto-medio); margin-bottom: 36px; }
+
+.learn-wrap {
+  max-width: 620px;
+  margin: 0 auto 28px;
+  padding: 14px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, var(--musgo-oscuro) 0%, var(--musgo) 100%);
+}
+.learn-card {
+  border-radius: 14px;
+  padding: 22px 20px;
+  background: rgba(247,243,234,0.92);
+  border: 2px solid rgba(247,243,234,0.55);
+  box-shadow: 0 16px 34px rgba(43,42,40,0.18);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  font-family: var(--font-pop);
+  color: var(--texto-oscuro);
+}
+.learn-kicker {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(168,85,47,0.14);
+  color: var(--arcilla-suave);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.learn-title {
+  margin: 10px 0 0;
+  font-weight: 700;
+  font-size: clamp(1.1rem, 1vw + 0.85rem, 1.3rem);
+  line-height: 1.3;
+  color: var(--concreto-oscuro);
+}
+.learn-sub {
+  margin: 8px 0 0;
+  font-weight: 400;
+  font-size: clamp(0.88rem, 0.5vw + 0.75rem, 0.98rem);
+  line-height: 1.5;
+  color: var(--musgo);
+}
+.learn-list { margin: 16px 0 0; padding: 0; list-style: none; display: grid; gap: 12px; }
+.learn-item {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 14px;
+  border-radius: 14px;
+  background: #ffffff;
+  border: 1px solid rgba(107,122,94,0.18);
+  box-shadow: 0 8px 16px rgba(43,42,40,0.07);
+  font-size: clamp(0.92rem, 0.7vw + 0.75rem, 1.05rem) !important;
+  line-height: 1.45;
+  min-height: 60px;
+}
+.learn-dot {
+  width: 10px; height: 10px;
+  margin-top: 6px;
+  border-radius: 50%;
+  background: var(--arcilla-suave);
+  flex: 0 0 10px;
+}
+.learn-item b { color: var(--texto-oscuro); }
+
+/* =============================================
+   QUÉ ENCONTRARÁS
+   ============================================= */
+.que-encontraras { background: var(--arena-seccion); padding: 30px 0; }
+.que-encontraras__titulo {
+  font-family: var(--font-titulo);
+  font-size: clamp(1.85rem, 2.8vw + 1.05rem, 2.6rem) !important;
+  font-weight: 900;
+  text-align: center;
+  color: var(--concreto-oscuro);
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+.que-encontraras__titulo span { color: var(--arcilla); }
+.que-encontraras__sub { text-align: center; font-size: clamp(0.95rem, 0.8vw + 0.75rem, 1.15rem); color: var(--texto-medio); margin-bottom: 40px; }
+
+.categorias__grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 22px; margin-bottom: 40px; }
+.categoria-card {
+  background: var(--crema);
+  border-radius: var(--radio-lg);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(110px, 150px) 1fr;
+  box-shadow: var(--sombra);
+  border: 1.5px solid var(--arena-borde);
+  transition: transform 0.18s, box-shadow 0.18s;
+}
+.categoria-card:hover { transform: translateY(-4px); box-shadow: var(--sombra-concreto); }
+.categoria-card__foto { height: 100%; min-height: 130px; overflow: hidden; }
+.categoria-card__foto img { width: 100%; height: 100%; object-fit: cover; }
+.categoria-card__cuerpo { padding: 16px 18px; display: flex; flex-direction: column; justify-content: center; }
+.categoria-card__numero { font-family: var(--font-titulo); font-size: clamp(1.3rem, 1.6vw + 0.9rem, 1.8rem); font-weight: 900; color: var(--arcilla); line-height: 1.1; margin-bottom: 4px; }
+.categoria-card__titulo { font-family: var(--font-titulo); font-size: clamp(0.9rem, 0.5vw + 0.8rem, 1rem); font-weight: 800; color: var(--concreto-oscuro); text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 6px; }
+.categoria-card__items { font-size: clamp(0.85rem, 0.4vw + 0.75rem, 0.95rem); color: var(--texto-suave); line-height: 1.5; }
+
+/* =============================================
+   PREVIEW CELULAR / VIDEO
+   ============================================= */
+.sm-preview {
+  background: var(--marfil);
+  padding: 20px 0;
+}
+.sm-wrap { max-width: 920px; margin: 0 auto; padding: 0 24px; }
+.sm-preview__h2 {
+  margin: 0 0 28px;
+  text-align: center;
+  font-family: var(--font-titulo);
+  font-weight: 900;
+  font-size: clamp(1.85rem, 2.8vw + 1.05rem, 2.6rem) !important;
+  line-height: 1.2;
+  color: var(--concreto-oscuro);
+}
+.sm-preview__accent { color: var(--musgo); }
+.sm-phone {
+  width: min(340px, 88vw);
+  margin: 0 auto 22px;
+  padding: 14px;
+  border-radius: 34px;
+  background: linear-gradient(180deg, var(--musgo-oscuro) 0%, var(--musgo) 100%);
+  box-shadow: 0 22px 50px rgba(43,42,40,0.22);
+  position: relative;
+}
+.sm-phone__notch {
+  position: absolute;
+  top: 10px; left: 50%;
+  transform: translateX(-50%);
+  width: 44%; height: 22px;
+  background: rgba(43,42,40,0.92);
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  z-index: 5;
+}
+.sm-phone__screen {
+  background: #000;
+  border-radius: 26px;
+  overflow: hidden;
+  position: relative;
+  aspect-ratio: 9 / 19.5;
+  box-shadow: inset 0 0 0 2px rgba(247,243,234,0.10);
+}
+.sm-phone__video,
+.sm-phone__iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%; height: 100%;
+  border: 0;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+.sm-preview__bottom {
+  margin: 0;
+  text-align: center;
+  font-family: var(--font-pop);
+  font-size: clamp(0.95rem, 0.5vw + 0.8rem, 1.05rem);
+  font-weight: 500;
+  line-height: 1.6;
+  color: var(--musgo);
+}
+
+/* =============================================
+   TESTIMONIOS
+   ============================================= */
+.testimonios { background: var(--crema); padding: 30px 0; border-top: 2px solid var(--arena-borde); }
+.testimonios__titulo {
+  font-family: var(--font-titulo);
+  font-size: clamp(1.85rem, 2.8vw + 1.05rem, 2.6rem) !important;
+  font-weight: 900;
+  text-align: center;
+  color: var(--concreto-oscuro);
+  margin-bottom: 36px;
+  line-height: 1.2;
+}
+.testimonios__titulo span { color: var(--arcilla); }
+.testimonios__grid { display: flex; flex-direction: column; gap: 18px; max-width: 740px; margin: 0 auto; }
+.testimonial-card {
+  background: var(--arena-card);
+  border-radius: var(--radio-md);
+  border-left: 5px solid var(--concreto-claro);
+  padding: 22px 24px;
+  display: flex; gap: 18px; align-items: flex-start;
+  box-shadow: var(--sombra);
+}
+.testimonial-card__avatar { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; border: 3px solid var(--arcilla); flex-shrink: 0; }
+.testimonial-card__estrellas { color: var(--dorado); font-size: 1.2rem; letter-spacing: 2px; margin-bottom: 6px; }
+.testimonial-card__texto { font-size: clamp(0.95rem, 0.7vw + 0.75rem, 1.1rem); color: var(--texto-medio); font-style: italic; line-height: 1.6; margin-bottom: 10px; }
+.testimonial-card__nombre { font-family: var(--font-titulo); font-size: 0.98rem; font-weight: 700; color: var(--concreto-oscuro); }
+.testimonial-card__lugar { font-size: 0.85rem; color: var(--texto-suave); }
+
+/* ==========================================================
+   COMENTARIOS DE FACEBOOK - INICIO
+   ========================================================== */
+
+.fb-comments-widget {
+  max-width: 640px;
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #dadde1;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  color: #050505;
+}
+
+/* --- Encabezado (likes totales y compartidos) --- */
+.fb-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e4e6eb;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.fb-reactions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 15px;
+  color: #65676b;
+}
+
+.fb-icon-like, .fb-icon-love {
+  font-size: 16px;
+}
+
+.fb-count {
+  margin-left: 4px;
+}
+
+.fb-shares {
+  font-size: 15px;
+  color: #65676b;
+}
+
+/* --- Ordenar por "Más relevantes" --- */
+.fb-sort {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 600;
+  font-size: 15px;
+  color: #050505;
+  margin-bottom: 14px;
+  cursor: pointer;
+}
+
+.fb-caret {
+  font-size: 12px;
+}
+
+/* --- Lista general de comentarios --- */
+.fb-comment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.fb-comment {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+}
+
+/* --- Foto de perfil --- */
+.fb-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.fb-comment-body {
+  flex: 1;
+  min-width: 0;
+}
+
+/* --- Burbuja de texto del comentario --- */
+.fb-bubble {
+  background: #f0f2f5;
+  border-radius: 18px;
+  padding: 8px 12px;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.fb-name {
+  font-weight: 600;
+  font-size: 14px;
+  margin-right: 4px;
+  color: #050505;
+}
+
+.fb-time {
+  font-size: 12px;
+  color: #65676b;
+}
+
+.fb-text {
+  margin: 2px 0 0 0;
+  font-size: 15px;
+  line-height: 1.35;
+  color: #050505;
+  word-wrap: break-word;
+}
+
+/* --- Acciones: Responder / Me gusta --- */
+.fb-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 4px;
+  padding-left: 12px;
+  font-size: 13px;
+  color: #65676b;
+  font-weight: 600;
+}
+
+.fb-action {
+  cursor: pointer;
+}
+
+.fb-action:hover {
+  text-decoration: underline;
+}
+
+.fb-like-count {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-weight: 400;
+  color: #65676b;
+}
+
+.fb-mini-like {
+  background: #1877f2;
+  color: #fff;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
+}
+
+/* --- "Ver respuestas" --- */
+.fb-view-replies {
+  margin-top: 6px;
+  margin-left: 12px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #65676b;
+  cursor: pointer;
+}
+
+.fb-view-replies:hover {
+  text-decoration: underline;
+}
+
+/* --- Iconos de voto (pulgar arriba/abajo) --- */
+.fb-vote-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-self: center;
+  opacity: 0.55;
+}
+
+.fb-vote {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* --- Caja inferior "Comentar como..." --- */
+.fb-comment-box {
+  margin-top: 18px;
+  padding: 10px 14px;
+  background: #f0f2f5;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #65676b;
+}
+
+.fb-username {
+  color: #65676b;
+}
+
+/* --- Responsive (celulares) --- */
+@media (max-width: 480px) {
+  .fb-comments-widget {
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+  }
+  .fb-text {
+    font-size: 14px;
+  }
+}
+
+/* ==========================================================
+   COMENTARIOS DE FACEBOOK - FIN
+   ========================================================== */
+
+/* =============================================
+   MEDIOS DE PAGO standalone
+   ============================================= */
+.medios-pago-section {
+  background: var(--arena-seccion);
+  padding: 36px 0;
+  border-top: 1.5px solid var(--arena-borde);
+  border-bottom: 1.5px solid var(--arena-borde);
+}
+.medios-pago-section .c-wrap { display: flex; justify-content: center; }
+.medios-pago-card {
+  background-color: var(--marfil);
+  text-align: center; padding: 18px 24px;
+  border: 1px solid rgba(107,122,94,0.35);
+  border-radius: 10px;
+  box-shadow: 0 10px 26px rgba(43,42,40,0.12);
+  max-width: 480px; width: 100%;
+}
+.medios-pago-card img {
+  max-width: min(80%, 260px); height: auto; display: inline-block;
+  background-color: #fff; padding: 6px 14px; border-radius: 8px;
+  border: 1px solid rgba(107,122,94,0.25);
+  box-shadow: 0 0 0 3px rgba(168,85,47,0.10), 0 10px 18px rgba(43,42,40,0.10);
+  filter: brightness(1.02);
+}
+
+/* =============================================
+   CTA / PRECIO
+   ============================================= */
+.cta-section { background: var(--arena-fondo); padding: 68px 0; border-top: 4px solid var(--concreto-medio); }
+.cta-section__inner { display: grid; grid-template-columns: 1fr 400px; gap: 52px; align-items: start; }
+.cta-section__mockup { text-align: center; margin-bottom: 22px; }
+.cta-section__mockup img { max-width: min(340px, 100%); margin: 0 auto; border-radius: var(--radio-lg); box-shadow: var(--sombra-concreto); border: 3px solid var(--arena-borde); }
+.cta-section__nombre { font-family: var(--font-titulo); font-size: clamp(1.25rem, 1.3vw + 1rem, 1.55rem); font-weight: 800; color: var(--concreto-oscuro); text-align: center; margin-bottom: 6px; line-height: 1.25; }
+.cta-section__precio-anterior { font-size: 0.95rem; color: var(--texto-suave); text-decoration: line-through; text-align: center; margin-bottom: 4px; }
+.cta-section__precio-actual { font-family: var(--font-titulo); font-size: clamp(2.1rem, 2.6vw + 1.5rem, 2.9rem); font-weight: 900; color: var(--arcilla); text-align: center; margin-bottom: 22px; }
+.cta-section__oferta-banner { background: var(--rojo-oferta); color: var(--crema); text-align: center; font-family: var(--font-titulo); font-size: 0.9rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 10px 18px; border-radius: var(--radio-sm); margin-bottom: 14px; }
+.cta-section__temporizador { font-family: var(--font-titulo); font-size: clamp(1.05rem, 1.2vw + 0.85rem, 1.3rem); font-weight: 900; color: var(--rojo-oferta); letter-spacing: 0.04em; text-align: center; margin-bottom: 22px; line-height: 1.35; }
+
+/* =============================================
+   COUNTDOWN TIMER — precio box
+   ============================================= */
+.precio-box__urgencia-wrap {
+  background: rgba(156,59,40,0.07);
+  border: 1.5px solid rgba(156,59,40,0.22);
+  border-radius: var(--radio-md);
+  padding: 14px 12px 16px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.precio-box__oferta-label {
+  font-family: var(--font-titulo);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--rojo-oferta);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 10px;
+}
+.precio-box__countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+.countdown-bloque {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--rojo-oferta);
+  border-radius: 8px;
+  padding: 8px 18px;
+  min-width: 70px;
+}
+.countdown-num {
+  font-family: var(--font-titulo);
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: #fff;
+  line-height: 1;
+  letter-spacing: 0.04em;
+}
+.countdown-label {
+  font-family: var(--font-pop);
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.75);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-top: 3px;
+}
+.countdown-sep {
+  font-family: var(--font-titulo);
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: var(--rojo-oferta);
+  line-height: 1;
+  margin-bottom: 14px;
+}
+
+/* =============================================
+   UPSELL — caja vertical 4/5, imagen 1080x1080
+   ============================================= */
+.upsell { margin-top: 36px; }
+.upsell__titulo {
+  font-family: var(--font-titulo);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--texto-suave);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 14px;
+}
+.upsell__lista { display: flex; flex-direction: column; align-items: center; gap: 14px; }
+.upsell-item {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+  background: var(--arena-card);
+  border-radius: var(--radio-md);
+  border: 1.5px solid var(--arena-borde);
+  overflow: hidden;
+  aspect-ratio: 4 / 5;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+.upsell-item img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 0;
+  flex-shrink: 0;
+  border: none;
+}
+.upsell-item__nombre {
+  font-family: var(--font-titulo);
+  font-size: clamp(1.05rem, 0.9vw + 0.85rem, 1.25rem);
+  font-weight: 800;
+  color: var(--concreto-oscuro);
+  margin-bottom: 5px;
+  line-height: 1.3;
+  padding: 16px 18px 0;
+}
+.upsell-item__precio {
+  font-size: 0.92rem;
+  color: var(--arcilla);
+  font-weight: 600;
+  padding: 0 18px 16px;
+}
+
+/* =============================================
+   PRECIO BOX
+   ============================================= */
+.precio-box { background: var(--crema); border: 2.5px solid var(--concreto-medio); border-radius: var(--radio-lg); padding: 32px 26px; box-shadow: var(--sombra-concreto); position: sticky; top: 24px; }
+.precio-box__titulo { font-family: var(--font-titulo); font-size: clamp(1rem, 0.6vw + 0.85rem, 1.1rem); font-weight: 800; color: var(--concreto-oscuro); text-align: center; margin-bottom: 14px; line-height: 1.4; }
+.precio-box__precio-viejo { text-align: center; font-size: 1.02rem; color: var(--texto-suave); text-decoration: line-through; margin-bottom: 4px; }
+.precio-box__precio { font-family: var(--font-titulo); font-size: clamp(2.1rem, 2.6vw + 1.5rem, 2.9rem); font-weight: 900; color: var(--arcilla); text-align: center; line-height: 1.1; margin-bottom: 4px; }
+.precio-box__precio-moneda { font-size: 1.5rem; vertical-align: super; }
+.precio-box__nota { font-size: 0.85rem; color: var(--texto-suave); text-align: center; margin-bottom: 18px; }
+.precio-box__separador { border: none; border-top: 1.5px solid var(--arena-borde); margin: 20px 0; }
+.precio-box__confianza { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
+.precio-box__confianza span { font-size: 0.8rem; color: var(--texto-suave); }
+
+/* =============================================
+   CARD TIENDA
+   ============================================= */
+.cardnew { max-width: 100%; border: 1px solid rgba(107,122,94,0.35); border-radius: 14px; box-shadow: 0 10px 26px rgba(43,42,40,0.12); padding: 18px; margin-bottom: 0; margin-top: 0; background: var(--marfil); color: var(--texto-oscuro); font-family: var(--font-cuerpo); }
+.header-cardnew { display: flex; align-items: center; margin-bottom: 14px; }
+.iconppalnew { width: 44px; height: 44px; margin-right: 12px; filter: drop-shadow(0 0 6px rgba(107,122,94,0.18)); flex-shrink: 0; }
+.iconppalnew img { width: 100%; height: 100%; }
+.title-cardnew { color: var(--musgo); margin: 0; font-size: 1.25rem; line-height: 1.2; letter-spacing: 0.2px; font-family: var(--font-titulo); }
+.subtitle-cardnew { color: rgba(33,31,28,0.75); margin: 3px 0 0; font-size: 0.95rem; }
+.progress-bar { height: 6px; background: linear-gradient(to right, rgba(168,85,47,0.18) 0%, rgba(168,85,47,0.40) 50%, #a8552f 100%); border-radius: 3px; margin: 14px 0; }
+.statscardnew { display: flex; justify-content: space-between; text-align: center; margin-top: 10px; }
+.statcardnew { flex: 1; padding: 0 8px; border-right: 1px solid rgba(107,122,94,0.22); }
+.statcardnew:last-child { border-right: none; }
+.stat-number { font-size: 1.25rem; font-weight: 800; color: var(--texto-oscuro); margin-bottom: -2px; font-family: var(--font-titulo); }
+.stat-text { color: var(--musgo); font-size: 0.68rem; line-height: 1.3; text-transform: uppercase; letter-spacing: 0.3px; }
+.icononenew { width: 22px; height: 22px; margin: 4px auto; }
+.icononenew img { width: 100%; height: 100%; }
+
+/* ===========================
+   BONOS — esquinas 90°, más estética
+   Fuentes: <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+=========================== */
+.bonos-section{
+    max-width:1100px;
+    margin:auto;
+    padding:44px 35px;
+    background:#F3EDDF;
+    border:1px solid #E5DCC8;
+    border-top:4px solid #A8402A;
+    font-family:'Quicksand', 'Nunito', sans-serif;
+}
+.bonos-title{
+    text-align:center;
+    font-family:'Bitter', Georgia, serif;
+    font-size: clamp(1.8rem, 2.8vw + 1rem, 2.5rem);
+    font-weight:800;
+    color:#2B2620;
+    margin-bottom:14px;
+    line-height:1.15;
+}
+.bonos-subtitle{
+    display:block;
+    text-align:center;
+    width:60px;
+    height:4px;
+    background:#A8402A;
+    margin:0 auto 35px auto;
+}
+.bonos-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+}
+.bono-card{
+    display:flex;
+    align-items:center;
+    background:#FBF8F0;
+    border:1px solid #E5DCC8;
+    border-left:4px solid #A8402A;
+    padding:18px;
+    transition:.25s;
+    position:relative;
+}
+.bono-card:hover{
+    transform:translateY(-3px);
+    background:#FFFDF8;
+    border-left-color:#7A2E1D;
+    box-shadow:0 12px 28px rgba(43,38,32,.12);
+}
+.bono-label{
+    min-width:82px;
+    text-align:center;
+    padding:10px 14px;
+    background:#A8402A;
+    color:#FBF8F0;
+    font-family:'Bitter', Georgia, serif;
+    font-size:12px;
+    font-weight:800;
+    letter-spacing:.8px;
+    margin-right:16px;
+}
+.bono-content{
+    display:flex;
+    flex-direction:column;
+}
+.ebook{
+    display:inline-block;
+    width:max-content;
+    padding:4px 10px;
+    background:transparent;
+    color:#A8402A;
+    font-size:10.5px;
+    font-weight:700;
+    letter-spacing:1px;
+    margin-bottom:8px;
+    border:1px solid #A8402A;
+}
+.bono-name{
+    font-family:'Bitter', Georgia, serif;
+    font-size: clamp(1.05rem, 1vw + 0.8rem, 1.3rem);
+    font-weight:700;
+    color:#2B2620;
+    line-height:1.2;
+}
+@media(max-width:768px){
+.bonos-title{
+font-size: clamp(1.6rem, 4vw + 0.85rem, 2rem);
+}
+.bonos-grid{
+grid-template-columns:1fr;
+}
+.bono-name{
+font-size: 1.1rem;
+}
+.bono-card{
+padding:16px;
+}
+}
+/* =============================================
+   FAQ PREMIUM
+   ============================================= */
+.faq-premium { background: var(--arena-seccion); color: var(--texto-oscuro); padding: 30px 0; }
+.faq-premium .faq-wrap { max-width: var(--ancho-max); margin: 0 auto; padding: 0 24px; }
+.faq-premium .faq-section-title {
+  font-family: var(--font-titulo);
+  font-size: clamp(1.85rem, 2.8vw + 1.05rem, 2.6rem) !important;
+  font-weight: 900;
+  text-align: center;
+  color: var(--concreto-oscuro);
+  margin-bottom: 36px;
+  line-height: 1.2;
+}
+.faq-premium .faq-section-title span { color: var(--arcilla); }
+.faq-premium .faq-card { position: relative; border-radius: 16px; background: var(--crema); padding: 24px; overflow: hidden; width: 100%; box-shadow: 0 14px 30px rgba(43,42,40,0.10); border: 1px solid rgba(107,122,94,0.22); }
+.faq-premium .faq-item { padding: 10px 0; }
+.faq-premium .faq-item + .faq-item { border-top: 1px solid rgba(110,106,99,0.22); padding-top: 14px; margin-top: 8px; }
+.faq-premium .faq-summary { cursor: pointer; display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; padding: 6px 0; font-weight: 800; min-height: 44px; color: var(--texto-oscuro); list-style: none; }
+.faq-premium .faq-summary::-webkit-details-marker { display: none; }
+.faq-premium .faq-q { font-family: var(--font-titulo); font-size: clamp(0.95rem, 0.6vw + 0.85rem, 1.08rem); line-height: 1.4; color: var(--concreto-medio); display: block; flex: 1; }
+.faq-premium .faq-icon { display: grid; place-items: center; width: 28px; height: 28px; flex: 0 0 28px; border-radius: 8px; background: var(--arcilla); transition: transform .22s ease; box-shadow: 0 4px 12px rgba(43,42,40,0.18); flex-shrink: 0; margin-top: 2px; }
+.faq-premium .faq-icon .ic { width: 14px; height: 14px; fill: #fdfaf3; display: block; }
+details[open] .faq-icon { transform: rotate(45deg); }
+.faq-premium .faq-answer { color: var(--texto-medio); padding: 8px 2px 0; font-size: clamp(0.9rem, 0.5vw + 0.8rem, 1rem); line-height: 1.6; overflow: hidden; max-height: 0; opacity: 0; transform: translateY(-6px); transition: max-height .42s cubic-bezier(.2,.9,.2,1), opacity .32s ease, transform .32s ease; padding-top: 0; }
+details[open] .faq-answer { max-height: 1200px; opacity: 1; transform: translateY(0); padding-top: 8px; }
+
+/* =============================================
+   GARANTÍA
+   ============================================= */
+.garantia { background: linear-gradient(135deg, var(--concreto-oscuro) 0%, var(--concreto-medio) 100%); padding: 56px 0; }
+.garantia__inner { display: flex; align-items: center; gap: 40px; max-width: 720px; margin: 0 auto; }
+.garantia__titulo { font-family: var(--font-titulo); font-size: clamp(1.3rem, 1.4vw + 1rem, 1.7rem); font-weight: 900; color: var(--dorado); text-transform: uppercase; margin-bottom: 8px; }
+.garantia__icono { width: 84px; height: 84px; background: rgba(255,255,255,0.10); border: 3px solid var(--dorado); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.4rem; flex-shrink: 0; }
+.garantia__texto { font-size: 0.98rem; color: rgba(253,250,243,0.88); line-height: 1.7; }
+
+/* =============================================
+   FOOTER
+   ============================================= */
+.footer { background: var(--concreto-oscuro); padding: 40px 0 26px; }
+.footer__inner { text-align: center; }
+.footer__marca { font-family: var(--font-titulo); font-size: 0.9rem; font-weight: 900; color: var(--arena-seccion); letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 10px; }
+.footer__links { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; margin-bottom: 14px; }
+.footer__links a { font-size: 0.82rem; color: var(--texto-suave); text-transform: uppercase; letter-spacing: 0.05em; transition: color 0.2s; }
+.footer__links a:hover { color: var(--arena-seccion); }
+.footer__copy { font-size: 0.78rem; color: #7d7669; }
+
+/* =============================================
+   RESPONSIVE
+   ============================================= */
+@media (max-width: 860px) {
+  .hero__inner { grid-template-columns: 1fr; gap: 24px; text-align: center; }
+  .hero__imagen { order: -1; }
+  .hero__imagen img { max-width: 320px; margin: 0 auto; }
+  .hero__checks li { text-align: left; }
+  .cta-section__inner { grid-template-columns: 1fr; gap: 36px; }
+  .precio-box { position: static; }
+  .categorias__grid { grid-template-columns: 1fr; }
+  .garantia__inner { flex-direction: column; text-align: center; }
+  .hero-medios-pago { max-width: 100%; }
+}
+@media (max-width: 560px) {
+  .categoria-card { grid-template-columns: 110px 1fr; }
+  .precio-box { padding: 24px 18px; }
+  .precio-box__precio { font-size: clamp(1.9rem, 8vw, 2.4rem); }
+  .footer__links { flex-direction: column; gap: 10px; }
+  .golden-button { font-size: 1rem; padding: 15px 26px; }
+  .golden-button--sec { font-size: 1rem; padding: 14px 24px; }
+  .medios-pago-card img { max-width: min(95%, 220px); }
+  .sm-preview { padding: 52px 0; }
+  .sm-preview__h2, .para-quien__titulo, .que-encontraras__titulo,
+  .testimonios__titulo, .faq-premium .faq-section-title { font-size: 1.85rem !important; }
+  .upsell-item img { width: 100%; height: 80%; }
+  .countdown-bloque { min-width: 56px; padding: 8px 12px; }
+  .countdown-num { font-size: 1.8rem; }
+}
+
+</style>
+
+
+<!-- ==============================
+     TOPBAR
+=============================== -->
+<div class="topbar">
+    <div class="topbar-track">
+        <span>⏳ PRECIO DE LANZAMIENTO</span>
+        <span>★ POR TIEMPO LIMITADO</span>
+        <span><a href="#cta">👉 ACCESO INMEDIATO</a></span>
+
+        <span>⏳ PRECIO DE LANZAMIENTO</span>
+        <span>★ POR TIEMPO LIMITADO</span>
+        <span><a href="#cta">👉 ACCESO INMEDIATO</a></span>
+    </div>
+</div>
+<!-- ==============================
+     HERO
+=============================== -->
+<section class="hero" id="hero">
+  <div class="c-wrap">
+    <div class="hero__inner">
+
+      <!-- Esta imagen va primero en el código (aunque visualmente
+           sigue viéndose a la derecha gracias al order:2 en CSS)
+           para que sea la primera <img> del HTML y las plataformas
+           que auto-detectan la miniatura para compartir tomen esta
+           imagen del curso en vez de la de las tarjetas de pago. -->
+      <div class="hero__imagen">
+
+        <img
+          src="https://cdn.shopify.com/s/files/1/0994/3036/7552/files/ESTE_HERO_CORREGIDO_web.png?v=1785854794"
+          alt="Curso Completo Arte con Cemento - Aprende a crear piezas decorativas"
+        />
+
+      </div>
+
+      <div class="hero__contenido">
+
+        <h1 class="hero__titulo">
+
+          Una bolsa de cemento, un molde y un método. <span>Así se hacen las piezas que la gente pide comprar.</span>
+        </h1>
+        <p class="hero__subtitulo">
+          <strong>No necesitas experiencia ni talento artístico.</strong>
+          El material cuesta muy poco; lo que separa una pieza casera de una pieza de diseño es el acabado,
+          <strong>y el acabado es exactamente lo que vas a aprender aquí, paso a paso.</strong>
+
+        </p>
+
+        <p class="hero__micro">
+          </br>
+        </p>
+
+        <h2 class="hero__titulo">
+
+          ¿Te <span>pasa</span> esto?<br>
+
+        </h2>
+
+        <ul class="hero__checks">
+
+          <li>Empiezas proyectos manuales con muchas ganas y nunca llegas a terminarlos.</li>
+
+          <li>Guardas tutoriales de cemento en el celular, pero ninguno te dice las proporciones exactas.</li>
+
+          <li>Probaste y te salió una pieza gris, porosa y agrietada que no te animaste a mostrar.</li>
+
+          <li>Ves piezas de cemento en tiendas de decoración y piensas "esto lo podría hacer yo".</li>
+
+          <li>Te gustaría que tus horas de taller te devuelvan algo, no que solo te cuesten.</li>
+
+          <li>Tienes la creatividad, pero te falta el método claro que te lleve de la mezcla a la pieza terminada.</li>
+
+        </ul>
+
+        <div class="golden-button-wrap">
+
+          <a class="golden-button" href="https://store.ebooksdelfuturo.com/checkout?utm_source=landing_cemento&utm_medium=boton&utm_campaign=chile_2026&utm_content=hero">
+
+            ¡QUIERO EMPEZAR AHORA!
+
+          </a>
+
+        </div>
+
+        <div class="trustline" style="margin-top:10px;">
+
+          🔒 Pago seguro · <br>Acceso inmediato · 
+          Garantía de 7 días.
+
+        </div>
+
+        <div class="hero-medios-pago">
+
+          <img
+            src="https://cdn.shopify.com/s/files/1/0994/3036/7552/files/ChatGPT_Image_24_ago_2026_05_52_19_p.m.png?v=1787604803"
+            alt="Métodos de pago aceptados"
+          />
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     VIDEO PREVIEW
+============================================= -->
+
+<section class="sm-preview" id="preview">
+
+    <div class="sm-wrap">
+
+        <h2 class="sm-preview__h2">
+            Esto es lo que<br>
+            vas a saber hacer
+        </h2>
+
+        <div class="video-horizontal">
+
+            <div class="video-horizontal__screen">
+
+                <video
+                    class="video-horizontal__video"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    preload="auto"
+                    controlsList="nodownload noplaybackrate nofullscreen"
+                    disablePictureInPicture
+                    oncontextmenu="return false;">
+
+                    <source src="https://cdn.shopify.com/videos/c/o/v/00f46376f71244b2b5c1625e1bfec79e.mp4" type="video/mp4">
+
+                    Tu navegador no soporta videos HTML5.
+
+                </video>
+
+            </div>
+
+        </div>
+
+        <p class="sm-preview__bottom">
+            Piezas con acabado de tienda, hechas en una mesa de cocina.<br>
+            ⭐⭐⭐⭐⭐
+        </p>
+
+        <div class="golden-button-wrap--sec">
+
+            <a
+                class="golden-button--sec"
+                href="https://store.ebooksdelfuturo.com/checkout?utm_source=landing_cemento&utm_medium=boton&utm_campaign=chile_2026&utm_content=video">
+
+                LO QUIERO AHORA
+
+            </a>
+
+        </div>
+
+        <div class="trustline">
+            💳 Pago con débito y credito · <br>Acceso inmediato · Garantía de 7 días.
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==============================
+     LO QUE CAMBIA EN TU VIDA
+=============================== -->
+<section class="para-quien" id="para-quien">
+
+  <div class="c-wrap">
+
+    <h2 class="para-quien__titulo">
+
+      Lo que <br>
+
+      <span>vas a lograr</span>
+
+    </h2>
+
+    <p class="para-quien__subtitulo">
+      Piezas para tu casa, para regalar, y para vender cuando tú quieras.
+    </p>
+
+    <div class="learn-wrap">
+
+      <div class="learn-card">
+
+        <div class="learn-kicker">MÉTODO PASO A PASO</div>
+
+        <div class="learn-title">La diferencia entre una pieza casera y una pieza que se vende:</div>
+
+        <div class="learn-sub">No es el talento. Es el orden de los pasos. Empiezas desde cero.</div>
+
+        <ul class="learn-list">
+
+          <li class="learn-item">
+
+            <span class="learn-dot"></span>
+
+            <div>
+
+              <b>Acabado profesional desde la primera pieza: sin burbujas, sin grietas, sin esa textura porosa que delata al principiante.</b>
+
+            </div>
+
+          </li>
+
+          <li class="learn-item">
+
+            <span class="learn-dot"></span>
+
+            <div>
+
+              <b>Crear piezas que hoy están en tendencia: portavelas, macetas, bandejas, posavasos, lámparas y jaboneras.</b>
+
+            </div>
+
+          </li>
+
+          <li class="learn-item">
+
+            <span class="learn-dot"></span>
+
+            <div>
+
+              <b>Dominar lo que ningún tutorial gratis te dice: proporciones exactas, tiempos de secado y pigmentado parejo.</b>
+
+            </div>
+
+          </li>
+
+          <li class="learn-item">
+
+            <span class="learn-dot"></span>
+
+            <div>
+
+              <b>Fabricar tus propios moldes con cosas que ya tienes en casa, para hacer diseños que nadie más tiene.</b>
+
+            </div>
+
+          </li>
+
+          <li class="learn-item">
+
+            <span class="learn-dot"></span>
+
+            <div>
+
+              <b>Y si en algún momento quieres vender: tienes la guía de proveedores y el material de marketing incluidos, listos para cuando los necesites.</b>
+
+            </div>
+
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="golden-button-wrap--sec">
+
+      <a class="golden-button--sec" href="https://store.ebooksdelfuturo.com/checkout?utm_source=landing_cemento&utm_medium=boton&utm_campaign=chile_2026&utm_content=para_quien">
+
+        SÍ, LO QUIERO AHORA
+
+      </a>
+
+    </div>
+
+    <div class="trustline">
+
+      🔒 Pago seguro · <br>Acceso inmediato · Garantía de 7 días.
+
+    </div>
+
+  </div>
+
+</section>
+
+<!--
+ ==============================
+     QUÉ ENCONTRARÁS
+=============================== 
+-->
+<section class="que-encontraras" id="contenido">
+
+  <div class="c-wrap">
+
+    <h2 class="que-encontraras__titulo">
+
+      ¿Qué vas a <span>encontrar?</span>
+
+    </h2>
+
+    <p class="que-encontraras__sub">
+
+      Proyectos completos, de principio a fin. Nada de "y luego lo dejas secar y listo": aquí está el paso que todos se saltan.
+
+    </p>
+
+
+
+    <div class="categorias__grid">
+
+
+
+      <div class="categoria-card">
+
+        <div class="categoria-card__foto">
+
+          <img src="https://cdn.shopify.com/s/files/1/0994/3036/7552/files/ChatGPT_Image_30_jul_2026_10_36_31_a.m.png?v=1785418937"
+
+               alt="Macetas y portavelas en cemento" />
+
+        </div>
+
+        <div class="categoria-card__cuerpo">
+
+          <div class="categoria-card__numero">
+
+            Exclusivo
+
+          </div>
+
+          <div class="categoria-card__titulo">
+
+            Macetas y Portavelas
+
+          </div>
+
+          <div class="categoria-card__items">
+
+            Las piezas con las que casi todas empiezan, porque salen rápido y quedan impecables. Para tu casa, para regalar o para vender.
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="categoria-card">
+
+        <div class="categoria-card__foto">
+
+          <img src="https://cdn.shopify.com/s/files/1/0994/3036/7552/files/ChatGPT_Image_30_jul_2026_10_08_34_a.m.png?v=1785417936"
+
+               alt="Bandejas y posavasos en cemento" />
+
+        </div>
+
+        <div class="categoria-card__cuerpo">
+
+          <div class="categoria-card__numero">
+
+            Bestseller
+
+          </div>
+
+          <div class="categoria-card__titulo">
+
+            Bandejas y Posavasos
+
+          </div>
+
+          <div class="categoria-card__items">
+
+            Lo que más se repite en las tiendas de decoración. Bonitas, útiles y de las que más salida tienen.
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="categoria-card">
+
+        <div class="categoria-card__foto">
+
+          <img src="https://cdn.shopify.com/s/files/1/0994/3036/7552/files/ChatGPT_Image_30_jul_2026_10_32_46_a.m.png?v=1785418911"
+
+               alt="Lámparas y piezas decorativas en cemento" />
+
+        </div>
+
+        <div class="categoria-card__cuerpo">
+
+          <div class="categoria-card__numero">
+
+             Moderno
+
+          </div>
+
+          <div class="categoria-card__titulo">
+
+            Lámparas y Piezas Decorativas
+
+          </div>
+
+          <div class="categoria-card__items">
+
+            Las piezas grandes, las que la gente mira dos veces y pregunta dónde las compraste.
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="categoria-card">
+
+        <div class="categoria-card__foto">
+
+          <img src="https://cdn.shopify.com/s/files/1/0994/3036/7552/files/ChatGPT_Image_4_ago_2026_08_00_15_p.m.png?v=1785884740" 
+
+               alt="Proyectos paso a paso en cemento" />
+
+        </div>
+
+        <div class="categoria-card__cuerpo">
+
+          <div class="categoria-card__numero">
+
+             Completo
+          </div>
+
+          <div class="categoria-card__titulo">
+
+            Proyectos Paso a Paso
+
+          </div>
+
+          <div class="categoria-card__items">
+
+            Materiales, proporciones exactas, pigmentos, tiempos de secado y técnicas de acabado. Todo medido, nada a ojo.
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+
+
+    <div class="golden-button-wrap--sec">
+
+      <a class="golden-button--sec" href="https://store.ebooksdelfuturo.com/checkout?utm_source=landing_cemento&utm_medium=boton&utm_campaign=chile_2026&utm_content=contenido">
+
+        LO QUIERO AHORA
+
+      </a>
+
+    </div>
+
+
+
+    <div class="trustline">
+
+      💳 Pago con débito y credito · <br>Acceso inmediato · Garantía de 7 días.
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+</section>
+
+
+<!-- ==============================
+     TESTIMONIOS
+     NOTA: reemplaza estos textos y fotos por los de clientas reales.
+     Lo ideal: foto de LA PIEZA que hizo, no de la cara.
+=============================== -->
+<section class="testimonios" id="testimonios">
+  <div class="c-wrap">
+    <h2 class="testimonios__titulo">
+      Lo que dicen<br><span>nuestras alumnas</span>
+    </h2>
+    <div class="testimonios__grid">
+      <div class="testimonial-card">
+        <img src="https://cdn.shopify.com/s/files/1/0994/3036/7552/files/OIP.jpg?v=1785785256" alt="María B." class="testimonial-card__avatar" />
+        <div>
+          <div class="testimonial-card__estrellas">★★★★★</div>
+          <p class="testimonial-card__texto">
+            "Estoy muy orgullosa porque hoy hice mis primeras piezas. Todo gracias a lo que aprendí en este curso. ¡Muchas gracias!"
+          </p>
+          <div class="testimonial-card__nombre">María B.</div>
+          <div class="testimonial-card__lugar">Washington D.C, EEUU</div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <img src="https://cdn.shopify.com/s/files/1/0994/3036/7552/files/Ruze-su-crvene-ljubav-nije-plava-kampanja-koja-opdize-svijest-o-zdravim-ljubavnim-odnosima-hello-magazine-hrvatska-croatia-4.webp?v=1785785331" alt="Gloria D." class="testimonial-card__avatar" />
+        <div>
+          <div class="testimonial-card__estrellas">★★★★★</div>
+          <p class="testimonial-card__texto">
+            "El material es muy completo y está bien organizado. Lo que más me sirvió fueron las proporciones exactas: antes se me agrietaba todo y no entendía por qué."
+          </p>
+          <div class="testimonial-card__nombre">Gloria D.</div>
+          <div class="testimonial-card__lugar">Valparaíso, Chile</div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <img src="https://cdn.shopify.com/s/files/1/0994/3036/7552/files/OIP_1.jpg?v=1785785369" alt="Claudia E." class="testimonial-card__avatar" />
+        <div>
+          <div class="testimonial-card__estrellas">★★★★★</div>
+          <p class="testimonial-card__texto">
+            "Nunca había tocado cemento, pero los videos me dieron confianza y mis creaciones salen cada vez mejor. ¡Mi hermana ya me encargó dos! Jajaja"
+          </p>
+          <div class="testimonial-card__nombre">Claudia E.</div>
+          <div class="testimonial-card__lugar">Mendoza, Argentina</div>
+        </div>
+      </div>
+    </div>
+    <div class="golden-button-wrap--sec" style="margin-top:40px;">
+      <a class="golden-button--sec" href="https://store.ebooksdelfuturo.com/checkout?utm_source=landing_cemento&utm_medium=boton&utm_campaign=chile_2026&utm_content=testimonios">
+        SÍ, QUIERO CREAR MIS PIEZAS
+      </a>
+    </div>
+    <div class="trustline">
+      🔒 Pago seguro · <br>Acceso inmediato · Garantía de 7 días.
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================
+     COMENTARIOS DE FACEBOOK - INICIO
+     ========================================================== -->
+<div class="fb-comments-widget">
+
+  <!-- Encabezado: likes totales y compartidos -->
+  <div class="fb-header">
+    <div class="fb-reactions">
+      <span class="fb-icon-like">👍</span>
+      <span class="fb-icon-love">❤️</span>
+      <span class="fb-count">1,045</span>
+    </div>
+    <div class="fb-shares">20 veces compartido</div>
+  </div>
+
+  <!-- Ordenar por relevancia -->
+  <div class="fb-sort">
+    <span>Más relevantes</span>
+    <span class="fb-caret">▾</span>
+  </div>
+
+  <!-- Lista de comentarios -->
+  <div class="fb-comment-list">
+
+    <!-- Comentario 1: Marina Mancebo -->
+    <div class="fb-comment">
+      <img class="fb-avatar" src="https://cdn.shopify.com/s/files/1/0994/3036/7552/files/Screenshot_20250829_231004_Chrome.jpg?v=1786109278" alt="Marina Mancebo">
+      <div class="fb-comment-body">
+        <div class="fb-bubble">
+          <span class="fb-name">Marina Mancebo</span>
+          <span class="fb-time">· 8 sem</span>
+          <p class="fb-text">Hola, muchas gracias, está hermoso. Me llegó todo impecable. El fin de semana me pongo a hacerlo 😍</p>
+        </div>
+        <div class="fb-actions">
+          <span class="fb-action">Responder</span>
+          <span class="fb-like-count"><span class="fb-mini-like">👍</span> 8</span>
+        </div>
+        <div class="fb-view-replies">▾ Ver 1 respuesta</div>
+      </div>
+    </div>
+
+    <!-- Comentario 2: María Urrutia -->
+    <div class="fb-comment">
+      <img class="fb-avatar" src="https://cdn.shopify.com/s/files/1/0994/3036/7552/files/Screenshot_20250829_231030_Chrome.jpg?v=1786109311" alt="María Urrutia">
+      <div class="fb-comment-body">
+        <div class="fb-bubble">
+          <span class="fb-name">María Urrutia</span>
+          <span class="fb-time">· 5 sem</span>
+          <p class="fb-text">Me encantó. Lo de los tiempos de secado me salvó.</p>
+        </div>
+        <div class="fb-actions">
+          <span class="fb-action">Responder</span>
+          <span class="fb-like-count"><span class="fb-mini-like">👍</span> 12</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Comentario 3: Maxi Gorretia -->
+    <div class="fb-comment">
+      <img class="fb-avatar" src="https://cdn.shopify.com/s/files/1/0994/3036/7552/files/per_1.jpg?v=1786109221" alt="Maxi Gorretia">
+      <div class="fb-comment-body">
+        <div class="fb-bubble">
+          <span class="fb-name">Maxi Gorretia</span>
+          <span class="fb-time">· 4 sem</span>
+          <p class="fb-text">Super chevere. Cemento... ¡voy por ti! 😍</p>
+        </div>
+        <div class="fb-actions">
+          <span class="fb-action">Responder</span>
+          <span class="fb-like-count"><span class="fb-mini-like">👍</span> 3</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Comentario 4: Jime Surteni -->
+    <div class="fb-comment">
+      <img class="fb-avatar" src="https://cdn.shopify.com/s/files/1/0994/3036/7552/files/osteopatia-wellness-barcelona.webp?v=1786109223" alt="Jime Surteni">
+      <div class="fb-comment-body">
+        <div class="fb-bubble">
+          <span class="fb-name">Jime Surteni</span>
+          <span class="fb-time">· 6 sem</span>
+          <p class="fb-text">Qué bueno, esto es un lujo. Súper detallado. Lo mejor que compré en meses. Sirve, y mucho. Gracias</p>
+        </div>
+        <div class="fb-actions">
+          <span class="fb-action">Responder</span>
+          <span class="fb-like-count"><span class="fb-mini-like">👍</span> 3</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Comentario 5: Gaby Goldberg -->
+    <div class="fb-comment">
+      <img class="fb-avatar" src="https://cdn.shopify.com/s/files/1/0994/3036/7552/files/Screenshot_20250829_230736_Chrome.jpg?v=1786109524" alt="Gaby Goldberg">
+      <div class="fb-comment-body">
+        <div class="fb-bubble">
+          <span class="fb-name">Gaby Goldberg</span>
+          <span class="fb-time">· 8 sem</span>
+          <p class="fb-text">Me encantó ❤️ Partí haciendo una maceta para mi jardín y me quedó muy bien. Ahora quiero hacer más y hasta estoy pensando en regalarle una a mis amigas o venderlas. Saludos.</p>
+        </div>
+        <div class="fb-actions">
+          <span class="fb-action">Responder</span>
+        </div>
+        <div class="fb-view-replies">▾ Ver 4 respuestas</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Caja inferior "Comentar como..." -->
+  <div class="fb-comment-box">
+    Comentar como <span class="fb-username">ebooks del futuro</span>
+  </div>
+
+</div>
+<!-- ==========================================================
+     COMENTARIOS DE FACEBOOK - FIN
+     ========================================================== -->
+<!-- 
+==============================
+     MEDIOS DE PAGO
+=============================== -->
+<div class="medios-pago-section">
+  <div class="c-wrap">
+    <div class="medios-pago-card">
+      <img
+        src="https://cdn.shopify.com/s/files/1/0994/3036/7552/files/ChatGPT_Image_24_ago_2026_05_52_19_p.m.png?v=1787604803"
+        alt="Métodos de pago aceptados"
+      />
+    </div>
+  </div>
+</div>
+
+
+
+<!-- ==============================
+     CTA / PRECIO
+=============================== -->
+<section class="cta-section" id="cta">
+  <div class="c-wrap">
+    <div class="cta-section__inner">
+
+      <!-- Columna izquierda -->
+      <div>
+        <div class="cta-section__mockup">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0994/3036/7552/files/este_56568f8a-129f-4194-820f-2773d01a6606.png?v=1785371908"
+            alt="Curso Completo Arte con Cemento + 9 Bonos de Regalo"
+          />
+        </div>
+
+        <p class="cta-section__nombre">
+          Método Arte con Cemento<br> Video Clases<br> + 9 Bonos
+        </p>
+
+        <p class="precio-box__precio-viejo">Antes {{original_price}}</p>
+
+<p class="precio-box__precio">
+  <span class="precio-box__precio-moneda"></span>{{price}}
+</p>
+
+
+        <div class="cta-section__oferta-banner">
+          🔒 Pago seguro
+        </div>
+
+        <p class="cta-section__temporizador">
+          LOS 9 BONOS SE VENDEN POR SEPARADO.<br>HOY ENTRAN SIN COSTO 🎁
+        </p>
+
+        <div class="upsell">
+
+          <p class="upsell__titulo">
+            Exclusivos para ti
+          </p>
+
+          <div class="upsell__lista">
+
+            <div class="upsell-item">
+              <img src="https://cdn.shopify.com/s/files/1/0994/3036/7552/files/ARTE_EN_YESO_MOC.png?v=1785874485" />
+
+              <div>
+                <div class="upsell-item__nombre">
+                  ARTE EN YESO
+                </div>
+
+                <div class="upsell-item__precio">
+                  🎁 HOY DE REGALO
+                </div>
+              </div>
+
+            </div>
+
+
+            <div class="upsell-item">
+
+              <img src="https://cdn.shopify.com/s/files/1/0994/3036/7552/files/MOLDES_CASEROS.png?v=1785874481" />
+
+              <div>
+
+                <div class="upsell-item__nombre">
+                  MOLDES CASEROS
+                </div>
+
+                <div class="upsell-item__precio">
+                  🎁 HOY DE REGALO
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="upsell-item">
+
+              <img src="https://cdn.shopify.com/s/files/1/0994/3036/7552/files/ACABADOS_TEXTURAS.png?v=1785874485" />
+
+              <div>
+
+                <div class="upsell-item__nombre">
+                  ACABADOS, TEXTURAS Y PIGMENTOS
+                </div>
+
+                <div class="upsell-item__precio">
+                  🎁 HOY DE REGALO
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Columna derecha -->
+      <div>
+
+        <div class="precio-box">
+
+          <p class="precio-box__titulo">
+           El método completo <br>+ los 9 bonos
+          </p>
+
+          <p class="precio-box__precio-viejo">Antes {{original_price}}</p>
+
+<p class="precio-box__precio">
+  <span class="precio-box__precio-moneda"></span>{{price}}
+</p>
+
+
+          <p class="precio-box__nota">
+            🔒 Pago seguro · <br>Acceso inmediato · Garantía de 7 días.
+          </p>
+
+
+          <!-- TIMER -->
+
+          <div class="precio-box__urgencia-wrap">
+
+            <p class="precio-box__oferta-label">
+              ⚠️ Esta oferta puede terminar en:
+            </p>
+
+            <div class="precio-box__countdown" id="countdown-box">
+
+              <div class="countdown-bloque">
+
+                <span class="countdown-num" id="cd-min">
+                  15
+                </span>
+
+                <span class="countdown-label">
+                  min
+                </span>
+
+              </div>
+
+              <span class="countdown-sep">:</span>
+
+              <div class="countdown-bloque">
+
+                <span class="countdown-num" id="cd-sec">
+                  00
+                </span>
+
+                <span class="countdown-label">
+                  seg
+                </span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- CTA -->
+
+          <a class="golden-button--sec"
+                  href="https://store.ebooksdelfuturo.com/checkout?utm_source=landing_cemento&utm_medium=boton&utm_campaign=chile_2026&utm_content=cta"
+                  style="margin-bottom:12px;">
+
+            SÍ, LO QUIERO AHORA
+
+          </a>
+
+          <hr class="precio-box__separador" />
+
+
+          <!-- CONFIANZA -->
+
+          <div class="precio-box__confianza">
+
+            <span>🔒 Compra 100% Segura</span>
+
+            <span>⚡ Acceso Inmediato</span>
+
+            <span>↩ Garantía de 7 días</span>
+
+          </div>
+
+
+          <!-- PAGOS -->
+
+          <div style="text-align:center; margin-top:16px;">
+
+            <img
+              src="https://cdn.shopify.com/s/files/1/0994/3036/7552/files/ChatGPT_Image_24_ago_2026_05_52_19_p.m.png?v=1787604803"
+              alt="Medios de pago"
+              style="max-width:100%; height:auto; display:inline-block; background:#fff; padding:4px 10px; border-radius:6px; border:1px solid rgba(107,122,94,0.22);"
+            />
+
+          </div>
+
+          <hr class="precio-box__separador" />
+
+
+
+          <!-- CARD -->
+
+          <div class="cardnew">
+
+            <div class="header-cardnew">
+
+              <div class="iconppalnew">
+
+                <img src="https://cdn.shopify.com/s/files/1/0593/0814/6858/files/iconos_dev_new_card_Mesa_de_trabajo_1_copia_2.svg?v=1735484042" />
+
+              </div>
+
+              <div>
+
+                <h3 class="title-cardnew">
+
+                  <b>Tienda Líder Premium</b>
+
+                </h3>
+
+                <p class="subtitle-cardnew">
+
+                  ¡Una de las mejores del sitio!
+
+                </p>
+
+              </div>
+
+            </div>
+
+
+            <div class="progress-bar"></div>
+
+
+            <div class="statscardnew">
+
+              <div class="statcardnew">
+
+                <div class="stat-number">
+
+                  2.376+
+
+                </div>
+
+                <div class="stat-text">
+
+                  Alumnas ya dieron el primer paso
+
+                </div>
+
+              </div>
+
+
+              <div class="statcardnew">
+
+                <div class="icononenew">
+
+                  <img src="https://cdn.shopify.com/s/files/1/0593/0814/6858/files/iconos_dev_new_card_Mesa_de_trabajo_1_copia.svg?v=1735483382" />
+
+                </div>
+
+                <div class="stat-text">
+
+                  Brinda un buen servicio
+
+                </div>
+
+              </div>
+
+
+              <div class="statcardnew">
+
+                <div class="icononenew">
+
+                  <img src="https://cdn.shopify.com/s/files/1/0593/0814/6858/files/iconos_dev_new_card_Mesa_de_trabajo_1.svg?v=1735483382" />
+
+                </div>
+
+                <div class="stat-text">
+
+                  Entrega los productos a tiempo
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="bonos-section">
+    <h2 class="bonos-title">
+        Y además, entran estos:
+    </h2>
+    <span class="bonos-subtitle"></span>
+    <div class="bonos-grid">
+        <div class="bono-card">
+            <div class="bono-label">
+                BONO 4
+            </div>
+            <div class="bono-content">
+                <span class="ebook">
+                    EBOOK
+                </span>
+                <div class="bono-name">
+                    🎁 Pigmentos: color parejo, sin manchas
+                </div>
+            </div>
+        </div>
+        <div class="bono-card">
+            <div class="bono-label">
+                BONO 5
+            </div>
+            <div class="bono-content">
+                <span class="ebook">
+                    EBOOK
+                </span>
+                <div class="bono-name">
+                    🎁 Cómo mostrar y vender lo que haces
+                </div>
+            </div>
+        </div>
+        <div class="bono-card">
+            <div class="bono-label">
+                BONO 6
+            </div>
+            <div class="bono-content">
+                <span class="ebook">
+                    EBOOK
+                </span>
+                <div class="bono-name">
+                    🎁 Moldes de silicona: diseños que nadie más tiene
+                </div>
+            </div>
+        </div>
+        <div class="bono-card">
+            <div class="bono-label">
+                BONO 7
+            </div>
+            <div class="bono-content">
+                <span class="ebook">
+                    EBOOK
+                </span>
+                <div class="bono-name">
+                    🎁 Velas de soja para tus portavelas
+                </div>
+            </div>
+        </div>
+        <div class="bono-card">
+            <div class="bono-label">
+                BONO 8
+            </div>
+            <div class="bono-content">
+                <span class="ebook">
+                    EBOOK
+                </span>
+                <div class="bono-name">
+                    🎁 Dónde comprar todo (guía de proveedores)
+                </div>
+            </div>
+        </div>
+        <div class="bono-card">
+            <div class="bono-label">
+                BONO 9
+            </div>
+            <div class="bono-content">
+                <span class="ebook">
+                    EBOOK
+                </span>
+                <div class="bono-name">
+                    🎁 Muros con resina
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==============================
+     FAQ PREMIUM
+=============================== -->
+
+<section class="faq-premium" id="faq">
+
+  <div class="faq-wrap">
+
+    <h2 class="faq-section-title">
+
+      Preguntas <span>Frecuentes</span>
+
+    </h2>
+
+    <div class="faq-card">
+
+      <div class="faq-list" role="list">
+
+
+
+        <details class="faq-item">
+
+          <summary class="faq-summary">
+
+            <span class="faq-q">
+
+              ¿Necesito experiencia previa o ser buena con las manos?
+
+            </span>
+
+            <span class="faq-icon">+</span>
+
+          </summary>
+
+          <div class="faq-answer">
+
+            No. No hace falta ser artística. El método convierte algo que parece complicado en pasos claros y repetibles que cualquiera puede seguir. Empiezas desde cero y la primera pieza la haces el mismo día.
+
+          </div>
+
+        </details>
+
+
+
+        <details class="faq-item">
+
+          <summary class="faq-summary">
+
+            <span class="faq-q">
+
+              ¿Qué materiales necesito y dónde los compro?
+
+            </span>
+
+            <span class="faq-icon">+</span>
+
+          </summary>
+
+          <div class="faq-answer">
+
+            Cemento, arena, agua y moldes. Todo se consigue en cualquier ferretería o por internet, y el bono de proveedores te dice exactamente qué marca y qué tipo pedir para que no compres de más ni compres lo que no sirve.
+
+          </div>
+
+        </details>
+
+
+
+        <details class="faq-item">
+
+          <summary class="faq-summary">
+
+            <span class="faq-q">
+
+              ¿Necesito mucho espacio? ¿Ensucia mucho?
+
+            </span>
+
+            <span class="faq-icon">+</span>
+
+          </summary>
+
+          <div class="faq-answer">
+
+            Te alcanza con una mesa chica, un balcón o un rincón de la cocina. El cemento se trabaja húmedo, así que no hay polvo flotando. Cubres la superficie con plástico o cartón y listo: se recoge en cinco minutos.
+
+          </div>
+
+        </details>
+
+
+
+        <details class="faq-item">
+
+          <summary class="faq-summary">
+
+            <span class="faq-q">
+
+              ¿Cuánto tarda en secar una pieza?
+
+            </span>
+
+            <span class="faq-icon">+</span>
+
+          </summary>
+
+          <div class="faq-answer">
+
+            Depende del tamaño y del tipo de mezcla, y es justo donde la mayoría arruina la pieza: la desmoldan antes de tiempo y se parte. En el curso tienes los tiempos exactos para cada tipo de proyecto. Mientras una pieza fragua, tú ya estás con la siguiente.
+
+          </div>
+
+        </details>
+
+
+
+        <details class="faq-item">
+
+          <summary class="faq-summary">
+
+            <span class="faq-q">
+
+              Ya lo intenté antes y me salió agrietado y poroso. ¿Por qué ahora sí?
+
+            </span>
+
+            <span class="faq-icon">+</span>
+
+          </summary>
+
+          <div class="faq-answer">
+
+            Porque las grietas, las burbujas y la textura porosa casi nunca son culpa tuya: son proporción de agua, vibrado y tiempo de curado. Son tres cosas concretas, y las tres están explicadas con medidas exactas desde la primera clase.
+
+          </div>
+
+        </details>
+
+
+
+        <details class="faq-item">
+
+          <summary class="faq-summary">
+
+            <span class="faq-q">
+
+              ¿Qué voy a aprender exactamente?
+
+            </span>
+
+            <span class="faq-icon">+</span>
+
+          </summary>
+
+          <div class="faq-answer">
+
+            A crear macetas, portavelas, bandejas, posavasos, lámparas y jaboneras en tendencia: materiales, proporciones, tiempos de secado, pigmentado y técnicas de acabado profesional, paso a paso y en video.
+
+          </div>
+
+        </details>
+
+
+
+        <details class="faq-item">
+
+          <summary class="faq-summary">
+
+            <span class="faq-q">
+
+              ¿Puedo vender las piezas que haga?
+
+            </span>
+
+            <span class="faq-icon">+</span>
+
+          </summary>
+
+          <div class="faq-answer">
+
+            Sí, son tuyas y puedes hacer con ellas lo que quieras. El cemento decorativo está en tendencia y el material de proveedores y de marketing viene incluido por si decides dar ese paso.
+
+          </div>
+
+        </details>
+
+
+
+        <details class="faq-item">
+
+          <summary class="faq-summary">
+
+            <span class="faq-q">
+
+              ¿Cómo recibo el curso?
+
+            </span>
+
+            <span class="faq-icon">+</span>
+
+          </summary>
+
+          <div class="faq-answer">
+
+            Apenas completas la compra te llega un correo automático con el acceso a todo el material. No hay envíos ni esperas. El acceso es de por vida: lo ves a tu ritmo, desde el celular o la computadora, las veces que quieras.
+
+          </div>
+
+        </details>
+
+
+
+        <details class="faq-item">
+
+          <summary class="faq-summary">
+
+            <span class="faq-q">
+
+              ¿Tiene garantía?
+
+            </span>
+
+            <span class="faq-icon">+</span>
+
+          </summary>
+
+          <div class="faq-answer">
+
+            Sí. Tienes 7 días de garantía total. Si no te gusta o no cumple tus expectativas, te devolvemos el 100% de tu dinero. Sin preguntas.
+
+          </div>
+
+        </details>
+
+
+
+      </div>
+
+    </div>
+
+
+    <div class="golden-button-wrap--sec" style="margin-top:40px;">
+
+      <a class="golden-button--sec" href="https://store.ebooksdelfuturo.com/checkout?utm_source=landing_cemento&utm_medium=boton&utm_campaign=chile_2026&utm_content=faq">
+
+        SÍ, QUIERO MIS PIEZAS
+
+      </a>
+
+    </div>
+
+    <div class="trustline">
+
+      💳 Pago con débito y credito · <br>Acceso inmediato · Garantía de 7 días.
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+<!-- ==============================
+     GARANTÍA
+=============================== -->
+
+<section class="garantia" id="garantia">
+
+  <div class="c-wrap">
+
+    <div class="garantia__inner">
+
+      <div class="garantia__icono">
+
+        🛡
+
+      </div>
+
+      <div>
+
+        <div class="garantia__titulo">
+
+          El riesgo lo corremos nosotros
+
+        </div>
+
+        <p class="garantia__texto">
+
+          Pruébalo 7 días. Mira las clases, descarga los PDF y haz tus primeras piezas.
+Si no te convence, te devolvemos el 100% de tu dinero.
+Sin preguntas. Sin rodeos. Y te quedas con lo que ya aprendiste.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+<!-- ==============================
+     FOOTER
+=============================== -->
+
+<footer class="footer">
+
+  <div class="c-wrap">
+
+    <div class="footer__inner">
+
+      <p class="footer__marca">
+
+        ebooksdelfuturo@gmail.com
+
+      </p>
+
+      <div class="footer__links">
+
+        <a href="/policies/privacy-policy">
+
+          Política de Privacidad
+
+        </a>
+
+        <a href="/policies/terms-of-service">
+
+          Términos y Condiciones
+
+        </a>
+
+        <a href="/policies/refund-policy">
+
+          Política de Reembolso
+
+        </a>
+
+      </div>
+
+      <p class="footer__copy">
+
+        © 2026 Ebooks del Futuro. Todos los derechos reservados.
+
+      </p>
+
+    </div>
+
+  </div>
+
+</footer>
+
+<!-- ==============================
+     SCRIPT CONTADOR REGRESIVO (solo visual, no afecta el checkout)
+=============================== -->
+<script>
+(function() {
+  function onReady(fn) {
+    if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', fn); } else { fn(); }
+  }
+  onReady(function() {
+    const STORAGE_KEY = 'cta_timer_end';
+    const DURATION = 15 * 60;
+
+    function getEndTime() {
+      var stored = sessionStorage.getItem(STORAGE_KEY);
+      if (stored) {
+        var end = parseInt(stored, 10);
+        if (end > Date.now()) return end;
+      }
+      var newEnd = Date.now() + DURATION * 1000;
+      sessionStorage.setItem(STORAGE_KEY, newEnd);
+      return newEnd;
+    }
+
+    function padTwo(n) { return n < 10 ? '0' + n : '' + n; }
+
+    function tickTimer() {
+      var endTime  = getEndTime();
+      var minEl    = document.getElementById('cd-min');
+      var secEl    = document.getElementById('cd-sec');
+      if (!minEl || !secEl) return;
+
+      var remaining = Math.floor((endTime - Date.now()) / 1000);
+      if (remaining <= 0) {
+        sessionStorage.removeItem(STORAGE_KEY);
+        remaining = DURATION;
+        endTime = Date.now() + DURATION * 1000;
+        sessionStorage.setItem(STORAGE_KEY, endTime);
+      }
+
+      var mins = Math.floor(remaining / 60);
+      var secs = remaining % 60;
+      minEl.textContent = padTwo(mins);
+      secEl.textContent = padTwo(secs);
+    }
+
+    tickTimer();
+    setInterval(tickTimer, 1000);
+  });
+})();
+</script>
