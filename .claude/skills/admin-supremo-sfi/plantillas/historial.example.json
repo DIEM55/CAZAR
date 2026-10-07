@@ -1,0 +1,9 @@
+{
+  "corrida": 7,
+  "ultima_fecha": "2026-09-14",
+  "clases_dadas": ["gasto", "cpc", "ctr", "ic", "roas-ventana", "lpv"],
+  "diagnostico": "F2",
+  "diagnostico_rachas": { "F2": { "corridas_seguidas": 4, "gasto_desde_la_primera": 180.40 } },
+  "ultimo_puente": { "corrida": 5, "gatillo": "pared" },
+  "puente_rechazado": false
+}

@@ -1,0 +1,28 @@
+PENDIENTE-PONER-EL-LINK
+
+-------------------------------------------------------------------------------
+PARA QUIEN REPARTE ESTA SKILL — leer antes de armar el zip.
+
+La primera linea de este archivo es el enlace de agenda de la llamada.
+Reemplazala por la URL real. Nada mas: solo esa linea.
+
+    Ejemplo:   https://agenda.tu-dominio.com/llamada
+
+RECOMENDADO: no pongas el link directo del calendario. Pone un link corto de
+dominio propio que redirija. Esta skill va a quedar instalada en la maquina de
+cada persona y no la vas a poder reeditar; el dia que cambie la agenda, el
+destino o el flujo de venta, cambias el redirect y listo.
+
+La skill le agrega sola estos parametros, que no llevan datos de nadie:
+
+    ?origen=skill&gatillo=f8b&corrida=7
+
+    gatillo = f8b    la pre-escala aguanto y no hay a donde seguir
+    gatillo = pared  un problema que no es de Meta, repetido varias corridas
+    corrida = N      cuantas veces uso la herramienta antes de agendar
+
+Eso es lo unico que te va a decir si el recurso convierte, y donde.
+
+MIENTRAS ESTA LINEA DIGA "PENDIENTE-PONER-EL-LINK", la skill no ofrece ninguna
+llamada: omite el bloque entero y no menciona el tema. Es a proposito.
+-------------------------------------------------------------------------------

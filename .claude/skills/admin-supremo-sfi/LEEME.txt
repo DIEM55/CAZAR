@@ -1,0 +1,124 @@
+===============================================================================
+  ADMIN SUPREMO DE SIN FILTROS
+  Tu copiloto diario de Meta Ads, adentro de Claude Code.
+===============================================================================
+
+QUE HACE
+---------
+  1. ANALIZA tu cuenta y te dice, conjunto por conjunto, que apagar y que dejar
+     (y hasta cuantos dolares dejarlo, con el numero puesto).
+  2. MONTA campanas por vos: la ABO de testeo, y la pre-escala cuando aparece
+     un ganador. Te las deja PAUSADAS para que las revises y las prendas vos.
+  3. TE ENSENA una metrica por corrida: que es, por que importa y que estas
+     viendo vos ahora mismo en tu cuenta.
+  4. TE DICE EL PROBLEMA DE FONDO, el que atraviesa toda la cuenta y no se
+     arregla apagando conjuntos.
+
+  No toca nada sin que se lo pidas. Es plata tuya.
+
+
+QUE NECESITAS
+--------------
+  - Claude Code (terminal, app de escritorio o web).           OBLIGATORIO
+  - El conector de Meta Ads.                                   OPCIONAL *
+  - Node.js 18 o superior.                                     OPCIONAL **
+
+  *  Sin el conector podes usarla igual: le pegas una CAPTURA DE PANTALLA del
+     Administrador de Anuncios. El conector hace falta solo para que te MONTE
+     campanas.
+  ** Sin Node decide igual y te lo avisa en el informe.
+
+  No hace falta ninguna llave, ninguna suscripcion, ninguna cuenta extra.
+  Nada de lo que le muestres sale de tu computadora.
+
+
+COMO SE INSTALA  (30 segundos)
+-------------------------------
+  LA FORMA FACIL — copiale esto a Claude Code, cambiando la ruta por la del
+  zip que descargaste:
+
+      Instala la skill que esta en "C:\Users\TU-USUARIO\Downloads\
+      admin-supremo-sfi.zip": descomprimila en ~/.claude/skills/ (tiene que
+      quedar la carpeta ~/.claude/skills/admin-supremo-sfi) y despues haceme
+      la configuracion inicial.
+
+  A MANO — descomprimi el zip adentro de la carpeta ~/.claude/skills/
+  En Windows esa carpeta es:   C:\Users\TU-USUARIO\.claude\skills\
+  Tiene que quedar asi:        ~/.claude/skills/admin-supremo-sfi/SKILL.md
+
+  Cerra y volve a abrir Claude Code.
+
+
+COMO SE USA
+------------
+  No hace falta invocarla con un comando. Le hablas normal:
+
+      "revisa mis campanas"
+      "que apago hoy"
+      "montame una campana de testeo para mi curso"
+      "monta la pre-escala del AD3"
+      "explicame el CPC"
+
+  LA PRIMERA VEZ te hace dos o tres preguntas (el precio de tu producto y en
+  que mercado vendes) y las guarda en admin-supremo-sfi.json, en la carpeta
+  donde estes trabajando. No te las vuelve a preguntar. Si queres cambiarlas,
+  borra ese archivo.
+
+  TODOS LOS DIAS: corrila una vez a la manana, antes de tocar nada. Y otra vez
+  a las pocas horas de lanzar una tanda nueva.
+
+  SI RECIEN ARRANCAS y todavia no tenes campanas, corrila igual: te explica el
+  tablero, te verifica el pixel y te monta tu primera campana de testeo.
+
+
+QUE TE VA A DEVOLVER
+---------------------
+  Un informe corto con:
+    - Que hacer con cada conjunto, con el motivo y los numeros que lo sostienen
+    - Los candidatos a escalar
+    - Lo que quedo en ZONA GRIS (donde decidis vos, y por que)
+    - El problema de fondo de la cuenta
+    - La clase del dia
+
+  Los estados que vas a ver:
+    OFF ................. apagalo
+    MANTENER ............ anda, no lo toques
+    TRAMO hasta $X ...... todavia no vendio, pero dejalo hasta ese numero
+    ESPERAR ............. todavia no gasto lo suficiente para juzgarlo
+    CANDIDATO ........... ganador: va a pre-escala
+    CON RESERVAS ........ parece ganador pero hay algo raro, mira esto antes
+    REACTIVAR A PRUEBA .. lo apagaste y no deberias haberlo apagado
+    ZONA GRIS ........... hay dos lecturas posibles; decidis vos
+    NO DECIDIBLE ........ tus datos no alcanzan para decidir
+
+
+HASTA DONDE LLEGA
+------------------
+  Llega hasta la pre-escala. El escalado duro NO lo monta: a cientos de dolares
+  por dia las decisiones dependen de tus margenes, de tu caja y de cuanto
+  aguanta tu cuenta, y nada de eso esta en el Administrador de Anuncios.
+
+  Tampoco escribe tus creativos, ni arregla tu pagina de venta, ni rehace tu
+  oferta, ni te busca otro producto. Detecta cual de esas cosas te esta
+  frenando y te lo dice con precision. Ahi se para.
+
+      "Puedo decirte que apagar todos los dias. Lo que no puedo decirte es
+       por que tenes que apagar tanto."
+
+
+SI ALGO NO ANDA
+----------------
+  "No veo ninguna cuenta publicitaria"
+      El conector entro con otro perfil de Facebook, o no tenes rol en el
+      Business Manager. Fijate con que cuenta iniciaste sesion.
+
+  "node no se encuentra"
+      No tenes Node.js. No es obligatorio: la skill funciona igual. Si lo
+      queres:  Windows -> winget install OpenJS.NodeJS.LTS
+               Mac     -> brew install node
+
+  La skill no se activa sola
+      Deci "revisa mis campanas" o llamala con /admin-supremo-sfi
+
+  Mas detalle en INSTALACION.md
+===============================================================================

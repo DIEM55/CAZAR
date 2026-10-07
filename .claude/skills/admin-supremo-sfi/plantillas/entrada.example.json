@@ -1,0 +1,16 @@
+{
+  "config": { "precio": 17, "mercado": "francia", "pasarela_externa": true },
+  "campana": {
+    "nombre": "CURSO FRA | G7 | ABO | 05-09-26",
+    "tipo": "abo",
+    "dias": 1,
+    "conjuntos": [
+      { "nombre": "AD1 G7", "estado": "ACTIVE", "gasto": 2.10, "impresiones": 98,  "clics": 7, "cpm": 21.40, "ctr": 7.14, "cpc": 0.30, "lpv": 5, "ic": 0, "compras": 1, "valor": 18.50 },
+      { "nombre": "AD2 G7", "estado": "ACTIVE", "gasto": 3.50, "impresiones": 103, "clics": 3, "cpm": 34.00, "ctr": 2.90, "cpc": 1.17, "lpv": 4, "ic": 1, "compras": 0, "valor": 0 },
+      { "nombre": "AD3 G7", "estado": "ACTIVE", "gasto": 2.40, "impresiones": 83,  "clics": 1, "cpm": 29.00, "ctr": 1.20, "cpc": 2.40, "lpv": 1, "ic": 0, "compras": 0, "valor": 0 },
+      { "nombre": "AD4 G7", "estado": "ACTIVE", "gasto": 3.03, "impresiones": 233, "clics": 4, "cpm": 13.00, "ctr": 1.72, "cpc": 0.76, "lpv": 4, "ic": 0, "compras": 0, "valor": 0 },
+      { "nombre": "AD5 G7", "estado": "ACTIVE", "gasto": 1.73, "impresiones": 115, "clics": 0, "cpm": 15.00, "ctr": 0.00, "cpc": null, "lpv": 0, "ic": 0, "compras": 0, "valor": 0 },
+      { "nombre": "AD6 G7", "estado": "ACTIVE", "gasto": 1.40, "impresiones": 78,  "clics": 4, "cpm": 18.00, "ctr": 5.13, "cpc": 0.35, "lpv": 2, "ic": 0, "compras": 0, "valor": 0 }
+    ]
+  }
+}

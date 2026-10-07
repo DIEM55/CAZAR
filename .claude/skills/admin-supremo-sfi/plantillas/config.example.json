@@ -1,0 +1,19 @@
+{
+  "producto": "Guia de ejercicios",
+  "abreviacion_producto": "GUIA",
+  "precio": 19.9,
+  "moneda_precio": "EUR",
+  "mercado": "europa",
+  "idioma_producto": "italiano",
+  "pais_token": "ITA",
+  "pasarela_externa": true,
+  "modo_entrada": "captura",
+  "cuenta_publicitaria_id": "",
+  "cuenta_publicitaria_nombre": "",
+  "page_id": "",
+  "instagram_user_id": "",
+  "pixel_id": "",
+  "hora_arranque": "02:00",
+  "zona_horaria_cuenta": "Europe/Rome",
+  "creado": "2026-09-14"
+}
