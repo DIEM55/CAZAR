@@ -39,3 +39,8 @@ Veredictos: 🟢 COPIAR · 🟡 ARBITRAJE · 🟠 WATCHLIST · 🔴 DESCARTAR
 07/10 | low ticket mundial | Med-Ment ECG (BR) | V:1/3 O:1/3 | 🔴 DESCARTAR | 79 dias pero 1 ad activo
 07/10 | low ticket mundial | Mboa Academy (FR Africa) | V:0/3 O:3/3 | 🔴 DESCARTAR | tester 6 ads arranco hoy
 07/10 | low ticket mundial | Nadjate Digital (FR) | V:0/3 O:2/3 | 🔴 DESCARTAR | 2 ads, tester
+
+07/10 | tejido DACH | Chiemseegarn (DE) | V:2/3 O:0/3 | 🔴 DESCARTAR | fisico 90-130 EUR, no modelable
+07/10 | tejido DACH | Gruendl / Hobbii / Novaprint | V:1/3 O:0/3 | 🔴 DESCARTAR | marcas fisicas establecidas
+07/10 | tejido DACH | Stitchy (AT) | V:1/3 O:2/3 | 🟠 WATCHLIST | 36 ads 15 dias, sin historial
+07/10 | costura DACH | SewPal + Lybstes. | V:2/3 O:3/3 | 🟢 COPIAR | 33-36 dias, unica longevidad real
