@@ -1,176 +1,58 @@
-MÉTODO DE PLANTILLAS CERÁMICAS
-LOCUCIONES (VOZ EN OFF) PARA ESPAÑA Y CHILE
+ESPAÑA 1
 
-Cómo usar este archivo:
-- Copia solo el bloque que está entre "TEXTO DE LA LOCUCIÓN" y "FIN". Todo eso es para leer en voz alta.
-- La "Indicación de voz" es para Google AI Studio (o para quien grabe). No se lee.
-- El "Titular del anuncio" va escrito en Meta, no se lee.
-- Cada locución dura entre 25 y 35 segundos.
+¿Cuántas veces le has puesto el alma a una pieza de cerámica… y te ha salido torcida igualmente? Horas amasando, cortando y montando… y al final la taza cojea o la tapa no encaja. No es que no tengas manos. Es que te falta una guía. Con el Método de Plantillas Cerámicas imprimes la plantilla, la apoyas sobre la arcilla y cortas el contorno. Así de sencillo. Tazas, cuencos, jarrones y teteras mucho más regulares, desde la primera vez. Son cien plantillas con medidas y paso a paso. Y de regalo, cinco manuales para decorar, esmaltar y hornear tus piezas. Hoy lo tienes con un cincuenta por ciento de descuento. Pulsa el botón de abajo y empieza hoy mismo.
 
 
-==================================================
-ESPAÑA
-Indicación de voz (para todas): mujer de España, acento peninsular neutro, entre 35 y 45 años. Tono cercano y cálido, como una amiga que te cuenta un truco. Ritmo ágil, con una pausa breve después de la primera pregunta.
-==================================================
+ESPAÑA 2
 
-ESPAÑA 1 — Pieza torcida
-Titular del anuncio: Deja de adivinar medidas
-
-TEXTO DE LA LOCUCIÓN
-¿Cuántas veces le has puesto el alma a una pieza de cerámica… y te ha salido torcida igualmente?
-No es que no tengas manos. Es que te falta una guía.
-Con el Método de Plantillas Cerámicas imprimes la plantilla, la apoyas sobre la arcilla y cortas el contorno. Así de sencillo.
-Tazas, cuencos, jarrones y teteras mucho más regulares, desde tu primera pieza.
-Son cien plantillas con medidas y paso a paso. Y de regalo, cinco manuales para decorar, esmaltar y hornear.
-Hoy lo tienes con un cincuenta por ciento de descuento. Pulsa el botón de abajo y empieza hoy mismo.
-FIN
+Te han dicho que para hacer cerámica hay que tener talento. Mentira. Hay un truco que casi nadie cuenta: la plantilla. La imprimes en un folio normal, la recortas, la apoyas sobre la arcilla y cortas el contorno. Después montas la pieza siguiendo el paso a paso, sin adivinar ninguna medida. Aunque nunca hayas tocado el barro, tu primera taza te va a salir mucho más regular. Y lo mejor: puedes usar cada plantilla las veces que quieras. Son cien plantillas listas para imprimir. Y de regalo, cinco manuales para decorar, esmaltar, colorear y hornear. Hoy tiene un cincuenta por ciento de descuento. Pulsa el botón de abajo y descárgalo ahora.
 
 
-ESPAÑA 2 — No hace falta talento
-Titular del anuncio: Tu primera taza, sin experiencia
+ESPAÑA 3
 
-TEXTO DE LA LOCUCIÓN
-Te han dicho que para hacer cerámica hay que tener talento. Mentira.
-Hay un truco que casi nadie cuenta: la plantilla.
-La imprimes en un folio normal, la recortas, la apoyas sobre la arcilla y cortas el contorno. Después montas la pieza siguiendo el paso a paso.
-Aunque nunca hayas tocado el barro, tu primera taza te va a salir mucho más regular.
-Además, te llevas de regalo cinco manuales para decorar, esmaltar, colorear y hornear.
-Hoy tiene un cincuenta por ciento de descuento. Pulsa el botón de abajo y descárgalo ahora.
-FIN
+Si vendes cerámica y no consigues repetir el mismo modelo dos veces… estás perdiendo encargos. Te piden seis tazas iguales, y te salen seis primas lejanas. Una más alta, otra más ancha, otra con el asa torcida. Con estas plantillas, cada pieza sale casi idéntica a la anterior. Son cien modelos listos para imprimir: tazas, cuencos, jarrones, teteras, casitas y organizadores. Todos con medidas y paso a paso. Repites el diseño las veces que quieras y creas tu propia línea de cerámica. Y de regalo, cinco manuales para decorar, esmaltar y hornear con menos pruebas fallidas. Hoy tiene un cincuenta por ciento de descuento. Pulsa el botón de abajo.
 
 
-ESPAÑA 3 — Seis tazas iguales (para quien vende)
-Titular del anuncio: Crea tu propia línea de cerámica
+ESPAÑA 4
 
-TEXTO DE LA LOCUCIÓN
-Si vendes cerámica y no consigues repetir el mismo modelo dos veces… estás perdiendo encargos.
-Te piden seis tazas iguales, y te salen seis primas lejanas.
-Con estas plantillas, cada pieza sale casi idéntica a la anterior.
-Son cien modelos listos para imprimir: tazas, cuencos, jarrones, teteras, casitas y organizadores. Todos con medidas y paso a paso.
-Repites el diseño las veces que quieras y creas tu propia línea.
-Y de regalo, cinco manuales para decorar, esmaltar y hornear con menos pruebas fallidas.
-Hoy tiene un cincuenta por ciento de descuento. Pulsa el botón de abajo.
-FIN
+¿Crees que para hacer cerámica necesitas un torno? Pues no. Muchas de las tazas y cuencos que ves en las tiendas de diseño se hacen con planchas de arcilla, sin torno. Y el secreto para que salgan rectas y parejas es la plantilla. Estiras la arcilla con un rodillo, apoyas la plantilla, cortas el contorno y montas la pieza. Todo desde la mesa de tu cocina. Con el Método de Plantillas Cerámicas tienes cien plantillas con medidas y paso a paso: tazas, cuencos, jarrones, teteras y mucho más. Y de regalo, cinco manuales para decorar, esmaltar y hornear. Hoy tiene un cincuenta por ciento de descuento. Pulsa el botón de abajo y empieza hoy.
 
 
-ESPAÑA 4 — Sin torno (ángulo nuevo)
-Titular del anuncio: ¿Sin torno? No hay problema
+ESPAÑA 5
 
-TEXTO DE LA LOCUCIÓN
-¿Crees que para hacer cerámica necesitas un torno? Pues no.
-Muchas de las tazas y cuencos que ves en las tiendas de diseño se hacen con planchas de arcilla. Sin torno.
-El secreto para que salgan rectas es la plantilla.
-Estiras la arcilla con un rodillo, apoyas la plantilla, cortas y montas la pieza. Desde la mesa de tu cocina.
-Son cien plantillas con medidas y paso a paso, y cinco manuales de regalo para decorar, esmaltar y hornear.
-Hoy tiene un cincuenta por ciento de descuento. Pulsa el botón de abajo y empieza hoy.
-FIN
+Las nueve de la noche. Los niños, dormidos. La arcilla, sobre la mesa. El móvil, boca abajo. Ese rato es solo tuyo. Y no debería acabar en frustración porque la taza te ha salido torcida otra vez. Con el Método de Plantillas Cerámicas imprimes la plantilla, la apoyas sobre la arcilla, cortas y montas. Sin adivinar medidas y sin desperdiciar material. Tazas, cuencos, jarrones y teteras que da gusto enseñar. Son cien plantillas con medidas y paso a paso. Y de regalo, cinco manuales para decorar, esmaltar y hornear. Hoy tiene un cincuenta por ciento de descuento. Pulsa el botón de abajo y regálate ese rato.
 
 
-ESPAÑA 5 — Tu momento (ángulo nuevo)
-Indicación de voz extra: más pausado e íntimo que los demás, casi en susurro al principio.
-Titular del anuncio: Tu rato, tus piezas, sin frustración
+ESPAÑA 6
 
-TEXTO DE LA LOCUCIÓN
-Las nueve de la noche. Los niños, dormidos. La arcilla, sobre la mesa. El móvil, boca abajo.
-Ese rato es solo tuyo.
-Y no debería acabar en frustración porque la taza te ha salido torcida.
-Con el Método de Plantillas Cerámicas imprimes, apoyas, cortas y montas. Sin adivinar medidas y sin desperdiciar arcilla.
-Cien plantillas con medidas y paso a paso, y cinco manuales de regalo.
-Hoy tiene un cincuenta por ciento de descuento. Pulsa el botón de abajo.
-FIN
+Este año, en lugar de comprar los regalos… hazlos tú. Una taza para tu madre. Un cuenco para tu mejor amiga. Un jarrón para la mesa de Navidad. Regalos que nadie más va a tener, porque los has hecho con tus manos. Con el Método de Plantillas Cerámicas imprimes la plantilla, la apoyas sobre la arcilla y cortas el contorno. Piezas regulares, que parecen de tienda, aunque estés empezando. Son cien plantillas con medidas y paso a paso. Y de regalo, cinco manuales para decorar, esmaltar y hornear. Hoy tiene un cincuenta por ciento de descuento. Pulsa el botón de abajo y empieza ahora, que llegas a tiempo para Navidad.
 
 
-ESPAÑA 6 — Regalos de Navidad (ángulo nuevo, solo si tienes plantillas que sirvan para regalar)
-Titular del anuncio: Regalos de cerámica hechos por ti
+CHILE 1
 
-TEXTO DE LA LOCUCIÓN
-Este año, en lugar de comprar los regalos… hazlos tú.
-Una taza para tu madre. Un cuenco para tu mejor amiga. Una casita de cerámica para decorar la mesa de Navidad.
-Con el Método de Plantillas Cerámicas imprimes la plantilla, la apoyas sobre la arcilla y cortas. Piezas regulares, que parecen de tienda, aunque estés empezando.
-Son cien plantillas con medidas y paso a paso, y cinco manuales de regalo para decorar, esmaltar y hornear.
-Hoy tiene un cincuenta por ciento de descuento. Empieza ahora y llegas a tiempo para Navidad.
-FIN
+¿Cuántas veces le pusiste todo el cariño a una pieza de cerámica… y te salió chueca igual? Horas amasando, cortando y armando… y al final la taza cojea o la tapa no calza. No es que no tengas mano para esto. Es que te falta una guía. Con el Método de Plantillas Cerámicas imprimes la plantilla, la apoyas sobre la greda y cortas el contorno. Así de simple. Tazas, bowls, jarrones y teteras mucho más parejos, desde la primera vez. Son cien plantillas con medidas y paso a paso. Y de regalo, cinco manuales para decorar, esmaltar y hornear tus piezas. Hoy tiene cincuenta por ciento de descuento. Toca el botón de abajo y empieza hoy mismo.
 
 
-==================================================
-CHILE
-Indicación de voz (para todas): mujer chilena, acento chileno suave y claro (no exagerado), entre 35 y 45 años. Tono cercano y cálido, como una amiga que te cuenta un truco. Ritmo ágil, con una pausa breve después de la primera pregunta.
-==================================================
+CHILE 2
 
-CHILE 1 — Pieza chueca
-Titular del anuncio: Deja de adivinar medidas
-
-TEXTO DE LA LOCUCIÓN
-¿Cuántas veces le pusiste todo el cariño a una pieza de cerámica… y te salió chueca igual?
-No es que no tengas mano para esto. Es que te falta una guía.
-Con el Método de Plantillas Cerámicas imprimes la plantilla, la apoyas sobre la greda y cortas el contorno. Así de simple.
-Tazas, bowls, jarrones y teteras mucho más parejos, desde tu primera pieza.
-Son cien plantillas con medidas y paso a paso. Y de regalo, cinco manuales para decorar, esmaltar y hornear.
-Hoy tiene cincuenta por ciento de descuento. Toca el botón de abajo y empieza hoy mismo.
-FIN
+Te dijeron que para hacer cerámica hay que tener talento. Mentira. Hay un truco que casi nadie cuenta: la plantilla. La imprimes en una hoja común, la recortas, la apoyas sobre la greda y cortas el contorno. Después armas la pieza siguiendo el paso a paso, sin adivinar ninguna medida. Aunque nunca hayas trabajado con greda, tu primera taza te va a salir mucho más pareja. Y lo mejor: puedes usar cada plantilla las veces que quieras. Son cien plantillas listas para imprimir. Y de regalo, cinco manuales para decorar, esmaltar, pintar y hornear. Hoy tiene cincuenta por ciento de descuento. Toca el botón de abajo y descárgalo ahora.
 
 
-CHILE 2 — No hace falta talento
-Titular del anuncio: Tu primera taza, sin experiencia
+CHILE 3
 
-TEXTO DE LA LOCUCIÓN
-Te dijeron que para hacer cerámica hay que tener talento. Mentira.
-Hay un truco que casi nadie cuenta: la plantilla.
-La imprimes en una hoja común, la recortas, la apoyas sobre la greda y cortas el contorno. Después armas la pieza siguiendo el paso a paso.
-Aunque nunca hayas trabajado con greda, tu primera taza te va a salir mucho más pareja.
-Y te llevas de regalo cinco manuales para decorar, esmaltar, pintar y hornear.
-Hoy tiene cincuenta por ciento de descuento. Toca el botón de abajo y descárgalo ahora.
-FIN
+Si vendes cerámica y no logras repetir el mismo modelo dos veces… estás perdiendo pedidos. Te encargan seis tazas iguales, y te salen seis primas lejanas. Una más alta, otra más ancha, otra con el asa chueca. Con estas plantillas, cada pieza sale casi idéntica a la anterior. Son cien modelos listos para imprimir: tazas, bowls, jarrones, teteras, casitas y organizadores. Todos con medidas y paso a paso. Repites el diseño las veces que quieras y armas tu propia línea de cerámica. Y de regalo, cinco manuales para decorar, esmaltar y hornear con menos pruebas fallidas. Hoy tiene cincuenta por ciento de descuento. Toca el botón de abajo.
 
 
-CHILE 3 — Seis tazas iguales (para quien vende)
-Titular del anuncio: Arma tu propia línea de cerámica
+CHILE 4
 
-TEXTO DE LA LOCUCIÓN
-Si vendes cerámica y no logras repetir el mismo modelo dos veces… estás perdiendo pedidos.
-Te encargan seis tazas iguales, y te salen seis primas lejanas.
-Con estas plantillas, cada pieza sale casi idéntica a la anterior.
-Son cien modelos listos para imprimir: tazas, bowls, jarrones, teteras, casitas y organizadores. Todos con medidas y paso a paso.
-Repites el diseño las veces que quieras y armas tu propia línea.
-Y de regalo, cinco manuales para decorar, esmaltar y hornear con menos pruebas fallidas.
-Hoy tiene cincuenta por ciento de descuento. Toca el botón de abajo.
-FIN
+¿Crees que para hacer cerámica necesitas un torno? No. Muchas de las tazas y bowls que ves en las tiendas de diseño se hacen con planchas de greda, sin torno. Y el secreto para que salgan derechas y parejas es la plantilla. Estiras la greda con un uslero, apoyas la plantilla, cortas el contorno y armas la pieza. Todo desde la mesa de tu cocina. Con el Método de Plantillas Cerámicas tienes cien plantillas con medidas y paso a paso: tazas, bowls, jarrones, teteras y mucho más. Y de regalo, cinco manuales para decorar, esmaltar y hornear. Hoy tiene cincuenta por ciento de descuento. Toca el botón de abajo y empieza hoy.
 
 
-CHILE 4 — Sin torno (ángulo nuevo)
-Titular del anuncio: ¿Sin torno? No hay problema
+CHILE 5
 
-TEXTO DE LA LOCUCIÓN
-¿Crees que para hacer cerámica necesitas un torno? No.
-Muchas de las tazas y bowls que ves en las tiendas de diseño se hacen con planchas de greda. Sin torno.
-El secreto para que salgan derechas es la plantilla.
-Estiras la greda con un uslero, apoyas la plantilla, cortas y armas la pieza. Desde la mesa de tu cocina.
-Son cien plantillas con medidas y paso a paso, y cinco manuales de regalo para decorar, esmaltar y hornear.
-Hoy tiene cincuenta por ciento de descuento. Toca el botón de abajo y empieza hoy.
-FIN
+Las nueve de la noche. Los niños, dormidos. La greda, sobre la mesa. El celular, boca abajo. Ese rato es solo tuyo. Y no debería terminar en frustración porque la taza te salió chueca otra vez. Con el Método de Plantillas Cerámicas imprimes la plantilla, la apoyas sobre la greda, cortas y armas. Sin adivinar medidas y sin perder material. Tazas, bowls, jarrones y teteras que da gusto mostrar. Son cien plantillas con medidas y paso a paso. Y de regalo, cinco manuales para decorar, esmaltar y hornear. Hoy tiene cincuenta por ciento de descuento. Toca el botón de abajo y regálate ese rato.
 
 
-CHILE 5 — Tu momento (ángulo nuevo)
-Indicación de voz extra: más pausado e íntimo que los demás, casi en susurro al principio.
-Titular del anuncio: Tu rato, tus piezas, sin frustración
+CHILE 6
 
-TEXTO DE LA LOCUCIÓN
-Las nueve de la noche. Los niños, dormidos. La greda, sobre la mesa. El celular, boca abajo.
-Ese rato es solo tuyo.
-Y no debería terminar en frustración porque la taza te salió chueca.
-Con el Método de Plantillas Cerámicas imprimes, apoyas, cortas y armas. Sin adivinar medidas y sin perder greda.
-Cien plantillas con medidas y paso a paso, y cinco manuales de regalo.
-Hoy tiene cincuenta por ciento de descuento. Toca el botón de abajo.
-FIN
-
-
-CHILE 6 — Regalos de Navidad (ángulo nuevo, solo si tienes plantillas que sirvan para regalar)
-Titular del anuncio: Regalos de cerámica hechos por ti
-
-TEXTO DE LA LOCUCIÓN
-Este año, en vez de comprar los regalos… hazlos tú.
-Una taza para tu mamá. Un bowl para tu mejor amiga. Una casita de cerámica para decorar la mesa de Navidad.
-Con el Método de Plantillas Cerámicas imprimes la plantilla, la apoyas sobre la greda y cortas. Piezas parejas, que parecen de tienda, aunque estés empezando.
-Son cien plantillas con medidas y paso a paso, y cinco manuales de regalo para decorar, esmaltar y hornear.
-Hoy tiene cincuenta por ciento de descuento. Empieza ahora y llegas a tiempo para Navidad.
-FIN
+Este año, en vez de comprar los regalos… hazlos tú. Una taza para tu mamá. Un bowl para tu mejor amiga. Un jarrón para la mesa de Navidad. Regalos que nadie más va a tener, porque los hiciste con tus manos. Con el Método de Plantillas Cerámicas imprimes la plantilla, la apoyas sobre la greda y cortas el contorno. Piezas parejas, que parecen de tienda, aunque estés empezando. Son cien plantillas con medidas y paso a paso. Y de regalo, cinco manuales para decorar, esmaltar y hornear. Hoy tiene cincuenta por ciento de descuento. Toca el botón de abajo y empieza ahora, que llegas a tiempo para Navidad.
