@@ -24,7 +24,7 @@ Ahora ~1791668000. 20 días atrás ~1789940000. 1 día = 86400.
 ## Páginas
 - HI MERY 106784294503235 "Kit de Plantillas Cerámicas" USD. tandas creadas 1790911168 (~8.8d), 1791429985 (~2.8d), 1791608508 (~0.7d)
 - Ceramicaemprendedor 860004577196412 "La Biblia de las Plantillas Cerámicas" + EN "The Pottery Template Bible" USD. creados 1790213877 (~16.8d), 1791152444 (~6d), 1791509327 (~1.8d)
-- Ebooks del Futuro 725759253957744 "Armá tu propia línea de cerámica" USD, AR. creados 1791581983 (~1d)
+- Ebooks del Futuro (PROPIO, es el usuario) 725759253957744 "Armá tu propia línea de cerámica" USD, AR. creados 1791581983 (~1d)
 - Pulso ceramica 269424112913360 "PLANTILLAS PARA CERÁMICA" ARS, AR. 1791409439 (~3d); también formación engobes desde 1780697412 (~126d)
 - Barro Club 1050393238168035 "+40 plantillas PDF" USD AR. 1791400104 (~3d)
 - Sistema Arcilla en Casa 1353864484479328 "Haz piezas que parecen de tienda" USD. 1791149401 (~6d) LATAM+ES+US

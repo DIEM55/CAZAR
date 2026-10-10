@@ -11,6 +11,7 @@ NECESIDAD = "Aprender una habilidad: cortar piezas a medida sin deformar ni desp
 
 # (producto/página, tipo, score, confianza, veredicto, días, ads, países/idiomas, clones, saturación,
 #  precio, país potencial, tendencia, page_id, ad_id)
+# Nota: Ebooks del Futuro es la página del propio usuario (corregido a mano en el xlsx).
 ROWS = [
     ("The Clay Blueprints", "Pack de plantillas imprimibles (EN)", 90, "Media", "GANADOR FUERTE", 25.8, 34,
      "EN · US/GB/DE/AU + Europa del Este", 10, "sí (en inglés)", "~US$42 (Dhs 154, según Excel unificado)",
