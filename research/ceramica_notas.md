@@ -51,3 +51,7 @@ EN:
   - FR "Gabarits Céramique": 61 activos, desde 1790639091 (~12.6d) => sostiene.
 - "Il Servizio Intero" 1384647651397432: 2 ads creados 1791693005 (~0.6d), cobra ARS, IT: "Sei tazze uguali, non sei pezzi spaiati" / "Rilassati. E che venga sempre uguale." => traducción del copy 3 del usuario (¿es del usuario o lo copiaron?)
 - Derrame de anuncios EN ("pottery templates", ACTIVE) por país: Nórdicos+NL 82 | Europa del Este (PL,CZ,SK,HU,RO,HR,GR) 77 | FR+BE 74 | DACH 65 | IT 4 | India 20 (ALL, casi todo Clay Maker Lab + talleres) | Corea 0
+- Agente (ACTIVE vs ALL, Ceramicaemprendedor, frase exacta del título):
+  SOSTIENE tandas viejas (rinde): ES 48/462 desde 24-sep | DE 61 desde 25-sep | FR 61 desde 25-sep | DK 20/267 desde 24-sep | NO 51/51 desde 27-sep | GR 52/181 desde 27-sep | HU 40/133 desde 30-sep | TR 50/50 desde 30-sep | CZ (Bible keramických šablon) desde 30-sep | PL 20/197 desde 3-oct
+  SOLO última tanda 9-oct (apagó lo anterior = no rinde): IT 11 | NL 11/246 | SE 10/229 | FI 10/113 | RO 10/132 | HR 10/152 | JP 10/10 | EN 21/354
+- The Clay Table (IT/EN, aire seco): 352 ALL vs 32 ACTIVE (16 en IT) => ola en Italia que ya bajó.
