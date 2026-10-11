@@ -55,3 +55,8 @@ EN:
   SOSTIENE tandas viejas (rinde): ES 48/462 desde 24-sep | DE 61 desde 25-sep | FR 61 desde 25-sep | DK 20/267 desde 24-sep | NO 51/51 desde 27-sep | GR 52/181 desde 27-sep | HU 40/133 desde 30-sep | TR 50/50 desde 30-sep | CZ (Bible keramických šablon) desde 30-sep | PL 20/197 desde 3-oct
   SOLO última tanda 9-oct (apagó lo anterior = no rinde): IT 11 | NL 11/246 | SE 10/229 | FI 10/113 | RO 10/132 | HR 10/152 | JP 10/10 | EN 21/354
 - The Clay Table (IT/EN, aire seco): 352 ALL vs 32 ACTIVE (16 en IT) => ola en Italia que ya bajó.
+- Ronda 3 (11-oct):
+  - LATAM chicos "plantillas cerámica" ACTIVE: CR+PA+DO+PR 11 ads | EC+GT+PY+BO 9 ads. HI MERY NO aparece ahí. Solo: Barro Perfecto (1308881132317225, USD, voseo "Imprimí, recortá y creá", "100 plantillas para crear cerámica", "Piezas parejas, sin adivinar medidas", creados 1791721039 ~0.3d), Sistema Arcilla (1), Portal de aprendizaje.
+  - "Negocio digital" 1416274091563317 (USD, voseo argentino en otros productos): lituano "100 keramikos šablonų su matmenimis", "Pirmas puodelis jau šįvakar", "Rankų darbo rinkinys Kūčių stalui" (Nochebuena), creados 1791650095 (~1.1d).
+  - Ceramicaemprendedor NO encontrado en esloveno, cirílico (BG/RU/UA), lituano.
+  => 3 páginas nuevas (Il Servizio Intero IT, Negocio digital LT, Barro Perfecto LATAM chico) con el copy/ángulo del usuario: ¿son del usuario o lo están clonando?
