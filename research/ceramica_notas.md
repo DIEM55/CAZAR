@@ -37,3 +37,17 @@ EN:
 - ClayCraft DIY 1298723666659492 EUR, 1791380921 (~3.3d) "30+ printable pottery templates"
 - Pottery Blueprint 1339142019281477 EUR (~1.5d)
 - Creative Hands Academy 1403139762875246 BRL "click to see more"
+
+## Ronda multilingüe (11-oct) — ALL (activos+inactivos)
+- IT "sagome ceramica": Ceramicaemprendedor "La Bibbia delle Sagome per Ceramica" (tandas 1791152060, 1791249365, 1791509326) + "Il Servizio Intero" (cobra ARS! operador argentino en italiano, 1791693005, "Rilassati. E che venga sempre uguale.")
+- IT "modelli argilla": The Clay Table (USD, "Crea pezzi che la gente vuole comprare", 1791512668), Craft by Sofia (USD, 1790036159 "prima collezione di lezioni")
+- DE "Tonvorlagen": solo ClayLab DIY (14 ads, desde 1790891642 ~9d)
+- FR "gabarits argile": Ceramicaemprendedor "La Bible des Gabarits Céramique" + Clay Easy Makers (USD, "Sans four et sans expérience", 1791413965)
+- Ceramicaemprendedor "Biblia de plantillas" detectada en: ES, EN, DE (Die Bibel der Keramikvorlagen), IT (La Bibbia delle Sagome per Ceramica), FR (La Bible des Gabarits Céramique), NL (De Bijbel van de Keramieksjablonen), SV (Keramikmallarnas Bibel, desde 1790646804), DA (Keramikskabelonernes bibel), NO (Keramikkmalenes Bibel), FI (Keramiikkasapluunien Raamattu), PL (Biblia Szablonów do Ceramiki), SK (Biblia keramických šablón), HR (Biblija šablona za keramiku), HU (A kerámia papírsablonok bibliája, desde 1790473823), RO (Biblia Șabloanelor pentru Ceramică), EL (Η Βίβλος των Πατρόν Κεραμικής, desde 1790639097), TR (Seramik Kesim Şablonları El Kitabı, desde 1790903024), JA (陶芸型紙バイブル). NO encontrado: HE (solo recetas), CS, ET.
+- Otros: NL/DA PrintClay; HE "sofi" (Rice DK, físico); CS solo talleres; Estonian nada.
+- ACTIVE por idioma (Ceramicaemprendedor, hoy ~1791745000):
+  - IT "Sagome per Ceramica": 11 activos, TODOS de la tanda 1791509xxx (~2.7d). Tandas anteriores IT (1791152/1791249) ya apagadas => en IT rota/corta, no sostiene.
+  - DE "Keramikvorlagen": 61 activos, mantiene tandas desde 1790639091 (~12.6d) => sostiene.
+  - FR "Gabarits Céramique": 61 activos, desde 1790639091 (~12.6d) => sostiene.
+- "Il Servizio Intero" 1384647651397432: 2 ads creados 1791693005 (~0.6d), cobra ARS, IT: "Sei tazze uguali, non sei pezzi spaiati" / "Rilassati. E che venga sempre uguale." => traducción del copy 3 del usuario (¿es del usuario o lo copiaron?)
+- Derrame de anuncios EN ("pottery templates", ACTIVE) por país: Nórdicos+NL 82 | Europa del Este (PL,CZ,SK,HU,RO,HR,GR) 77 | FR+BE 74 | DACH 65 | IT 4 | India 20 (ALL, casi todo Clay Maker Lab + talleres) | Corea 0
