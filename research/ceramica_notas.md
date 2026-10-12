@@ -60,3 +60,9 @@ EN:
   - "Negocio digital" 1416274091563317 (USD, voseo argentino en otros productos): lituano "100 keramikos šablonų su matmenimis", "Pirmas puodelis jau šįvakar", "Rankų darbo rinkinys Kūčių stalui" (Nochebuena), creados 1791650095 (~1.1d).
   - Ceramicaemprendedor NO encontrado en esloveno, cirílico (BG/RU/UA), lituano.
   => 3 páginas nuevas (Il Servizio Intero IT, Negocio digital LT, Barro Perfecto LATAM chico) con el copy/ángulo del usuario: ¿son del usuario o lo están clonando?
+- AUDITORÍA 12-oct:
+  - PR / PA / CR por separado ("plantillas cerámica" ACTIVE): 0 vendedores de plantillas (solo ruido: Mundo Sublimación, Portal talleres, importadora). "moldes de papel cerámica" en PR,PA,CR,UY,ES,CL: 0.
+  - HI MERY + Ceramicaemprendedor en PR/PA/CR, ALL (incl. inactivos): 0 => los líderes NUNCA probaron esos países. Sin competencia pero SIN prueba de demanda.
+  - HI MERY: 0 anuncios activos hoy (apagó todo o le bajaron la página).
+  - Ceramicaemprendedor plantillas activos: ES 10, CL 10 (sigue). UY: solo 2 de Ceramicaemprendedor.
+  - Barro Perfecto: 14 ads ALL, desde 1791429328 (~3.9d), sigue creando (último 1791770237).
