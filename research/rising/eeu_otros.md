@@ -1,0 +1,9 @@
+# Agente Europa del Este + otros (13-oct, now=1791900000)
+1. Neurokids1 1125298484000687 | "Nauka czytania przez zabawę 🦉"/"Impara a leggere giocando 🦉" | kids lectura | PL+IT | USD | 38 | 10.8d | 10.8d:1,9.9:1,9.0:1,7.8:1,6.6:1,5.6:2,4.5:3,3.9:4,2.9:5,2.4:2,1.9:9,0.6:8 | hermanas: Lucie Kučerová CZ 13, Andreea Stoica RO 10, Mathaino.paizontas GR 14 | https://www.facebook.com/ads/library/?id=1630068381827850
+2. Digital Club Edu 1361301167057013 | "3 knihy, 1 cena: 363 Kč"/"3 βιβλία, 1 τιμή: 16,90 €" (bullying/normas escolares, padres) | CS,RO,EL,PT(€) | USD | 54(cap) | 11.7d | 11.7:9,11.0:1,6.9:1,6.0:6,4.5:5,4.1:10,3.0:5,0.6:13 | 0 clones | https://www.facebook.com/ads/library/?id=1419550166952042
+3. Ezer Miért HU 1340954699103216 + Bin Neden TR 1320780351126872 | "1000 porqués" niños | 27+25 | 4.9d | HU 4.9:4,3.0:12,0.7:11; TR 4.85:3,2.9:15,0.7:7 | https://www.facebook.com/ads/library/?id=1427285042193505
+4. Tu Ebook Favorito 1153819164474182 | "500 000+ diseños sublimación" PL/RO/CS/PT | 160(cap) | oldest visto 2.5d | 0 clones | https://www.facebook.com/ads/library/?id=1105926468862231
+5. Digital Corner 1358074294058687 | "500 actividades para adultos mayores" HU | 32 | 3.0d | 3.0:4,1.7:10,0.6:15,0.55:4 | clon Bookbay Digital SK | https://www.facebook.com/ads/library/?id=1829682791389006
+6. Bookbay Digital 1339613552570777 | actividades seniors SK + 36 horas de tutoría RO | 25 | 2.9d | https://www.facebook.com/ads/library/?id=1591923225950108
+7. DermaEkspertka 1293274837209966 | "Promocja DZIŚ!" (¿skincare? sin verificar) PL | 85(cap) | 3.2d visto | https://www.facebook.com/ads/library/?id=1789505222360335
+8. Mister Shop 1263507180180992 | "Czytam Sylabami" + "200 recetas de velas comestibles" PL/CS/SK/RO | 81(cap) | página ≥20.9d; sílabas 4.6d | https://www.facebook.com/ads/library/?id=1834842644337475
