@@ -7,7 +7,10 @@ import os, sys, time, pathlib
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import generar as g  # reutiliza call(), find_key(), find_images()
 import urllib.request
-from mcp.server.fastmcp import FastMCP, Image
+try:  # mcp 1.x
+    from mcp.server.fastmcp import FastMCP, Image
+except ImportError:  # mcp 2.x renombró FastMCP a MCPServer
+    from mcp.server.mcpserver import MCPServer as FastMCP, Image
 
 mcp = FastMCP("apimart")
 OUT = pathlib.Path(os.environ.get("APIMART_OUT", "output"))
