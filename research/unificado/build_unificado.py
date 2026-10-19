@@ -152,3 +152,22 @@ style_sheet(ws, {1: 40, 2: 90})
 
 wb.save(OUT)
 print("guardado:", OUT, "| filas unificadas:", len(rows))
+
+# Filas del re-chequeo al tracker acumulativo (sin duplicar)
+tw = load_workbook(SRC_TRACKER)
+tws = tw.active
+existing = {(r[0], r[1]) for r in tws.iter_rows(min_row=2, values_only=True)}
+added = 0
+for r in RECHECK:
+    key = ("2026-10-19", r["Producto / Página"])
+    if key in existing:
+        continue
+    tws.append(["2026-10-19", r["Producto / Página"], "", "", r["Score 19-oct"], "Media", r["Veredicto 19-oct"],
+                "Re-chequeo 19-oct", r["Anuncio activo más viejo (días)"], r["Activos 19-oct"],
+                r["Idioma / moneda / países"], r["Vendedores en español"], "", "No verificado",
+                "No verificada (facebook.com y landings no accesibles)", "No verificado", "", "", "", "",
+                f'{r["Tendencia"]} {r["Activos chequeo anterior"]} → {r["Activos 19-oct"]} ({r["Fecha chequeo anterior"]})',
+                r["Page ID"], ""])
+    added += 1
+tw.save(SRC_TRACKER)
+print("filas agregadas al tracker:", added)
